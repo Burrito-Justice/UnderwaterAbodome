@@ -152,6 +152,10 @@
 			var/obj/effect/E = O
 			if(E.movable_flags & MOVABLE_FLAG_EFFECTMOVE)
 				E.forceMove(new_turf)
+			if(istype(E, /obj/effect/fluid))
+				var/obj/effect/fluid/F = E
+				new_turf.add_fluid(F.fluid_amount)
+				source.remove_fluid(F.fluid_amount)
 
 	for(var/mob/M in source)
 		if(isEye(M)) continue // If we need to check for more mobs, I'll add a variable

@@ -53,8 +53,10 @@
 
 	// Run the Destroy() chain.
 	qdel(src)
+	flooded = 0
+	QDEL_NULL(flood_object)
 
-	var/old_opaque_counter = opaque_counter 
+	var/old_opaque_counter = opaque_counter
 	var/turf/simulated/W = new N(src)
 
 	if (permit_ao)

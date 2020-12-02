@@ -31,6 +31,7 @@
 //Actual turfs here, simulated variants
 /turf/simulated/open/bub
 	temperature = T0C + 2
+	initial_gas = list(GAS_OXYGEN = MOLES_O2STANDARD * 4, GAS_NITROGEN = MOLES_N2STANDARD * 4)
 	flooded = TRUE
 
 /turf/simulated/open/bub/Initialize()

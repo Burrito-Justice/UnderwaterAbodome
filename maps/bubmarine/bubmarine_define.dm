@@ -14,12 +14,12 @@
 	use_overmap = 1
 	num_exoplanets = 0 //CHANGE THIS once we develop custom locations
 
-	allowed_spawns = list("Dorms","Cryogenics")
+	allowed_spawns = list("Dorms","Cryogenic Storage")
 	default_spawn = "Cryogenics"
 
 	//The following is mostly used for announcements from random events and such.
-	station_name = "Zeng-Hu Research Submarine \"Manta\""
-	station_short = "ZRS Manta"
+	station_name = "Zeng-Hu Research Submarine \"Stingray\""
+	station_short = "ZRS Stingray"
 	dock_name = "TBD" //I really don't know what this is actually used in
 	boss_name = "Research Command"
 	boss_short = "Command"

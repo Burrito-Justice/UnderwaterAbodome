@@ -2,7 +2,7 @@
 
 #if !defined(using_map_DATUM)
 	//MAPS
-	//#include "bubmarine.dmm"//Z1, Z2
+	#include "bubmarine.dmm"//Z1, Z2
 	//#include "transit.dmm"//Z3, includes overmap in the bottom left occupying 20x20
 	//CODE
 	#include "bubmarine_define.dm"

@@ -36,10 +36,10 @@
 "aJ" = (/obj/effect/wallframe_spawn/reinforced_phoron/hull,/turf/simulated/floor/plating,/area/space)
 "aK" = (/obj/effect/wallframe_spawn/reinforced/hull,/turf/simulated/floor/plating,/area/space)
 "aL" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor/plating,/area/space)
-"aM" = (/obj/effect/wallframe_spawn/reinforced/titanium,/turf/simulated/floor/plating,/area/space)
+"aM" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/space)
 "aN" = (/obj/effect/wallframe_spawn/reinforced/no_grille,/turf/simulated/floor/plating,/area/space)
 "aO" = (/obj/effect/wallframe_spawn/no_grille,/turf/simulated/floor/plating,/area/space)
-"aP" = (/obj/effect/shuttle_landmark/bub/beluga,/turf/simulated/floor/tiled/monotile,/area/space)
+"aP" = (/obj/structure/handrai,/obj/machinery/power/apc{dir = 1; pixel_y = 24},/obj/structure/cable/cyan{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/tiled/white/monotile,/area/space)
 "aQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/turf/simulated/floor/tiled/dark/monotile,/area/space)
 "aR" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 6},/turf/simulated/floor/bub/ocean/void,/area/space)
 "aS" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 6},/obj/structure/lattice,/turf/simulated/floor/bub/ocean/void,/area/space)
@@ -132,7 +132,7 @@
 "cB" = (/obj/machinery/atmospherics/pipe/simple/visible/yellow{dir = 4},/obj/machinery/meter,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
 "cC" = (/obj/machinery/atmospherics/pipe/manifold/visible/yellow{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
 "cD" = (/obj/machinery/atmospherics/pipe/simple/visible/yellow{dir = 10},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
-"cE" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/turf/simulated/floor/plating,/area/space)
+"cE" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/space)
 "cF" = (/obj/machinery/atmospherics/pipe/simple/visible/yellow{dir = 4},/obj/machinery/meter,/turf/simulated/floor/tiled/techfloor,/area/space)
 "cG" = (/obj/machinery/atmospherics/binary/oxyregenerator,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
 "cH" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan{dir = 10},/turf/simulated/floor/tiled/techfloor,/area/space)
@@ -167,7 +167,7 @@
 "dk" = (/obj/machinery/atmospherics/portables_connector{dir = 4},/obj/machinery/portable_atmospherics/powered/scrubber,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
 "dl" = (/obj/machinery/atmospherics/portables_connector{dir = 4},/obj/machinery/portable_atmospherics/powered/scrubber,/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
 "dm" = (/obj/machinery/door/airlock/external,/turf/simulated/floor/plating,/area/space)
-"dn" = (/obj/machinery/door/airlock/external,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"dn" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle,/obj/structure/handrai,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
 "do" = (/obj/machinery/atmospherics/binary/pump/on{dir = 8},/obj/machinery/door/window/eastleft,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
 "dp" = (/obj/machinery/atmospherics/unary/outlet_injector{dir = 4; frequency = 1441; id_tag = "n2_in"; injecting = 1; use_power = 1},/obj/machinery/air_sensor{id_tag = "n2_sensor"},/turf/simulated/floor/reinforced/nitrogen,/area/space)
 "dq" = (/obj/machinery/atmospherics/pipe/simple/visible/yellow,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
@@ -203,11 +203,11 @@
 "dU" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan{dir = 9},/turf/simulated/floor/tiled/techfloor,/area/space)
 "dV" = (/obj/machinery/atmospherics/pipe/manifold/visible/cyan,/turf/simulated/floor/tiled/techfloor,/area/space)
 "dW" = (/obj/machinery/atmospherics/pipe/manifold/visible/cyan{dir = 1},/obj/machinery/meter,/turf/simulated/floor/tiled/techfloor,/area/space)
-"dX" = (/obj/effect/overmap/visitable/ship/landable/beluga,/turf/simulated/floor/tiled/monotile,/area/space)
-"dY" = (/obj/machinery/computer/ship/sensors,/turf/simulated/floor/tiled/monotile,/area/space)
+"dX" = (/obj/structure/handrai,/turf/simulated/floor/tiled/monotile,/area/space)
+"dY" = (/obj/machinery/shipsensors,/obj/structure/window/phoronreinforced{dir = 1},/turf/simulated/floor/reinforced/airless,/area/space)
 "dZ" = (/obj/machinery/computer/ship/helm,/turf/simulated/floor/tiled/monotile,/area/space)
-"ea" = (/obj/machinery/computer/shuttle_control/explore/beluga,/turf/simulated/floor/tiled/monotile,/area/space)
-"eb" = (/obj/machinery/computer/ship/engines{dir = 8},/turf/simulated/floor/tiled/monotile,/area/space)
+"ea" = (/obj/machinery/computer/shuttle_control/explore/beluga,/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/monotile,/area/space)
+"eb" = (/obj/machinery/sleeper{dir = 8},/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/white/monotile,/area/space)
 "ec" = (/obj/machinery/computer/ship/engines,/turf/simulated/floor/tiled/dark/monotile,/area/space)
 "ed" = (/obj/machinery/computer/ship/helm,/turf/simulated/floor/tiled/dark/monotile,/area/space)
 "ee" = (/obj/machinery/atmospherics/pipe/simple/visible/green{dir = 9},/obj/machinery/fusion_fuel_injector/mapped{dir = 1; id_tag = "ray_core"},/turf/simulated/floor/tiled/techfloor,/area/space)
@@ -260,7 +260,7 @@
 "eZ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/plating,/area/space)
 "fa" = (/obj/structure/window/reinforced{dir = 1},/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/tiled/dark/monotile,/area/space)
 "fb" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/turf/simulated/floor/plating,/area/space)
-"fc" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/white,/area/space)
+"fc" = (/obj/structure/bed/chair/padded/blue{dir = 8},/turf/simulated/floor/tiled/white,/area/space)
 "fd" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/turf/simulated/floor/tiled/white/monotile,/area/space)
 "fe" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/tiled/monotile,/area/space)
 "ff" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/dark/monotile,/area/space)
@@ -401,6 +401,102 @@
 "hK" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/turf/simulated/floor/tiled/techfloor,/area/space)
 "hL" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/space)
 "hM" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/turf/simulated/floor/plating,/area/space)
+"hN" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/white/monotile,/area/space)
+"hO" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/iv_drip,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/white/monotile,/area/space)
+"hP" = (/obj/machinery/cryopod,/turf/simulated/floor/tiled/monotile,/area/space)
+"hQ" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/monotile,/area/space)
+"hR" = (/obj/structure/window/reinforced{dir = 1},/obj/structure/shuttle/engine/heater,/turf/simulated/floor/reinforced,/area/space)
+"hS" = (/obj/structure/cable/cyan{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1},/turf/simulated/floor/tiled/monotile,/area/space)
+"hT" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/bed,/turf/simulated/floor/tiled/white/monotile,/area/space)
+"hU" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/monotile,/area/space)
+"hV" = (/obj/machinery/vitals_monitor,/turf/simulated/floor/tiled/white/monotile,/area/space)
+"hW" = (/obj/structure/table/reinforced,/obj/machinery/alarm{dir = 4; pixel_x = -24; pixel_y = 0},/turf/simulated/floor/tiled/white/monotile,/area/space)
+"hX" = (/obj/structure/window/reinforced,/obj/structure/table/reinforced,/turf/simulated/floor/tiled/white/monotile,/area/space)
+"hY" = (/obj/structure/fuel_port{pixel_x = -32},/turf/simulated/floor/reinforced,/area/space)
+"hZ" = (/obj/structure/handrai,/obj/machinery/alarm{pixel_y = 24},/turf/simulated/floor/tiled/monotile,/area/space)
+"ia" = (/obj/structure/table/steel_reinforced,/obj/machinery/recharger,/turf/simulated/floor/tiled/monotile,/area/space)
+"ib" = (/obj/structure/window/reinforced,/obj/machinery/door/window/westright,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/monotile,/area/space)
+"ic" = (/obj/machinery/computer/ship/navigation/telescreen{pixel_y = 24},/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/monotile,/area/space)
+"id" = (/obj/structure/bed/chair/shuttle/blue{dir = 4},/turf/simulated/floor/tiled/monotile,/area/space)
+"ie" = (/obj/structure/table/rack,/turf/simulated/floor/tiled/monotile,/area/space)
+"if" = (/obj/machinery/computer/modular/preset/civilian{dir = 1},/turf/simulated/floor/tiled/monotile,/area/space)
+"ig" = (/obj/machinery/computer/ship/engines{dir = 8},/obj/structure/window/reinforced,/obj/machinery/power/apc{dir = 4; pixel_x = 24; pixel_y = 0},/obj/structure/cable/cyan{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/tiled/monotile,/area/space)
+"ih" = (/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/monotile,/area/space)
+"ii" = (/obj/structure/bed/chair/shuttle/black{dir = 1},/turf/simulated/floor/tiled/monotile,/area/space)
+"ij" = (/obj/structure/bed/chair/shuttle/blue{dir = 4},/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/tiled/monotile,/area/space)
+"ik" = (/obj/structure/bed/chair/shuttle/blue{dir = 4},/obj/structure/window/reinforced,/turf/simulated/floor/tiled/monotile,/area/space)
+"il" = (/turf/simulated/floor/tiled,/area/space)
+"im" = (/obj/structure/window/reinforced,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/tiled/monotile,/area/space)
+"in" = (/obj/structure/handrai,/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"io" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/monotile,/area/space)
+"ip" = (/obj/structure/handrai{dir = 1},/turf/simulated/floor/tiled/monotile,/area/space)
+"iq" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4},/turf/simulated/floor/tiled/monotile,/area/space)
+"ir" = (/obj/machinery/light/spot,/turf/simulated/floor/plating,/area/space)
+"is" = (/obj/machinery/atmospherics/pipe/manifold/hidden{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"it" = (/obj/machinery/atmospherics/pipe/manifold/hidden{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iu" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 4},/turf/simulated/floor/tiled,/area/space)
+"iv" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{dir = 1},/obj/structure/handrai{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iw" = (/obj/structure/handrai{dir = 1},/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"ix" = (/obj/structure/window/reinforced{dir = 8},/obj/machinery/computer/ship/sensors{dir = 4},/obj/machinery/alarm{pixel_y = 24},/turf/simulated/floor/tiled/monotile,/area/space)
+"iy" = (/obj/effect/overmap/visitable/ship/landable/beluga,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled,/area/space)
+"iz" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/light/spot,/turf/simulated/floor/plating,/area/space)
+"iA" = (/obj/machinery/light/spot{dir = 4},/turf/simulated/floor/plating,/area/space)
+"iB" = (/obj/effect/shuttle_landmark/bub/beluga,/obj/machinery/atmospherics/pipe/simple/hidden{dir = 6},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled,/area/space)
+"iC" = (/obj/machinery/atmospherics/pipe/simple/hidden,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled,/area/space)
+"iD" = (/obj/machinery/atmospherics/pipe/simple/hidden,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/monotile,/area/space)
+"iE" = (/obj/machinery/atmospherics/pipe/simple/hidden,/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iF" = (/obj/machinery/power/apc{dir = 1; pixel_y = 24},/obj/structure/cable/cyan{d2 = 2; icon_state = "0-2"},/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iG" = (/obj/machinery/power/port_gen/pacman/super,/obj/machinery/power/terminal,/obj/structure/cable/cyan{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iH" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iI" = (/obj/machinery/atmospherics/pipe/simple/hidden,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iJ" = (/obj/structure/table/rack,/obj/machinery/light/small,/turf/simulated/floor/tiled/monotile,/area/space)
+"iK" = (/obj/machinery/recharge_station,/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iL" = (/obj/machinery/power/smes/buildable/power_shuttle,/obj/structure/cable/cyan{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iM" = (/obj/machinery/atmospherics/portables_connector{dir = 1},/obj/machinery/portable_atmospherics/canister/air/airlock,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iN" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/space)
+"iO" = (/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/tiled/monotile,/area/space)
+"iP" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{dir = 1},/obj/structure/handrai{dir = 1},/obj/machinery/light/small,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/light/spot{dir = 4},/turf/simulated/floor/plating,/area/space)
+"iR" = (/obj/structure/handrai,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iS" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/machinery/firealarm{dir = 4; pixel_x = 24},/turf/simulated/floor/tiled/monotile,/area/space)
+"iT" = (/obj/machinery/atmospherics/pipe/simple/hidden/universal,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iU" = (/obj/machinery/atmospherics/portables_connector{dir = 1},/obj/machinery/portable_atmospherics/canister/empty,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iV" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 4},/turf/simulated/floor/tiled/white/monotile,/area/space)
+"iW" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/monotile,/area/space)
+"iX" = (/obj/structure/table/steel_reinforced,/obj/machinery/cell_charger,/obj/machinery/light/small,/obj/random_multi/single_item/boombox,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iY" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/machinery/alarm{pixel_y = 24},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"iZ" = (/obj/machinery/ion_engine{dir = 1},/turf/simulated/floor/reinforced,/area/space)
+"ja" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/space)
+"jb" = (/obj/machinery/atmospherics/unary/cryo_cell,/turf/simulated/floor/tiled/white,/area/space)
+"jc" = (/obj/machinery/atmospherics/unary/freezer,/turf/simulated/floor/tiled/white,/area/space)
+"jd" = (/obj/machinery/atmospherics/portables_connector,/obj/machinery/portable_atmospherics/canister/oxygen/prechilled,/turf/simulated/floor/tiled/white,/area/space)
+"je" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 5},/turf/simulated/floor/tiled/white,/area/space)
+"jf" = (/obj/machinery/atmospherics/pipe/manifold/visible,/turf/simulated/floor/tiled/white,/area/space)
+"jg" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 9},/turf/simulated/floor/tiled/white,/area/space)
+"jh" = (/obj/structure/table/reinforced,/obj/machinery/door/window/eastleft,/turf/simulated/floor/tiled/white,/area/space)
+"ji" = (/obj/effect/wallframe_spawn/reinforced/polarized/no_grille,/turf/simulated/floor/plating,/area/space)
+"jj" = (/obj/structure/table/standard,/turf/simulated/floor/tiled/white,/area/space)
+"jk" = (/obj/structure/table/reinforced,/turf/simulated/floor/tiled/white,/area/space)
+"jl" = (/obj/machinery/bodyscanner{dir = 8},/turf/simulated/floor/tiled/white,/area/space)
+"jm" = (/obj/machinery/body_scanconsole{dir = 8},/turf/simulated/floor/tiled/white,/area/space)
+"jn" = (/obj/machinery/sleeper{dir = 4},/turf/simulated/floor/tiled/white,/area/space)
+"jo" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/bed/chair/padded/blue{dir = 8},/turf/simulated/floor/tiled/white,/area/space)
+"jp" = (/obj/structure/bed/roller,/turf/simulated/floor/tiled/white,/area/space)
+"jq" = (/obj/structure/bed/chair/office/light{dir = 4},/turf/simulated/floor/tiled/white,/area/space)
+"jr" = (/obj/structure/closet/crate/med_crate/trauma,/turf/simulated/floor/tiled/white,/area/space)
+"js" = (/obj/structure/closet/crate/med_crate/burn,/turf/simulated/floor/tiled/white,/area/space)
+"jt" = (/obj/structure/closet/crate/med_crate/toxin,/turf/simulated/floor/tiled/white,/area/space)
+"ju" = (/obj/structure/closet/crate/med_crate/oxyloss,/turf/simulated/floor/tiled/white,/area/space)
+"jv" = (/obj/machinery/optable,/obj/machinery/body_scan_display{pixel_y = 24},/turf/simulated/floor/tiled/white,/area/space)
+"jw" = (/obj/machinery/vitals_monitor,/turf/simulated/floor/tiled/white,/area/space)
+"jx" = (/obj/structure/iv_drip,/turf/simulated/floor/tiled/white,/area/space)
+"jy" = (/obj/machinery/organ_printer/flesh/mapped,/turf/simulated/floor/tiled/white,/area/space)
+"jz" = (/obj/machinery/organ_printer/robot/mapped,/turf/simulated/floor/tiled/white,/area/space)
+"jA" = (/obj/structure/closet/crate/trashcart,/turf/simulated/floor/tiled/white,/area/space)
+"jB" = (/obj/structure/bed,/turf/simulated/floor/tiled/white,/area/space)
+"jC" = (/obj/machinery/computer/modular/preset/medical{dir = 4},/turf/simulated/floor/tiled/white,/area/space)
+"jD" = (/obj/machinery/door/window/eastright,/obj/machinery/computer/modular/preset/medical{dir = 8},/turf/simulated/floor/tiled/white,/area/space)
+"jE" = (/obj/structure/bed/chair/office/comfy/teal{dir = 8},/turf/simulated/floor/tiled/white,/area/space)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -445,22 +541,22 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadajajajajajajajajajajajadgYfdfjarar
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadajadadadadadadadadadadadgZhaadadadadadajajajajajajaFaFaFaFcOaFaFaFaFaFaFaFadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadajajajajajajajajajajajajajarhbcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfhcajajajajajajajajajajadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadajadadadadadadadadadadadadargOadadadadadadadadadadadadadadadcPadadadadadadadadadajadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadajajajajajajajajajadajajajajajajgLgagagagagDaLaHaHaHaHaHadaicAanavaxdDdDbJcrcscAcaadajadaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaadadaKadadadadadajadajadajajajajajadajababababababaMaMaMabgGaLfgaHaHaHaHadcocAcvcxcybCcFcyczcBcAcpadajadaBaBaBaBaBaBaBaBaBaSaTbMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaadadahahahajaDadadajadajadajajajajajadajabaAaAaAaAaAdYdZeaabgKgQgRgSaHaHaHadadadcYaHaHaHaHaycSdyadadadajadaBaaaaaaaaaaaaaRaUaVaaaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaadadaheFeLeLeLeOeTeLgladajadajadadadadadajaMaAaAaAaAaAaAaAaAaMgGadadadadadadadadadcCcDaHaHaHaHcYdzadajajajadaBaaaaaaaaaaaaaWaaaaaaaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaKahahffahahahgueHadgnadajadaAadaAaAaAaLajaMaAaAaAaAaAaAaAebabeQgjgkgkgkgkgkgkgladcGcGaHaHaHaHcSdAadajajadadadadaKaKaaaaaaaWaaaaaaaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaadadahahgvgwahahahahadgnadajadaAadfeaAaAajajabaAaAaAaAaAaAaAaAabgmfqadadadadadadgnadcIcJdddddddbcSdBadajajadaAaAaAaAaKaaaaaaaXaUaUbNaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaKahahahgxeKahahahahadgnadadadaAadgygzaAaLajabaAaAaAaAaAabababababaAadasasasasadgnaddedwdkdEdacZcSdCadajajadaAaAaAaAaKaaaaaaaaaaaabOaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaKahahahffadaLaLaLaLadgnadaEajgAadgnaNaNadajabaAaAaAdXaAaMaIaIaMaIaAaAasasasasadgnadaIaIdldcaHcVcSfPcfcfhdeIfkflgAaAaKaaaaaaaaaaaabOaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaadaLaLadffadaaaBaBaaadgBgkgkgkeNgkgCgUgkgkgDabaAaAaAaPaAaIaIaIdnaIaAaAasasasasadgogkcEdFdodGcHcVcSaHadajccadgHeIfoaAaKaaaaaaaaaaaabOaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaadahahgEgFadaBaCajaBadgnadaEajfqadgnaNaNadgGabaAaAaAaAaAaMaIaIaMaIaAaAasasasasadgnadcddFdsdHcTcZcShLeZeZhMeMfmflhiaAaKaaaaaaaaaaaabOaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaadahahaheHadaaaBaBaaadgnadadadaAadgHgzaAaLgGaMaAaAaAaAaAabababababaAadasasasasadgnaddtdudvaHbecVcSaHadajgGadaAaAaAaAaKaaaaaaaaaaaabOaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaadadadadadadaLaLaLaLadgnadajadaAadfqaAaAajgGaMaAaAaAaAaAaAaAaAaMgpfeadadadadadadgnadaHbZctbbcucVcSaHadajgGadaAaAaAaAaKaaaaaaaRaUaUbPaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaKaAaAaAaAaAaAaAfeadgnadajadaAadaAaAaAaLgGabaAaAaAaAaAaAaAaAabgqgrgkgkgkgkgkgkgsadaIcQcQaIcwcVdxcRadajgGadadadadaKaKaaaaaaaWaaaaaaaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaKaKaAaAaAaAaAgIgJgkgsadajadajadadadadadgGabauauabaAaAabauauabgGadadadadadadadadadcUdfdididIcVcUdqadajgLgDadaBaaaaaaaaaaaaaWaaaaaaaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaKaKaAaAaAajaDadadajadajadajajajajajadgGabauauababababauauabgKgQgTgSaHaHaHadadaddJdKdKdKbecWdJdLadadadgGadaBaaaaaaaaaaaaaXaUaYaaaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaKaKaKaKadadadadajadajadajajajajajadgGabauauauababauauauabgGaLeXaHaHaHaHadcqcAdMbCbCbCdgcXdMdNcAdjadgGadaBaBaBaBaBaBaBaBaBbQaTbMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadajajajajajajajajajadajirajajajajgLgagagaizgDaLaHaHaHaHaHadaicAanavaxdDdDbJcrcscAcaadajadaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaadadaKadadadadadajadajadajajajajajadajabababababdYabaMaMabgGaLfgaHaHaHaHadcocAcvcxcybCcFcyczcBcAcpadajadaBaBaBaBaBaBaBaBaBaSaTbMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaadadahahahajaDadadajadajadajajajajajadajabhWaPebabababdZeaabgKgQgRgSaHaHaHadadadcYaHaHaHaHaycSdyadadadajadaBaaaaaaaaaaaaaRaUaVaaaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaadadaheFeLeLeLeOeTeLgladajadajadadadadadajaMhVhNhThZicixiiiaaMgGadadadadadadadadadcCcDaHaHaHaHcYdzadajajajadaBaaaaaaaaaaaaaWaaaaaaaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaKahahffahahahgueHadgnadajadaAadaAaAaAaLajaMhXiVhOhShUibimigabeQgjgkgkgkgkgkgkgladcGcGaHaHaHaHcSdAadajajadadadadaKaKaaaaaaaWaaaaaaaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaadadahahgvgwahahahahadgnadajadaAadfeaAaAajajabiWihhQioaAaAaAhPabgmfqadadadadadadgnadcIcJdddddddbcSdBadajajadaAaAaAaAaKaaaaaaaXaUaUbNaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaKahahahgxeKahahahahadgnadadadaAadgygzaAaLiAabijiliuiSababababababiOadasasasasadgnaddedwdkdEdacZcSdCadajajadaAaAaAaAaKaaaaaaaaaaaabOaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaKahahahffadaLaLaLaLadgnadaEajgAadgnaNaNadajabidililiydXaMdndnaMinaAaAasasasasadgnadaIaIdldcaHcVcSfPcfcfhdeIfkflgAaAaKaaaaaaaaaaaabOaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaadaLaLadffadaaaBaBaaadgBgkgkgkeNgkgCgUgkgkgDabidililiBiqiHisitiHisaAaAasasasasadgogkcEdFdodGcHcVcSaHadajccadgHeIfoaAaKaaaaaaaaaaaabOaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaadahahgEgFadaBaCajaBadgnadaEajfqadgnaNaNadgGabikiliuiCipaMiPivaMiwaAaAasasasasadgnadjadFdsdHcTcZcShLeZeZhMeMfmflhiaAaKaaaaaaaaaaaabOaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaadahahaheHadaaaBaBaaadgnadadadaAadgHgzaAaLiQabiWililiDababababababiOadasasasasadgnaddtdudvaHbecVcSaHadajgGadaAaAaAaAaKaaaaaaaaaaaabOaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaadadadadadadaLaLaLaLadgnadajadaAadfqaAaAajgGaMaAaAaAiEiRiYiFiGiNgpfeadadadadadadgnadaHbZctbbcucVcSaHadajgGadaAaAaAaAaKaaaaaaaRaUaUbPaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaKaAaAaAaAaAaAaAfeadgnadajadaAadaAaAaAaLgGabieifiJiIiTiXiKiLabgqgrgkgkgkgkgkgkgsadaIcQcQaIcwcVdxcRadajgGadadadadaKaKaaaaaaaWaaaaaaaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaKaKaAaAaAaAaAgIgJgkgsadajadajadadadadadgGabhRhRabiMiUabhRhRabgGadadadadadadadadadcUdfdididIcVcUdqadajgLgDadaBaaaaaaaaaaaaaWaaaaaaaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaKaKaAaAaAajaDadadajadajadajajajajajadgGabiZiZababababiZiZabgKgQgTgSaHaHaHadadaddJdKdKdKbecWdJdLadadadgGadaBaaaaaaaaaaaaaXaUaYaaaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaKaKaKaKadadadadajadajadajajajajajadgGabauauauababhYauauabgGaLeXaHaHaHaHadcqcAdMbCbCbCdgcXdMdNcAdjadgGadaBaBaBaBaBaBaBaBaBbQaTbMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadajajajajajajajajajadgLgagagagagagMgagagagagNaLaHaHaHaHaHaddpcAdObCbCbCcFdhcBdPcAdradgGadaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadajadadadadadadadadadadadadargOadadadadadadadadadadadadadadadajadadadadadadadadadgGadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadajajajajajajajajajajajajajargPgagagagagagagagbhegcgagagagagagbgagagagagagagagagagNadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -538,11 +634,11 @@ acacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
 acacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
 acacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
 acacacacacacacacacacacacacacacacacacacacadadadadadadadadadadadadadadadadadadadadadadadadadadaddmadacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
-acacacacacacacacacacacacacacacacacacacadadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeadasasasasadfSadaGaGaGaGaGaGaGaGaGaGaGacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
-acacacacacacacacacacacacacacacacacacacadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaearasasasasadfTadadaGaGaGaGaGaGaGaGaGaGacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
-acacacacacacacacacacacacacacacacacacacadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaearasasasasadfTfUadaGaGaGaGaGaGaGaGaGaGacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
-acacacacacacacacacacacacacacacacacacacadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaearasasasasadfVfWadaGaGaGaGaGaGaGaGaGaGacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
-acacacacacacacacacacacacacacacacacacacadaeaeaeaeaeaeaeaeaeaeaeaeaefcaeaeaeaeaeaeaeadasasasasadajfTadaGaGaGaGaGaGaGaGaGaGacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
+acacacacacacacacacacacacacacacacacacacadadjjjrjsjtjuaeaeaeaeaeaeaeaeaeaejkjbjbjcjdadasasasasadfSadaGaGaGaGaGaGaGaGaGaGaGacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
+acacacacacacacacacacacacacacacacacacacadadadadadadadadaeadaeaeaeaeaeaeaeaejejfjfjgarasasasasadfTadadaGaGaGaGaGaGaGaGaGaGacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
+acacacacacacacacacacacacacacacacacacacadjjjvjwadjjjBaeaeadadaeadaeaeadaeaejljmaeaearasasasasadfTfUadaGaGaGaGaGaGaGaGaGaGacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
+acacacacacacacacacacacacacacacacacacacadjxaeaeaeaeaeaeaejiaeaejhaefcaNjnaeaeaeaeaearasasasasadfVfWadaGaGaGaGaGaGaGaGaGaGacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
+acacacacacacacacacacacacacacacacacacacadjyjzjAadjCjEjljmjiaejqjDaejoaNjnaeaejpjpjpadasasasasadajfTadaGaGaGaGaGaGaGaGaGaGacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
 acacacacacacacacacacacacacacacacacadadadadadadadadadadadadadadadargOadadadadadadadadadadadadadajfYadadaGaGaGaGaGaGaGaGaGacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
 acacacacacacacacacacacacacacacacacadajajajajajajajajajajajajajajaefCeZeZeZeZeZeZeZeZeZeZeZePajajfZajadadadadadadadadadadadadadacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
 acacacacacacacacacacacacacacacacacadajadadadadadadadadadadadadadargOadadadadadadadadadadajeYeZeZfDeZeZeZeZeZeZeZeZeZeZeZeZePadadadadadadadadadadacacacacacacacacacacacacacacacacacacacacacacacacacacacac
@@ -553,7 +649,7 @@ acacacacacacacacacacacagadadadadadadadadgGahadahahahahahahahahadakakakakadajajaj
 acacacacacacacacacacacaKahahahevekelahadgGahaOahahahahahahahahaOakakakakadajajajadahgGadajajajajajajadhFgwahahahazahahahadaHaHbeaHaHaHaHaHaHaHaHfgadadadacacacacacacacacacacacacacacacacacacacacacacacac
 acacacacacacacacacacaKaKahahahahewfaexadgGahaOahahahahfteEeKahadfFakakakadajajajadahfEadadadadadadajadffadadadadadadadadadalfgbeaHaHaHaHaHaHaHaHeGeLfvadadadadadadadadadadadacacacacacacacacacacacacacac
 acacacacacacacacacacaKahahahahahftfIeKaNfQgwadahahahahgEhwgwahadhxfGakakadajajajadgEgdahahahahahahahaNffahahahahahahahahahfyhBhDeVgQgQgQgQgQgQgQeWadhGgwahahahahahahahahahadadacacacacacacacacacacacacac
-acacacacacacacacacaKaKahahahahahahffahaNfHeKadadadadahahffahahadffadadadadadadadadfthpadadadadadadahaNffahahfteEeKahahahadfMaHbefNbfbCbCbCbCbhbhbiadfxeDeDeKahahahahahahahahadadacacacacacacacacacacacac
+acacacacacacacacacaKaKahahahahahahffahaNfHeKadaOaOadahahffahahadffadadadadadadadadfthpadadadadadadahaNffahahfteEeKahahahadfMaHbefNbfbCbCbCbCbhbhbiadfxeDeDeKahahahahahahahahadadacacacacacacacacacacacac
 acacacacacacacacacaKecahahahahahahffahadgGahahahahaOahahffahahadffamenemenemenemadahgGadasasasasadahadffahahgEhwgwahahahaLfMaHbZbbbkbXbYaHadawawbladadadahahahahahahahahahahahadadacacacacacacacacacacac
 acacacacacacacacacaKedahahahahahahffahadfEahepeqahadahahffahahadfffBahahhoahfBahadahgGahasasasasadahahffahahahffahahahbvaLfMaIbmbnbwbJbRaHajbobpbqbLacadahahahahahahahahahahahahadadacacacacacacacacacac
 acacacacacacacacacaKefahahahaocheghteLeLhqgagagagaeLgagahmgagMeLhmhsgagahzgafJgaeLgahrahasasasasadatadffahahahffahahahbEaLfMaIbrbsbtaIbSbTbUbVbHbubLacadahahahahahahahahahahahahadadadacacacacacacacacac
@@ -564,7 +660,7 @@ acacacacacacacacacacaKahahahahahfthveKaNfQgwadahahahahahgEhygFadeyeCezeAadhuhAfj
 acacacacacacacacacacaKaKahahahahahguahadgGahaOahahahahahahgueJeDfKaqaqaqadaraearadahfEadadadadadadgGadffadadadadadadadadadaleXbeaHdTdRdSdWcHaHaHfseLfwadadadadadadadadadadadacacacacacacacacacacacacacac
 acacacacacacacacacacacaKahahahaheteuahadgGahaOahahahahahahftfueBfLaqaqaqadaraearadahgGadajajajajajgGadhGgwahahahazahahahadaHaHbeaHbDdRdSdUdQaHaHeXadadadacacacacacacacacacacacacacacacacacacacacacacacac
 acacacacacacacacacacacagadadadadadadadadgGahadahahahahahahaheHadeyeyeyeyadarararadahgGadajajajajajgGadeJeKahahahahahahahadbIaHbGbbbbbbbbbbdVbbbbbbbcbdaZacacacacacacacacacacacacacacacacacacacacacacacac
-acacacacacacacacacacacacacacacacadajajajgGahadadadaOaOaOadadadadadaOaOadadadadadadahgGadajajadadajfEadeHahahahahahahahahadadadadadadadadadadadadadadadacacacacacacacacacacacacacacacacacacacacacacacacac
+acacacacacacacacacacacacacacacacadajajajgGahadadaOaOaOadaOaOaOadadaOaOadadadadadadahgGadajajadadajfEadeHahahahahahahahahadadadadadadadadadadadadadadadacacacacacacacacacacacacacacacacacacacacacacacacac
 acacacacacacacacacacacacacacacacadadajadgGhofBahahahahahahahahahahahahahahahahahfBhogGadajajadadajgGadahahahahahahahahahadajajajajajajajajajajajdmacacacacacacacacacacacacacacacacacacacacacacacacacacac
 acacacacacacacacacacacacacacacacacadajadgLhlhsgagagagagagagagafrgagMfrgagagagagahshlgNadajfpadadajgGadadadadadadadadadadadeSeZeZeZeZajajajajadadadacacacacacacacacacacacacacacacacacacacacacacacacacacac
 acacacacacacacacacacacacacacacacacadajadadadadadadadadadadadadadargOadadadadadadadadadadajgKgagagcfAeZeZeZeZeZeZeZeZeZeZeZfbadadadadadadadadadadacacacacacacacacacacacacacacacacacacacacacacacacacacacac

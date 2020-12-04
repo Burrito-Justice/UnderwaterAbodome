@@ -61,6 +61,16 @@
 	set_light(0.6, 1, 1, 3, "#c9eaff")
 	update_icon()
 
+/turf/simulated/floor/plating/bubflood
+	flooded = 1
+	temperature = T0C + 2
+	initial_gas = list(GAS_OXYGEN = MOLES_O2STANDARD * 4, GAS_NITROGEN = MOLES_N2STANDARD * 4)
+
+/turf/simulated/floor/plating/bubflood/Initialize()
+	. = ..()
+	set_light(0.6, 1, 1, 3, "#c9eaff")
+	update_icon()
+
 //Overmap Coziness
 /turf/unsimulated/overmap
 	icon = 'maps/bubmarine/icons/overmap.dmi'

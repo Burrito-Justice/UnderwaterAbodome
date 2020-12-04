@@ -27,6 +27,7 @@
 /turf/simulated/floor/bub/ocean/void/Initialize()
 	. = ..()
 	set_light(0.6, 1, 1, 3, "#c9eaff") //Open ocean will be very subtly lit up. Make sure the skybox is bright enough
+	update_icon()
 
 //Actual turfs here, simulated variants
 /turf/simulated/open/bub
@@ -37,6 +38,7 @@
 /turf/simulated/open/bub/Initialize()
 	. = ..()
 	set_light(0.6, 1, 1, 3, "#c9eaff")
+	update_icon()
 
 /turf/unsimulated/floor/bub/ocean/floor
 	name = "ocean floor"
@@ -48,6 +50,16 @@
 	desc = "Some rough tufts of Europan seagrass, waving and swaying with each passing current."
 	icon_state = "grass-dark"
 
+//Submarine turf stuff
+/turf/simulated/floor/reinforced/bubflood
+	flooded = 1
+	temperature = T0C + 2
+	initial_gas = list(GAS_OXYGEN = MOLES_O2STANDARD * 4, GAS_NITROGEN = MOLES_N2STANDARD * 4)
+
+/turf/simulated/floor/reinforced/bubflood/Initialize()
+	. = ..()
+	set_light(0.6, 1, 1, 3, "#c9eaff")
+	update_icon()
 
 //Overmap Coziness
 /turf/unsimulated/overmap

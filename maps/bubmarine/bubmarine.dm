@@ -9,7 +9,7 @@
 	#include "bubmarine_shuttles.dm"
 	//#include "bubmarine_jobs.dm"
 	#include "bubmarine_data.dm"
-	//#include "bubmarine_areas.dm"
+	#include "bubmarine_areas.dm"
 	//#include "bubmarine_objs.dm"
 	#include "bubmarine_turfs.dm"
 

@@ -11,6 +11,10 @@
 	temperature = T0C + 2
 	initial_gas = list(GAS_OXYGEN = MOLES_O2STANDARD * 4, GAS_NITROGEN = MOLES_N2STANDARD * 4)
 
+/turf/simulated/ocean
+	temperature = T0C + 2
+	initial_gas = list(GAS_OXYGEN = MOLES_O2STANDARD * 4, GAS_NITROGEN = MOLES_N2STANDARD * 4)
+
 /turf/simulated/ocean/Initialize()
 	. = ..()
 	update_icon()
@@ -70,6 +74,11 @@
 	. = ..()
 	set_light(0.6, 1, 1, 3, "#c9eaff")
 	update_icon()
+
+/turf/simulated/ocean/grass //this is for the aquarium in research
+	name = "seagrass"
+	desc = "Some rough tufts of Europan seagrass."
+	icon_state = "grass-dark"
 
 //Overmap Coziness
 /turf/unsimulated/overmap

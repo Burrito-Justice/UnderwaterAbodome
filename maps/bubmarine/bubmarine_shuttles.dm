@@ -27,7 +27,7 @@
 /datum/shuttle/autodock/overmap/beluga
 	name = "Beluga"
 	move_time = 60
-	//shuttle_area = list() - fill this in later
+	shuttle_area = list(/area/bub/bel,/area/bub/bel/med,/area/bub/bel/pilot)
 	landmark_transition = "nav_transit_beluga"
 	current_location = "nav_raydock_beluga"
 	dock_target = "nav_raydock_beluga"
@@ -47,4 +47,4 @@
 /obj/effect/shuttle_landmark/bub/beluga/transit
 	name = "Open Waters"
 	landmark_tag = "nav_transit_beluga"
-	base_turf = /turf/simulated/floor/bub/ocean/void
+	base_turf = /turf/simulated/ocean/void

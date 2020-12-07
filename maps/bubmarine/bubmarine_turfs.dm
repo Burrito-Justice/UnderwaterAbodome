@@ -1,6 +1,6 @@
 //Anything turf-related that needs to be tweaked for performance/aesthetic reasons goes here
 /world
-	turf = /turf/simulated/floor/bub/ocean/void
+	turf = /turf/simulated/ocean/void
 
 /turf/simulated/floor/bub/ocean
 	icon = 'maps/bubmarine/icons/ocean_turf.dmi'
@@ -20,7 +20,7 @@
 	update_icon()
 
 //Parallax and Skybox. This is the bottom-most ocean turf in most cases, but it gives the illusion that it goes deeper
-/turf/simulated/floor/bub/ocean/void
+/turf/simulated/ocean/void
 	name = "open ocean"
 	icon = 'icons/turf/space.dmi'
 	icon_state = "white"
@@ -28,7 +28,7 @@
 	plane = SPACE_PLANE
 	z_eventually_space = TRUE
 
-/turf/simulated/floor/bub/ocean/void/Initialize()
+/turf/simulated/ocean/void/Initialize()
 	. = ..()
 	set_light(0.6, 1, 1, 3, "#c9eaff") //Open ocean will be very subtly lit up. Make sure the skybox is bright enough
 	update_icon()

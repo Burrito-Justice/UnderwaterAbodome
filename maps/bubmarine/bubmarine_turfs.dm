@@ -2,11 +2,6 @@
 /world
 	turf = /turf/simulated/ocean/void
 
-/turf/simulated/floor/bub/ocean
-	icon = 'maps/bubmarine/icons/ocean_turf.dmi'
-	temperature = T0C + 2
-	initial_gas = list(GAS_OXYGEN = MOLES_O2STANDARD * 4, GAS_NITROGEN = MOLES_N2STANDARD * 4) //water pressure of 4 atmospheres (~404 kPa)
-
 /turf/unsimulated/floor/bub/ocean
 	temperature = T0C + 2
 	initial_gas = list(GAS_OXYGEN = MOLES_O2STANDARD * 4, GAS_NITROGEN = MOLES_N2STANDARD * 4)
@@ -27,6 +22,9 @@
 	flooded = TRUE
 	plane = SPACE_PLANE
 	z_eventually_space = TRUE
+
+/turf/simulated/ocean/void/add_decal()
+	return 0
 
 /turf/simulated/ocean/void/Initialize()
 	. = ..()

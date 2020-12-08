@@ -10,9 +10,11 @@
 /area/bub/ray/exterior
 	name = "EVA - Open Waters; Upper Level"
 	area_flags = AREA_FLAG_EXTERNAL
+	base_turf = /turf/simulated/open/bub
 
 /area/bub/ray/exterior/lower
 	name = "EVA - Open Waters; Lower Level"
+	base_turf = /turf/simulated/ocean/void
 
 //General halls and spaces
 /area/bub/ray/gen
@@ -226,3 +228,5 @@
 /area/bub/bel/pilot
 	name = "BEL - Beluga Piloting Area"
 	icon_state = "shuttlegrn"
+
+//___ELEVATORS___

@@ -41,4 +41,4 @@
 	away_site_budget = 3//what does this do again...
 	id_hud_icons = 'maps/torch/icons/assignment_hud.dmi' //don't mind me just grabbing something from another directory
 
-	base_turf_by_z = list(1 = /turf/simulated/ocean/void, 2 = /turf/simulated/open/bub) //turfs that pop up when you remove a floor plating, based on Z level
+	base_turf_by_z = list("1" = /turf/simulated/ocean/void, "2" = /turf/simulated/open) //turfs that pop up when you remove a floor plating, based on Z level

@@ -7,10 +7,10 @@
 	//CODE
 	#include "bubmarine_define.dm"
 	#include "bubmarine_shuttles.dm"
-	//#include "bubmarine_jobs.dm"
+	#include "bubmarine_jobs.dm"
 	#include "bubmarine_data.dm"
 	#include "bubmarine_areas.dm"
-	//#include "bubmarine_objs.dm"
+	#include "bubmarine_objs.dm"
 	#include "bubmarine_turfs.dm"
 
 	#define using_map_DATUM /datum/map/bubmarine

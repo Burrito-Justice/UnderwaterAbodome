@@ -218,15 +218,15 @@
 
 //___BELUGA AREAS___
 /area/bub/bel
-	name = "BEL - Beluga Expeditionary Submarine"
+	name = "XPD - Beluga Expeditionary Submarine"
 	icon_state = "shuttle"
 
 /area/bub/bel/med
-	name = "BEL - Beluga Medical Area"
+	name = "XPD - Beluga Medical Area"
 	icon_state = "medbay4"
 
 /area/bub/bel/pilot
-	name = "BEL - Beluga Piloting Area"
+	name = "XPD - Beluga Piloting Area"
 	icon_state = "shuttlegrn"
 
 //___ELEVATORS___

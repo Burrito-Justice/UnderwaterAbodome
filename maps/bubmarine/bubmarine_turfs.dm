@@ -17,6 +17,7 @@
 //Parallax and Skybox. This is the bottom-most ocean turf in most cases, but it gives the illusion that it goes deeper
 /turf/simulated/ocean/void
 	name = "open ocean"
+	desc = "Wide open ocean, as far as the eye can see. From your perspective it's hard to say whether or not there's even a floor to these waters."
 	icon = 'icons/turf/space.dmi'
 	icon_state = "white"
 	flooded = TRUE
@@ -30,6 +31,12 @@
 	. = ..()
 	set_light(0.6, 1, 1, 3, "#c9eaff") //Open ocean will be very subtly lit up. Make sure the skybox is bright enough
 	update_icon()
+
+/datum/controller/subsystem/skybox
+	skybox_icon = 'maps/bubmarine/icons/skybox.dmi'
+	background_icon = "skybox"
+	use_stars = FALSE
+	use_overmap_details = TRUE
 
 //Actual turfs here, simulated variants
 /turf/simulated/open/bub

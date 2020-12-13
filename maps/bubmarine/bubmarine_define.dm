@@ -10,7 +10,7 @@
 	contact_levels = list(1,2) //levels that can be contacted from the station mostly for announcements
 	overmap_size = 20 //change this as needed when we get to overmap POIs, a value of 20 will make it 20x20
 	overmap_event_areas = 2 //how many event groups are generated. groups are generated in large quantities
-	overmap_z = 3 //ideally we should condense z-levels down maybe, so group other things into Z3 as well
+	overmap_z = 3 //apparently if you set this then you get agony
 	use_overmap = 1
 	num_exoplanets = 0 //CHANGE THIS once we develop custom locations
 

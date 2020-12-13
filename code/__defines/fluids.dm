@@ -62,5 +62,5 @@
 	if(!SSfluids.fluid_images[img_state]) SSfluids.fluid_images[img_state] = image('icons/effects/liquids.dmi',img_state); \
 	overlays += SSfluids.fluid_images[img_state];
 
-#define FLUID_MAX_ALPHA 160
+#define FLUID_MAX_ALPHA 125
 #define FLUID_MIN_ALPHA 45

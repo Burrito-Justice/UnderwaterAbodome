@@ -24,6 +24,7 @@
 	max_skill = list(	SKILL_PILOT       = SKILL_MAX,
 						SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 30
+	minimal_player_age = 0
 
 /datum/job/hop
 	title = "First Mate"
@@ -35,6 +36,7 @@
 	max_skill = list(	SKILL_PILOT       = SKILL_MAX,
 						SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 30
+	minimal_player_age = 0
 
 /datum/job/bridge
 	title = "Bridge Crew"
@@ -47,6 +49,10 @@
 						SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 20
 	total_positions = 2
+	department = "Command"
+	department_flag = "COM"
+	selection_color = "#2f2f7f"
+	supervisors = "the captain and/or the first mate"
 
 //Engineering
 /datum/job/engineer
@@ -165,7 +171,6 @@
 
 /datum/job/librarian
 	total_positions = 0
-
 
 //Decls
 /decl/hierarchy/outfit/job/bub

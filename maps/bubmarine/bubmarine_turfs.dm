@@ -34,7 +34,7 @@
 
 /datum/controller/subsystem/skybox
 	skybox_icon = 'maps/bubmarine/icons/skybox.dmi'
-	background_icon = "skybox"
+	background_icon = "skybox2"
 	use_stars = FALSE
 	use_overmap_details = TRUE
 
@@ -86,6 +86,11 @@
 	icon_state = "grass-dark"
 
 //Overmap Coziness
-/turf/unsimulated/overmap
+/turf/unsimulated/map
 	icon = 'maps/bubmarine/icons/overmap.dmi'
 	icon_state = "map"
+	flooded = TRUE
+
+/turf/unsimulated/map/Initialize()
+	. = ..()
+	update_icon()

@@ -1,3 +1,13 @@
+//Wacky water effect thing
+/obj/effect/fluid
+	color = "#92d2f0"
+
+/obj/effect/fluid_mapped
+	color = "#92d2f0"
+
+/obj/effect/flood
+	color = "#92d2f0"
+
 //Uniforms
 /obj/item/clothing/under/bub
 	name = "submarine utility uniform"

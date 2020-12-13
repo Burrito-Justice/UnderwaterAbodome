@@ -131,8 +131,9 @@
 		return 1
 
 	testing("Building overmap...")
-	world.maxz++
-	GLOB.using_map.overmap_z = world.maxz
+	if(!GLOB.using_map.overmap_z)
+		world.maxz++
+		GLOB.using_map.overmap_z = world.maxz
 
 	testing("Putting overmap on [GLOB.using_map.overmap_z]")
 	var/area/overmap/A = new

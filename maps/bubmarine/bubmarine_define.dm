@@ -16,6 +16,10 @@
 
 	allowed_spawns = list("Dorms","Cryogenic Storage")
 	default_spawn = "Cryogenics"
+	default_assistant_title = "Crewman"
+	allowed_jobs = list(/datum/job/assistant,/datum/job/captain,/datum/job/hos,/datum/job/bridge,
+						/datum/job/engineer,/datum/job/doctor,/datum/job/scientist,/datum/job/qm,
+						/datum/job/chef)
 
 	//The following is mostly used for announcements from random events and such.
 	station_name = "Zeng-Hu Research Submarine \"Stingray\""

@@ -21,6 +21,9 @@
 /obj/item/clothing/under/bub/com
 	starting_accessories = list(/obj/item/clothing/accessory/bub/com)
 
+/obj/item/clothing/under/bub/sec
+	starting_accessories = list(/obj/item/clothing/accessory/bub/sec)
+
 /obj/item/clothing/under/bub/med
 	starting_accessories = list(/obj/item/clothing/accessory/bub/med)
 
@@ -54,6 +57,10 @@
 /obj/item/clothing/accessory/bub/com
 	desc = "Insignia denoting assignment to a department. These are gold."
 	color = "#e5ea4f"
+
+/obj/item/clothing/accessory/bub/sec
+	desc = "Insignia denoting assignment to a department. These are blood red."
+	color = "#820000"
 
 /obj/item/clothing/accessory/bub/med
 	desc = "Insignia denoting assignment to a department. These are blue."

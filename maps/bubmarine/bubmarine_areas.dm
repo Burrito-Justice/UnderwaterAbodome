@@ -132,9 +132,9 @@
 	name = "COM - Captain's Quarters"
 	icon_state = "heads_cap"
 
-/area/bub/ray/com/hop
-	name = "COM - First Mate's Quarters"
-	icon_state = "heads_hop"
+/area/bub/ray/com/hos
+	name = "COM - Security Marshall's Brig"
+	icon_state = "heads_hos"
 
 //Engineering
 /area/bub/ray/eng

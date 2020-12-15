@@ -1,18 +1,12 @@
-/datum/map/bubmarine
-	default_assistant_title = "Crewman"
-	allowed_jobs = list(/datum/job/captain,/datum/job/hop,/datum/job/bridge,
-						/datum/job/engineer,/datum/job/doctor,/datum/job/scientist,
-						/datum/job/qm,/datum/job/chef)
-
 //Assistant duderino
 /datum/job/assistant
 	title = "Crewman"
-	alt_titles = list(	"Junior Explorer" = /decl/hierarchy/outfit/job/bub/assistant/xpd,
+	alt_titles = list(	"Expeditionary Crewman" = /decl/hierarchy/outfit/job/bub/assistant/xpd,
 						"Medical Intern" = /decl/hierarchy/outfit/job/bub/assistant/med,
 						"Engineering Apprentice" = /decl/hierarchy/outfit/job/bub/assistant/eng,
 						"Research Assistant" = /decl/hierarchy/outfit/job/bub/assistant/xen)
 	outfit_type = /decl/hierarchy/outfit/job/bub/assistant
-
+	supervisors = "whoever looks like they know what they are doing"
 
 //Command fellas
 /datum/job/captain
@@ -25,7 +19,9 @@
 						SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 30
 	minimal_player_age = 0
+	supervisors = "Zeng-Hu advisory HQ"
 
+/* maybe don't need two command dudes
 /datum/job/hop
 	title = "First Mate"
 	alt_titles = list("Executive Officer")
@@ -36,6 +32,28 @@
 	max_skill = list(	SKILL_PILOT       = SKILL_MAX,
 						SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 30
+	minimal_player_age = 0
+*/
+
+/datum/job/hos
+	title = "Security Marshal"
+	alt_titles = list("Expedition Security","Asset Protection Agent")
+	outfit_type = /decl/hierarchy/outfit/job/bub/security
+	min_skill = list(	SKILL_BUREAUCRACY = SKILL_ADEPT,
+						SKILL_EVA         = SKILL_BASIC,
+						SKILL_COMBAT      = SKILL_BASIC,
+						SKILL_WEAPONS     = SKILL_ADEPT,
+						SKILL_FORENSICS   = SKILL_BASIC)
+
+	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
+						SKILL_WEAPONS     = SKILL_MAX,
+						SKILL_FORENSICS   = SKILL_MAX)
+	skill_points = 28
+	department = "Command"
+	department_flag = "COM"
+	selection_color = "#2f2f7f"
+	supervisors = "the captain"
+	total_positions = 1
 	minimal_player_age = 0
 
 /datum/job/bridge
@@ -71,6 +89,7 @@
 						SKILL_ENGINES      = SKILL_MAX)
 	skill_points = 20
 	total_positions = 3
+	supervisors = "the captain"
 
 //Medical
 /datum/job/doctor
@@ -85,12 +104,15 @@
 						SKILL_CHEMISTRY   = SKILL_MAX)
 	skill_points = 20
 	total_positions = 3
+	supervisors = "the captain"
 
 //Research
 /datum/job/scientist
 	title = "Xenobiologist"
 	alt_titles = list("Xenoarcheologist","Marine Biologist")
 	outfit_type = /decl/hierarchy/outfit/job/bub/research
+	supervisors = "the captain"
+	total_positions = 3
 
 //Cargo
 /datum/job/qm
@@ -102,6 +124,7 @@
 						SKILL_PILOT       = SKILL_BASIC)
 	max_skill = list(	SKILL_PILOT       = SKILL_MAX)
 	skill_points = 18
+	supervisors = "the captain"
 
 //Service
 /datum/job/chef
@@ -115,7 +138,7 @@
 /datum/job/rd
 	total_positions = 0
 
-/datum/job/hos
+/datum/job/hop
 	total_positions = 0
 
 /datum/job/chief_engineer
@@ -132,10 +155,10 @@
 
 /datum/job/detective
 	total_positions = 0
-
+/*
 /datum/job/officer
 	total_positions = 0
-
+*/
 /datum/job/Paramedic
 	total_positions = 0
 
@@ -206,8 +229,14 @@
 /decl/hierarchy/outfit/job/bub/command/captain
 	name = OUTFIT_JOB_NAME("Captain")
 
+/*
 /decl/hierarchy/outfit/job/bub/command/hop
 	name = OUTFIT_JOB_NAME("First Mate")
+*/
+
+/decl/hierarchy/outfit/job/bub/security
+	name = OUTFIT_JOB_NAME("Security Marshal")
+	uniform = /obj/item/clothing/under/bub/sec
 
 //Engineering
 /decl/hierarchy/outfit/job/bub/engineer

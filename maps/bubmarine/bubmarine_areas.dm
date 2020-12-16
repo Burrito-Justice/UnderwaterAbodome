@@ -57,6 +57,7 @@
 /area/bub/ray/srv/kitchen
 	name = "SRV - Kitchen"
 	icon_state = "kitchen"
+	req_access = list(access_kitchen)
 
 /area/bub/ray/srv/kitchen/botany
 	name = "SRV - Botany"
@@ -131,15 +132,18 @@
 /area/bub/ray/com/captain
 	name = "COM - Captain's Quarters"
 	icon_state = "heads_cap"
+	req_access = list(access_captain)
 
 /area/bub/ray/com/hos
 	name = "COM - Security Marshall's Brig"
 	icon_state = "heads_hos"
+	req_access = list(access_hos)
 
 //Engineering
 /area/bub/ray/eng
 	name = "ENG - Engineering Foyer"
 	icon_state = "engineering"
+	req_access = list(access_engine)
 
 /area/bub/ray/eng/locker
 	name = "ENG - Locker Room"
@@ -165,6 +169,7 @@
 /area/bub/ray/med
 	name = "MED - General Treatment Area"
 	icon_state = "medbay"
+	req_access = list(access_medical)
 
 /area/bub/ray/med/exam
 	name = "MED - Examination Room"
@@ -186,6 +191,7 @@
 /area/bub/ray/xen
 	name = "XEN - Research and Xenobiology"
 	icon_state = "xeno_lab"
+	req_access = list(access_tox)
 
 /area/bub/ray/xen/process
 	name = "XEN - Gas Processing Suite"
@@ -199,6 +205,7 @@
 /area/bub/ray/sup
 	name = "SUP - Quartermaster's Office"
 	icon_state = "quartoffice"
+	req_access = list(access_qm)
 
 /area/bub/ray/sup/starb1
 	name = "SUP - Primary Starboard Warehouse"

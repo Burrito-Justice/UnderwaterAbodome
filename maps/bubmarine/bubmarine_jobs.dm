@@ -49,8 +49,9 @@
 						SKILL_WEAPONS     = SKILL_MAX,
 						SKILL_FORENSICS   = SKILL_MAX)
 	skill_points = 28
+	access = list(access_hos,access_security,access_medical,access_tox,access_qm,access_engine,access_kitchen)
 	department = "Command"
-	department_flag = "COM"
+	department_flag = COM
 	selection_color = "#2f2f7f"
 	supervisors = "the captain"
 	total_positions = 1
@@ -58,7 +59,7 @@
 
 /datum/job/bridge
 	title = "Bridge Crew"
-	alt_titles = list("Helmsman","Acoustic Analyst")
+	alt_titles = list("Helmsman","Sonar Analyst")
 	outfit_type = /decl/hierarchy/outfit/job/bub/command
 	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
 						SKILL_SCIENCE     = SKILL_ADEPT,
@@ -66,11 +67,12 @@
 	max_skill = list(	SKILL_PILOT       = SKILL_MAX,
 						SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 20
+	access = list(access_medical,access_tox)
 	total_positions = 2
 	department = "Command"
-	department_flag = "COM"
+	department_flag = COM
 	selection_color = "#2f2f7f"
-	supervisors = "the captain and/or the first mate"
+	supervisors = "the captain"
 
 //Engineering
 /datum/job/engineer
@@ -88,6 +90,7 @@
 						SKILL_ATMOS        = SKILL_MAX,
 						SKILL_ENGINES      = SKILL_MAX)
 	skill_points = 20
+	access = list(access_engine,access_engine_equip,access_atmospherics)
 	total_positions = 3
 	supervisors = "the captain"
 
@@ -103,6 +106,7 @@
 						SKILL_ANATOMY     = SKILL_MAX,
 						SKILL_CHEMISTRY   = SKILL_MAX)
 	skill_points = 20
+	access = list(access_medical,access_medical_equip)
 	total_positions = 3
 	supervisors = "the captain"
 
@@ -111,12 +115,14 @@
 	title = "Xenobiologist"
 	alt_titles = list("Xenoarcheologist","Marine Biologist")
 	outfit_type = /decl/hierarchy/outfit/job/bub/research
+	access = list(access_tox)
 	supervisors = "the captain"
 	total_positions = 3
 
 //Cargo
 /datum/job/qm
 	alt_titles = list("Warehouse Manager")
+	outfit_type = /decl/hierarchy/outfit/job/bub/supply
 	min_skill = list(	SKILL_BUREAUCRACY = SKILL_ADEPT,
 						SKILL_FINANCE     = SKILL_BASIC,
 						SKILL_HAULING     = SKILL_BASIC,
@@ -124,11 +130,13 @@
 						SKILL_PILOT       = SKILL_BASIC)
 	max_skill = list(	SKILL_PILOT       = SKILL_MAX)
 	skill_points = 18
+	access = list(access_qm)
 	supervisors = "the captain"
 
 //Service
 /datum/job/chef
 	outfit_type = /decl/hierarchy/outfit/job/bub/service
+	access = list(access_kitchen)
 	total_positions = 1
 
 //Role removals
@@ -225,9 +233,13 @@
 /decl/hierarchy/outfit/job/bub/command
 	name = OUTFIT_JOB_NAME("Bridge Crewman")
 	uniform = /obj/item/clothing/under/bub/com
+	id_types = list(/obj/item/weapon/card/id/bridge)
+	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
 
 /decl/hierarchy/outfit/job/bub/command/captain
 	name = OUTFIT_JOB_NAME("Captain")
+	id_types = list(/obj/item/weapon/card/id/gold)
+	pda_type = /obj/item/modular_computer/pda/captain
 
 /*
 /decl/hierarchy/outfit/job/bub/command/hop
@@ -237,26 +249,36 @@
 /decl/hierarchy/outfit/job/bub/security
 	name = OUTFIT_JOB_NAME("Security Marshal")
 	uniform = /obj/item/clothing/under/bub/sec
+	id_types = list(/obj/item/weapon/card/id/security/head)
+	pda_type = /obj/item/modular_computer/pda/heads/hos
 
 //Engineering
 /decl/hierarchy/outfit/job/bub/engineer
 	name = OUTFIT_JOB_NAME("Engineer")
 	uniform = /obj/item/clothing/under/bub/eng
+	id_types = list(/obj/item/weapon/card/id/engineering)
+	pda_type = /obj/item/modular_computer/pda/engineering
 
 //Medical
 /decl/hierarchy/outfit/job/bub/medical
 	name = OUTFIT_JOB_NAME("Medical Doctor")
 	uniform = /obj/item/clothing/under/bub/med
+	id_types = list(/obj/item/weapon/card/id/medical)
+	pda_type = /obj/item/modular_computer/pda/medical
 
 //Research
 /decl/hierarchy/outfit/job/bub/research
 	name = OUTFIT_JOB_NAME("Xenobiologist")
 	uniform = /obj/item/clothing/under/bub/xen
+	id_types = list(/obj/item/weapon/card/id/science)
+	pda_type = /obj/item/modular_computer/pda/science
 
 //Cargo
 /decl/hierarchy/outfit/job/bub/supply
 	name = OUTFIT_JOB_NAME("Quartermaster")
 	uniform = /obj/item/clothing/under/bub/sup
+	id_types = list(/obj/item/weapon/card/id/cargo/head)
+	pda_type = /obj/item/modular_computer/pda/cargo
 
 //Expedition
 /decl/hierarchy/outfit/job/bub/expedition
@@ -267,3 +289,4 @@
 /decl/hierarchy/outfit/job/bub/service
 	name = OUTFIT_JOB_NAME("Submarine Service Member")
 	uniform = /obj/item/clothing/under/bub/srv
+	id_types = list(/obj/item/weapon/card/id/civilian/chef)

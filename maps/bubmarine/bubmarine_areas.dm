@@ -37,11 +37,11 @@
 	name = "GEN - Hangar"
 	icon_state = "hangar"
 
-/area/bub/ray/gen/hangar/storage
-	name = "GEN - Hangar Primary Storage"
+/area/bub/ray/gen/hangar/net
+	name = "GEN - Network Processing Center"
 	icon_state = "auxstorage"
 
-/area/bub/ray/gen/hangar/storage2
+/area/bub/ray/gen/hangar/storage
 	name = "GEN - Hangar Secondary Storage"
 	icon_state = "auxstorage"
 

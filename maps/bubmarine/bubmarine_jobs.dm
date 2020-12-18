@@ -49,7 +49,7 @@
 						SKILL_WEAPONS     = SKILL_MAX,
 						SKILL_FORENSICS   = SKILL_MAX)
 	skill_points = 28
-	access = list(access_hos,access_security,access_medical,access_tox,access_qm,access_engine,access_kitchen)
+	access = list(access_hos,access_security,access_armory,access_brig,access_medical,access_tox,access_qm,access_engine,access_kitchen)
 	department = "Command"
 	department_flag = COM
 	selection_color = "#2f2f7f"
@@ -106,7 +106,7 @@
 						SKILL_ANATOMY     = SKILL_MAX,
 						SKILL_CHEMISTRY   = SKILL_MAX)
 	skill_points = 20
-	access = list(access_medical,access_medical_equip)
+	access = list(access_medical,access_medical_equip,access_surgery)
 	total_positions = 3
 	supervisors = "the captain"
 

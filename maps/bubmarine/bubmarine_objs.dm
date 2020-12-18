@@ -320,3 +320,22 @@
 		/obj/item/weapon/module/power_control = 3,
 		/obj/item/device/multitool = 3
 	)
+
+//Submarine propeller stuff
+/obj/machinery/ion_engine
+	name = "submarine screw"
+	desc = "Your typical massive propeller that you'd usually see on something like a boat."
+	icon = 'maps/bubmarine/icons/propellers.dmi'
+	icon_state = "sub_screw"
+
+/obj/machinery/ion_engine/large
+	icon = 'maps/bubmarine/icons/big_propellers.dmi'
+	icon_state = "bigsub_screw"
+
+/obj/structure/shuttle/engine/heater/sub
+	icon = 'maps/bubmarine/icons/propellers.dmi'
+	icon_state = "subheater"
+
+/obj/structure/shuttle/engine/heater/sub/large
+	icon = 'maps/bubmarine/icons/big_propellers.dmi'
+	icon_state = "bigsubheater"

@@ -16,85 +16,16 @@
 		LANGUAGE_SIGN
 	)
 
-/decl/cultural_info/culture/human/martian_surfacer
-	name = CULTURE_HUMAN_MARTIAN
-	description = "You are from the surface of Mars. Raised in one of the many farming communities or one of the great cities such as Olympus. Most of the surfacers \
-	are known as Monsians, the largest cultural group on the planet. Most Surfacers have had a decent upbringing and represent the \
-	average level of comfort expected in Sol space. Most surfacers are like many across the galaxy, though a few harbour rivalries with other Martian cultural \
-	groups or are generally overly proud of their heritage, as is the case with the Gideons, to the point that they constantly refer to it."
+//S O L  A L L I A N C E
+/decl/cultural_info/culture/human/sol
+	name = CULTURE_HUMAN_JUPITER
+	description = "You grew up on Jupiter, either in one of its floating cities or, more likely, on one of its moons. You probably know all about Jovian life: the gas giant is deadly to everything \
+	around it, the moons are creepy, and Europa stands to be even creepier according to the tall tales of many a sailor. Perhaps you're a sailor yourself, or you were just around to service the \
+	tourism industry. Either way, you're locked up in a plasteel coffin several leagues beneath the icy crust now."
 	economic_power = 1
+	language = LANGUAGE_HUMAN_EURO
 
-/decl/cultural_info/culture/human/martian_tunneller
-	name = CULTURE_HUMAN_MARSTUN
-	description = "You are one of the people of the UnderCities of Mars. The UnderCities, originally built as 'temporary' living space while the cities above them \
-	were constructed, have since grown far beyond their original scope and have now spread out underneath the red planet. Tunnellers, despite typically having access \
-	to the same amenities and services as Surfacers are somewhat poorer than their aboveground brethren as a result of their less desirable locale as well as a strong \
-	criminal presence stemming from centuries of poor policing and a focus on the surface by the martian government. Most Tunnellers are resilient, though distrusting \
-	and wary of outsiders, and tend to strongly dislike non-Martians."
-	economic_power = 0.9
-
-/decl/cultural_info/culture/human/luna_poor
-	name = CULTURE_HUMAN_LUNAPOOR
-	description = "You are from Luna, a natural satellite of Earth and home to some of the richest, mostly highly cultured or influential people humanity has. Unfortunately, you are most certainly not one of them. \
-	While Luna is known for its richness, the arts, culture and old money, it is also home to a sizeable population of working poor or middle-lower income persons. Typically the corporate employees \
-	of one of the various corporations, persons hired in service roles in one of the many prefectures or a resident of New Vegas. The 'poor' of Luna typically resent the rich because of their \
-	financial, cultural and political power and influence over their lives."
-	economic_power = 1
-	language = LANGUAGE_HUMAN_SELENIAN
-
-/decl/cultural_info/culture/human/luna_rich
-	name = CULTURE_HUMAN_LUNARICH
-	description = "You are from Luna, Earths only natural satellite and home to some of the richest, most highly cultured, or influential people of humanity. Fortunately for you, you are one of this elite and well \
-	off class of people. The rich of Luna are politically and economically influential not just in Luna, but in the various corporations, organizations and government bodies of the SCG. \
-	Luna's upper class isn't equal; generally divided between new, corporate money and old, dynastic money; many members of the old dynasties look down on the newly wealthy. \
-	Much of the elite of Luna is embroiled in 'The Game' a state of political manoeuvring and intrigue among various factions and persons of influence and power \
-	with implications far beyond the squabbles of the prefectures."
-	economic_power = 1.3
-	language = LANGUAGE_HUMAN_SELENIAN
-
-/decl/cultural_info/culture/human/venusian_upper
-	name = CULTURE_HUMAN_VENUSIAN
-	description = "You are from one of the many zones of Venus. Floating high above the ground of the planet on massive platforms, you are one of the many who live on one of the most decadent locations in the \
-	SCG. As a Venusian, you know luxury, wealth and entertainment. Primarily a tourist destination, many of the permanent residents work in the tourism industry and are notably middle-income. \
-	Those above are exceptionally wealthy, being hotel, casino, resort owners, politicians, bankers or rich retirees."
-	economic_power = 1.4
-
-/decl/cultural_info/culture/human/venusian_surfacer
-	name = CULTURE_HUMAN_VENUSLOW
-	description = "You are from the surface of Venus, one of many employed in mining, industry and services industries. Venusian Surfacers are fairly poor, especially compared to Zoners and \
-	have far lower standards of living than those above. A hardy people who spend much of their time working in mostly unpleasant conditions in order to prop up the society above, \
-	surfacers are a people who value hard work, solidarity, unity and democracy. Unfortunately, while they support noble ideals, the reality of their situation does not always \
-	match them, and much of the surface of Venus finds itself rife with organised crime, separatist groups and other criminal organisations."
-	economic_power = 0.9
-
-/decl/cultural_info/culture/human/belter
-	name = CULTURE_HUMAN_BELTER
-	description = "You are from Ceres. The people of Ceres and the wider asteroid belt are colloquially known as 'Belters.' Traditionally a people rooted in the mining industry, \
-	the belters of today are primarily engaged in the mechanical services, engineering, shipbuilding and maintenance industries. Belters are quite varied, and something of a melting \
-	pot owing to the sheer number of transient workers, hauler crews and government and corporate employees basing themselves around the great shipyards of Ceres. This has led to belter \
-	culture being mainly about embracing change, new people and new experiences, as well as a sense of pride in their work, as the reputation of Ceres shipbuilding is widely known across \
-	human space."
-	economic_power = 1
-
-
-/decl/cultural_info/culture/human/plutonian
-	name = CULTURE_HUMAN_PLUTO
-	description = "You are from Pluto, one of many denizens of this cruel and unforgiving world. For centuries Pluto has been in a slow state of decay and decline, resulting in \
-	much of the planet's infrastructure being unstable or outright falling apart. This, coupled with rampant corruption and the large influence of criminal organisations across much of \
-	the planet has led to the people of Pluto having something of a seedy reputation, its citizens being viewed with disrepute. The people themselves, however, are usually \
-	just happy to get off the rock and to healthier locales. Unfortunately, despite the efforts of the wider SCG, many Plutonians tend to maintain criminal ties, even offworld."
-	economic_power = 0.8
-	secondary_langs = list (LANGUAGE_HUMAN_EURO,
-		LANGUAGE_HUMAN_CHINESE,
-		LANGUAGE_HUMAN_ARABIC,
-		LANGUAGE_HUMAN_INDIAN,
-		LANGUAGE_HUMAN_IBERIAN,
-		LANGUAGE_HUMAN_RUSSIAN,
-		LANGUAGE_SPACER,
-		LANGUAGE_GUTTER,
-		LANGUAGE_SIGN)
-
-/decl/cultural_info/culture/human/earthling
+/decl/cultural_info/culture/human/sol/earth
 	name = CULTURE_HUMAN_EARTH
 	description = "You are from Earth, home of humanity. Earth culture is much as it has been for centuries, with the old nation states, while no longer politically important, still \
 	culturally significant to many humans across the galaxy, as all trace their roots to somewhere on the planet. While not as geographically diverse as they were in the past, most \
@@ -103,6 +34,84 @@
 	a content folk who see themselves as close to nature and keepers of the heritage of humanity."
 	economic_power = 1.1
 
+/decl/cultural_info/culture/human/sol/luna
+	name = CULTURE_HUMAN_LUNA
+	description = "You're pretty much a snob. Probably. Idk I didn't read Luna lore that much."
+	economic_power = 1.3
+
+/decl/cultural_info/culture/human/sol/cytherian
+	name = CULTURE_HUMAN_VENUSIAN
+	description = "You live in floating cities which is pretty cool I guess."
+	economic_power = 1.4
+
+/decl/cultural_info/culture/human/sol/jintarian
+	name = CULTURE_HUMAN_VENUSLOW
+	description = "You don't live in floating cities which isn't very cool I guess."
+	economic_power = 0.9
+
+/decl/cultural_info/culture/human/sol/mars
+	name = CULTURE_HUMAN_MARTIAN
+	description = "While some may say you're not too far from home, you're certainly in foreign lands... or waters, perhaps."
+
+/decl/cultural_info/culture/human/sol/ceres
+	name = CULTURE_HUMAN_BELTER
+	description = "You are from Ceres. The people of Ceres and the wider asteroid belt are colloquially known as 'Belters.' Traditionally a people rooted in the mining industry, \
+	the belters of today are primarily engaged in the mechanical services, engineering, shipbuilding and maintenance industries. Belters are quite varied, and something of a melting \
+	pot owing to the sheer number of transient workers, hauler crews and government and corporate employees basing themselves around the great shipyards of Ceres. This has led to belter \
+	culture being mainly about embracing change, new people and new experiences, as well as a sense of pride in their work, as the reputation of Ceres shipbuilding is widely known across \
+	human space."
+	economic_power = 1
+
+/decl/cultural_info/culture/human/sol/silversun
+	name = CULTURE_HUMAN_SILVER
+	description = "Fun in the sun amirite?"
+	economic_power = 1.1
+
+/decl/cultural_info/culture/human/sol/nhp
+	name = CULTURE_HUMAN_NHP
+	description = "Cough cough asthma noises."
+	economic_power = 0.9
+
+//E R I D A N I  F E D E R A T I O N
+/decl/cultural_info/culture/human/eri
+	name = CULTURE_HUMAN_ERIDANI
+	description = "Filthy corpo rat."
+	economic_power = 1.2
+
+//R E P U B L I C  O F  B I E S E L
+/decl/cultural_info/culture/human/rob
+	name = CULTURE_HUMAN_CETI
+	description = "You're from Tau Ceti so no one likes you lol."
+	economic_power = 0.7
+
+/decl/cultural_info/culture/human/rob/gibson
+	name = CULTURE_HUMAN_GIBSON
+	description = "You probably talk like you're from Brooklyn."
+
+/decl/cultural_info/culture/human/rob/mictlan
+	name = CULTURE_HUMAN_MICTLAN
+	description = "Filthy tree hugger. Also you're probably used to Sol life."
+	economic_power = 0.8
+
+//C O A L I T I O N  O F  C O L O N I E S
+/decl/cultural_info/culture/human/xan
+	name = CULTURE_HUMAN_XANU
+	description = "You're a yeehaw guy. Yeehaw."
+	economic_power = 0.7
+
+//R E P U B L I C  O F  E L Y R A
+/decl/cultural_info/culture/human/ely
+	name = CULTURE_HUMAN_ELYRAN
+	description = "Feels good to have phoron lmao suck it Sol."
+	economic_power = 0.8
+
+//E M P I R E  O F  D O M I N I A
+/decl/cultural_info/culture/human/dom
+	name = CULTURE_HUMAN_DOMINIAN
+	description = "Filthy dominians get out."
+	economic_power = 1
+
+/*
 /decl/cultural_info/culture/human/ceti
 	name = CULTURE_HUMAN_CETI
 	description = "You are from Ceti Epsilon, the technical hub of the SCG. As a Cetite you are no stranger to the cutting edge of technology present in Sol space. \
@@ -138,10 +147,11 @@
 	resentful about their loss in the Gaia Conflict. An upbringing on Terra emphasises an odd mix of service to the state, liberalism and militarism."
 	language = LANGUAGE_HUMAN_RUSSIAN
 	economic_power = 0.9
+*/
 
 /decl/cultural_info/culture/human/other
 	name = CULTURE_HUMAN_OTHER
-	description = "Some people are from places no one has ever heard of or places too wild and fantastical to make it into Encyclopedia Galactica. You are one of these. "
+	description = "Some people are from places no one has ever heard of or places too wild and fantastical to make it into Encyclopedia Galactica. You are one of these."
 	economic_power = 1
 	secondary_langs = list (LANGUAGE_HUMAN_EURO,
 		LANGUAGE_HUMAN_CHINESE,

@@ -31,6 +31,20 @@
 	company_short = "Zeng-Hu"
 
 	map_admin_faxes = list("Corporate Central Office")
+	station_networks = list(	NETWORK_ROBOTS,
+								NETWORK_EXODUS,
+								NETWORK_ENGINEERING,
+								NETWORK_MEDICAL,
+								NETWORK_RESEARCH,
+								NETWORK_SECURITY,
+								NETWORK_MINE,
+								NETWORK_ALARM_ATMOS,
+								NETWORK_ALARM_CAMERA,
+								NETWORK_ALARM_FIRE,
+								NETWORK_ALARM_MOTION,
+								NETWORK_ALARM_POWER,
+								NETWORK_THUNDER
+							)
 
 	//Maybe we'll find a use for these one day
 	shuttle_docked_message = "Attention all hands: Jump preparation complete. The bluespace drive is now spooling up, secure all stations for departure. Time to jump: approximately %ETD%."

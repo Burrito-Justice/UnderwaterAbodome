@@ -3,11 +3,11 @@
 	name_plural = "Humans"
 	primitive_form = "Monkey"
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
-	description = "Humanity originated in the Sol system, and over the last five centuries has spread \
-	colonies across a wide swathe of space. They hold a wide range of forms and creeds.<br/><br/> \
-	While the central Sol government maintains control of its far-flung people, powerful corporate \
-	interests, rampant cyber and bio-augmentation and secretive factions make life on most human \
-	worlds tumultous at best."
+	description = "Humanity is one of the most populous species in the Orion Spur, spreading and \
+	colonizing the stars like wildfire. From an outside and alien perspective, one might say they \
+	are downright invasive.<br><br>Though they originate from Sol, humanity is not unified under \
+	a single government, let alone the Sol Alliance by itself; humans have established multiple \
+	trans-stellar governments amongst the stars."
 	assisted_langs = list(LANGUAGE_NABBER)
 	min_age = 17
 	max_age = 100
@@ -23,6 +23,7 @@
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
+			CULTURE_HUMAN_JUPITER,
 			CULTURE_HUMAN_MARTIAN,
 			CULTURE_HUMAN_LUNA,
 			CULTURE_HUMAN_VENUSIAN,
@@ -35,8 +36,7 @@
 			CULTURE_HUMAN_CETI,
 			CULTURE_HUMAN_GIBSON,
 			CULTURE_HUMAN_MICTLAN,
-			CULTURE_HUMAN_SPACER,
-			CULTURE_HUMAN_JUPITER,
+			CULTURE_HUMAN_XANU,
 			CULTURE_HUMAN_SILVER,
 			CULTURE_HUMAN_NHP,
 			CULTURE_HUMAN_ERIDANI,
@@ -135,7 +135,7 @@
 	genders = list(PLURAL)
 	hidden_from_codex = FALSE
 	min_age = 19
-	max_age = 90
+	max_age = 300
 
 	burn_mod = 0.9
 	oxy_mod = 1.3
@@ -153,7 +153,7 @@
 	darksight_range = 4
 	darksight_tint = DARKTINT_MODERATE
 
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED
+	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR
 
 	flesh_color = "#8cd7a3"
@@ -183,27 +183,20 @@
 	available_cultural_info = list(
 		TAG_CULTURE = list(
 			CULTURE_SKRELL_QERR,
-			CULTURE_SKRELL_MALISH,
-			CULTURE_SKRELL_KANIN,
-			CULTURE_SKRELL_TALUM,
-			CULTURE_SKRELL_RASKINTA
+			CULTURE_SKRELL_ALIO,
+			CULTURE_SKRELL_AWEI
 		),
 		TAG_HOMEWORLD = list(
 			HOME_SYSTEM_QERRBALAK,
-			HOME_SYSTEM_TALAMIRA,
-			HOME_SYSTEM_ROASORA,
-			HOME_SYSTEM_MITORQI,
+			HOME_SYSTEM_QERRMALIC,
+			HOME_SYSTEM_ALIOSE,
+			HOME_SYSTEM_AWEIJI,
 			HOME_SYSTEM_SKRELLSPACE
 		),
 		TAG_FACTION = list(
-			FACTION_NANOTRASEN,
-			FACTION_HEPHAESTUS,
 			FACTION_ZENG_HU,
-			FACTION_SKRELL_QERRVOAL,
-			FACTION_SKRELL_QALAOA,
-			FACTION_SKRELL_YIITALANA,
-			FACTION_SKRELL_KRRIGLI,
-			FACTION_SKRELL_QONPRRI,
+			FACTION_EINSTEIN,
+			FACTION_SOL_CENTRAL,
 			FACTION_OTHER
 		),
 		TAG_RELIGION = list(
@@ -337,7 +330,7 @@
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_IS_PLANT | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_SLIP
 	appearance_flags = 0
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN
 
 	blood_color = "#004400"
 	flesh_color = "#907e4a"

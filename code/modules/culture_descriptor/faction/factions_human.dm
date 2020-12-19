@@ -159,3 +159,4 @@
 	and related products, they still remain the market leader in computer technologies."
 	economic_power = 1.1
 	subversive_potential = 15
+*/

@@ -327,6 +327,7 @@
 	desc = "Your typical massive propeller that you'd usually see on something like a boat."
 	icon = 'maps/bubmarine/icons/propellers.dmi'
 	icon_state = "sub_screw"
+	density = 1
 
 /obj/machinery/ion_engine/large
 	icon = 'maps/bubmarine/icons/big_propellers.dmi'

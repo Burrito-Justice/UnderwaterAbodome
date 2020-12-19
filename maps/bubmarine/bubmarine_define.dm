@@ -15,7 +15,7 @@
 	num_exoplanets = 0 //CHANGE THIS once we develop custom locations
 
 	allowed_spawns = list("Dorms","Cryogenic Storage")
-	default_spawn = "Cryogenics"
+	default_spawn = "Cryogenic Storage"
 	default_assistant_title = "Crewman"
 	allowed_jobs = list(/datum/job/assistant,/datum/job/captain,/datum/job/hos,/datum/job/bridge,
 						/datum/job/engineer,/datum/job/doctor,/datum/job/scientist,/datum/job/qm,

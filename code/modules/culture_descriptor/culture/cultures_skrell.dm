@@ -1,24 +1,22 @@
 /decl/cultural_info/culture/skrell
 	name = CULTURE_SKRELL_QERR
-	description = "Considered as the leaders of Skrellkind, the Qerr-Katish are the face and soul of skrellian society. \
-		Managers, diplomats, lawyers, they are notably the only caste allowed to fulfil the role of Qerr-Skria,\
-		and the only one forbidden from being appointed to the Xaq Moglar. As the representatives of the Skrell, \
-		the Qerr-Katish are highly social beings, sophisticated, cultured and very organised. As defenders of their society's \
-		values, they tend to be rather conservative, although progressive ideas regularly grow within the caste, as a stagnant \
-		society is a dying society. Considering their role, they are generally the richest people of a City-State, although their \
-		money is generally invested in various endeavours both in and out of skrellian society. Qerr-Katish families tend to be rather \
-		small, being generally limited to one, sometimes two bondings. They often dress in clothing made from softer, shinier materials \
-		that are long and flowing and have often been compared to the clothing of ancient Chinese nobles by human scholars. Their skin is generally bright green."
+	description = "Placeholder"
 	economic_power = 1.4
 	language = LANGUAGE_SKRELLIAN
 	secondary_langs = list(
 		LANGUAGE_SIGN,
 		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_SPACER,
-		LANGUAGE_MANTID_VOCAL,
-		LANGUAGE_MANTID_NONVOCAL
+		LANGUAGE_SPACER
 	)
 
+/decl/cultural_info/culture/skrell/aliose
+	name = CULTURE_SKRELL_ALIO
+	description = "Placeholer"
+
+/decl/cultural_info/culture/skrell/aweiji
+	name = CULTURE_SKRELL_AWEI
+	description = "Placeholder"
+/*
 /decl/cultural_info/culture/skrell/caste_malish
 	name = CULTURE_SKRELL_MALISH
 	description = "If the Qerr-Katish are the face of Skrellkind, the Malish-Katish are its brain. Scientists of all sorts, \
@@ -71,3 +69,4 @@
 		strong social cohesion. These are often the hardest to spot among a crowd because they intentionally wear clothing other castes are known \
 		for while not working, however they tend to stick to clothing that is easy to move in and are often dark blue. Their skin is generally green, blue, black, brown or yellow."
 	economic_power = 1.2
+*/

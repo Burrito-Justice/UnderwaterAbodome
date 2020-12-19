@@ -99,7 +99,6 @@
 #define CULTURE_HUMAN_LUNARICH "Luna, Upper Class"
 #define CULTURE_HUMAN_LUNAPOOR "Luna, Lower Class"
 #define CULTURE_HUMAN_PLUTO    "Plutonian"
-#define CULTURE_HUMAN_SPACER   "Colonizer"
 #define CULTURE_HUMAN_SPAFRO   "Spacer, Frontier Systems"
 #define CULTURE_HUMAN_CONFED   "Terran"
 
@@ -122,16 +121,27 @@
 
 // Skrellian cultures.
 #define CULTURE_SKRELL_QERR     "Qerr-Katish"
+#define CULTURE_SKRELL_ALIO     "Alio-Katish"
+#define CULTURE_SKRELL_AWEI     "Awei-Katish"
+//Unused
+/*
 #define CULTURE_SKRELL_MALISH   "Malish-Katish"
 #define CULTURE_SKRELL_KANIN    "Kanin-Katish"
 #define CULTURE_SKRELL_TALUM    "Talum-Katish"
 #define CULTURE_SKRELL_RASKINTA "Raskinta-Katish"
+*/
 
-#define HOME_SYSTEM_QERRBALAK  "Qerrbalak"
+#define HOME_SYSTEM_QERRBALAK   "Qerrbalak"
+#define HOME_SYSTEM_QERRMALIC   "Qerr'Malic"
+#define HOME_SYSTEM_ALIOSE      "Aliose"
+#define HOME_SYSTEM_AWEIJI      "Aweiji"
+#define HOME_SYSTEM_SKRELLSPACE "Skrell Space"
+//Unused
+/*
 #define HOME_SYSTEM_TALAMIRA "Talamira"
 #define HOME_SYSTEM_ROASORA "Roa'sora"
 #define HOME_SYSTEM_MITORQI "Mi'tor'qi"
-#define HOME_SYSTEM_SKRELLSPACE "Skrell Space"
+*/
 
 #define FACTION_SKRELL_QERRVOAL "Qerr'voal"
 #define FACTION_SKRELL_QALAOA "Qala'oa"

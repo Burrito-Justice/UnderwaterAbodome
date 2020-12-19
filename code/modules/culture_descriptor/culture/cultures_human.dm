@@ -5,14 +5,12 @@
 /decl/cultural_info/culture/human
 	name = CULTURE_HUMAN
 	description = "You are from one of various planetary cultures of humankind."
+	language = LANGUAGE_SOL
 	secondary_langs = list(
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_HUMAN_CHINESE,
-		LANGUAGE_HUMAN_ARABIC,
-		LANGUAGE_HUMAN_INDIAN,
-		LANGUAGE_HUMAN_IBERIAN,
-		LANGUAGE_HUMAN_RUSSIAN,
-		LANGUAGE_SPACER,
+		LANGUAGE_SOL,
+		LANGUAGE_TCB,
+		LANGUAGE_TRADE,
+		LANGUAGE_FREE,
 		LANGUAGE_SIGN
 	)
 
@@ -23,7 +21,6 @@
 	around it, the moons are creepy, and Europa stands to be even creepier according to the tall tales of many a sailor. Perhaps you're a sailor yourself, or you were just around to service the \
 	tourism industry. Either way, you're locked up in a plasteel coffin several leagues beneath the icy crust now."
 	economic_power = 1
-	language = LANGUAGE_HUMAN_EURO
 
 /decl/cultural_info/culture/human/sol/earth
 	name = CULTURE_HUMAN_EARTH
@@ -77,12 +74,14 @@
 	name = CULTURE_HUMAN_ERIDANI
 	description = "Filthy corpo rat."
 	economic_power = 1.2
+	additional_langs = list(LANGUAGE_TRADE)
 
 //R E P U B L I C  O F  B I E S E L
 /decl/cultural_info/culture/human/rob
 	name = CULTURE_HUMAN_CETI
 	description = "You're from Tau Ceti so no one likes you lol."
 	economic_power = 0.7
+	additional_langs = list(LANGUAGE_TCB)
 
 /decl/cultural_info/culture/human/rob/gibson
 	name = CULTURE_HUMAN_GIBSON
@@ -98,6 +97,7 @@
 	name = CULTURE_HUMAN_XANU
 	description = "You're a yeehaw guy. Yeehaw."
 	economic_power = 0.7
+	additional_langs = list(LANGUAGE_FREE)
 
 //R E P U B L I C  O F  E L Y R A
 /decl/cultural_info/culture/human/ely
@@ -110,6 +110,7 @@
 	name = CULTURE_HUMAN_DOMINIAN
 	description = "Filthy dominians get out."
 	economic_power = 1
+	additional_langs = list(LANGUAGE_FREE)
 
 /*
 /decl/cultural_info/culture/human/ceti

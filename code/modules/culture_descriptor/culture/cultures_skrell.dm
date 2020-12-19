@@ -2,11 +2,13 @@
 	name = CULTURE_SKRELL_QERR
 	description = "Placeholder"
 	economic_power = 1.4
-	language = LANGUAGE_SKRELLIAN
+	language = LANGUAGE_SKRELL
+	additional_langs = list(LANGUAGE_SOL)
 	secondary_langs = list(
-		LANGUAGE_SIGN,
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_SPACER
+		LANGUAGE_TCB,
+		LANGUAGE_FREE,
+		LANGUAGE_TRADE,
+		LANGUAGE_SIGN
 	)
 
 /decl/cultural_info/culture/skrell/aliose

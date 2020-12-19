@@ -35,7 +35,6 @@
 	distance = "1AU"
 	capital = "Harmony City"
 	economic_power = 1.3
-	secondary_langs = list(LANGUAGE_HUMAN_SELENIAN)
 
 /decl/cultural_info/location/human/sol/venus
 	name = HOME_SYSTEM_VENUS

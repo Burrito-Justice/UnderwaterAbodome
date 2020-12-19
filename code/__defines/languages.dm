@@ -1,4 +1,10 @@
 //Human
+#define LANGUAGE_SOL    "Sol Common"
+#define LANGUAGE_TCB    "Ceti Basic"
+#define LANGUAGE_TRADE  "Tradeband"
+#define LANGUAGE_FREE   "Freespeak"
+#define LANGUAGE_SKRELL "Nral'Malic"
+//Unused
 #define LANGUAGE_HUMAN_EURO      "Zurich Accord Common"
 #define LANGUAGE_HUMAN_CHINESE   "Yangyu"
 #define LANGUAGE_HUMAN_ARABIC    "Prototype Standard Arabic"

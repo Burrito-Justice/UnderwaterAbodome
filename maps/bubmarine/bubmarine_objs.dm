@@ -332,6 +332,9 @@
 /obj/machinery/ion_engine/large
 	icon = 'maps/bubmarine/icons/big_propellers.dmi'
 	icon_state = "bigsub_screw"
+	generated_thrust = 25
+	burn_cost = 50000
+	idle_power_usage = 30000
 
 /obj/structure/shuttle/engine/heater/sub
 	icon = 'maps/bubmarine/icons/propellers.dmi'
@@ -340,3 +343,9 @@
 /obj/structure/shuttle/engine/heater/sub/large
 	icon = 'maps/bubmarine/icons/big_propellers.dmi'
 	icon_state = "bigsubheater"
+
+//SMES
+/obj/machinery/power/smes/buildable/prop
+	uncreated_component_parts = list(
+		/obj/item/weapon/stock_parts/smes_coil/super_io = 2,
+		)

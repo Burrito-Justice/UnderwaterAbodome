@@ -17,6 +17,8 @@
 
 	addtimer(CALLBACK(src, .proc/check_delete, animation), 15)
 
+	playsound(src, 'maps/bubmarine/sounds/crunk.ogg', 80, 1)
+
 /mob/proc/check_delete(var/atom/movable/overlay/animation)
 	if(animation)	qdel(animation)
 	if(src)			qdel(src)

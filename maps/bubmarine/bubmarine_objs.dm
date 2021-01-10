@@ -1,12 +1,19 @@
 //Wacky water effect thing
 /obj/effect/fluid
 	color = "#92d2f0"
+	obj_flags = OBJ_FLAG_NOFALL
+
+/obj/effect/fluid/on_update_icon()
+	. = ..()
+	fluid_amount > FLUID_OVER_MOB_HEAD ? (atom_flags |= ATOM_FLAG_CLIMBABLE) : (atom_flags &= ATOM_FLAG_CLIMBABLE)
 
 /obj/effect/fluid_mapped
 	color = "#92d2f0"
 
 /obj/effect/flood
 	color = "#92d2f0"
+	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CLIMBABLE
+	obj_flags = OBJ_FLAG_NOFALL
 
 //ID cards
 /obj/item/weapon/card/id/bridge
@@ -322,25 +329,49 @@
 	)
 
 //Submarine propeller stuff
-/obj/machinery/ion_engine
+/obj/machinery/ion_engine/bub
 	name = "submarine screw"
 	desc = "Your typical massive propeller that you'd usually see on something like a boat."
 	icon = 'maps/bubmarine/icons/propellers.dmi'
 	icon_state = "sub_screw"
 	density = 1
+	on = 0
 
-/obj/machinery/ion_engine/large
+/obj/machinery/ion_engine/bub/update_icon()
+	if(!on)
+		icon_state = "sub_screw_off"
+	else
+		icon_state = "sub_screw[on ? "" : "_off"]"
+
+/obj/machinery/ion_engine/bub/Initialize()
+	. = ..()
+	update_icon()
+
+/obj/machinery/ion_engine/bub/Bumped(mob/living/M)
+	if(istype(M))
+		if(on == 1)
+			M.take_organ_damage(rand(40,80))
+			playsound(src, 'sound/weapons/bladeslice.ogg', 50, 1)
+	..()
+
+/obj/machinery/ion_engine/bub/large
 	icon = 'maps/bubmarine/icons/big_propellers.dmi'
-	icon_state = "bigsub_screw"
+	icon_state = "sub_screw"
 	generated_thrust = 25
 	burn_cost = 50000
 	idle_power_usage = 30000
 
-/obj/structure/shuttle/engine/heater/sub
+/obj/machinery/ion_engine/bub/large/Bumped(mob/living/M)
+	if(istype(M))
+		if(on == 1)
+			M.gib()
+	..()
+
+/obj/structure/shuttle/engine/heater/bub
 	icon = 'maps/bubmarine/icons/propellers.dmi'
 	icon_state = "subheater"
 
-/obj/structure/shuttle/engine/heater/sub/large
+/obj/structure/shuttle/engine/heater/bub/large
 	icon = 'maps/bubmarine/icons/big_propellers.dmi'
 	icon_state = "bigsubheater"
 
@@ -349,3 +380,81 @@
 	uncreated_component_parts = list(
 		/obj/item/weapon/stock_parts/smes_coil/super_io = 2,
 		)
+
+/obj/machinery/power/smes/buildable/engine
+	uncreated_component_parts = list(
+		/obj/item/weapon/stock_parts/smes_coil/super_io = 2,
+		/obj/item/weapon/stock_parts/smes_coil = 1,
+		)
+
+obj/machinery/power/smes/buildable/engine/Initialize()
+	. = ..()
+	charge = capacity
+	input_attempt = TRUE
+	output_attempt = TRUE
+
+/obj/machinery/power/smes/buildable/main
+	uncreated_component_parts = list(
+		/obj/item/weapon/stock_parts/smes_coil = 4,
+		)
+
+obj/machinery/power/smes/buildable/main/Initialize()
+	. = ..()
+	charge = capacity
+	input_attempt = TRUE
+	output_attempt = TRUE
+	input_level = input_level_max
+	output_level = output_level_max
+
+//Flora maybe??? Oh god these sprites
+/obj/structure/flora/bub
+	name = "seaweed"
+	desc = "If you're reading this then I forgot to populate the desc var on a plant lol please ahelp this."
+	icon = 'maps/bubmarine/icons/flora.dmi'
+
+/obj/structure/flora/bub/violet
+	name = "violet shrub"
+	desc = "A short shrub with violet, feather-like foilage. It looks like it'd be soft to touch."
+	icon_state = "violet"
+
+/obj/structure/flora/bub/teal
+	name = "teal tendrils"
+	desc = "A cluster of odd-looking tendrils that shift from purple to teal, oddly enough."
+	icon_state = "teal"
+
+/obj/structure/flora/bub/red
+	name = "red reeds"
+	desc = "A set of bright red and orange reeds, looking quite stick-y and brittle."
+	icon_state = "red"
+
+/obj/structure/flora/bub/purple
+	name = "purple nettle"
+	desc = "A large nettle of sorts that looks like a large leaf of some kind."
+	icon_state = "purple"
+
+/obj/structure/flora/bub/maroon
+	name = "maroon tubes"
+	desc = "Large reed-like tubes protrude from the floor. It's possible it's a sponge of some kind."
+	icon_state = "maroon"
+
+/obj/structure/flora/bub/cyan
+	name = "cyan groundcover"
+	desc = "Some rather sharp looking petals and bloomage are scattered about the floor. Don't get poked!"
+	icon_state = "cyan"
+
+/obj/structure/flora/bub/yellow
+	name = "yellow stalks"
+	desc = "A set of wiggly yellow stocks flows back and forth here."
+	icon_state = "yellow"
+
+//Kelp and other 32x64 stuff (maybe)
+/obj/structure/flora/bub/kelp
+	name = "kelp"
+	desc = "A lone stalk of tall kelp, waving and swaying in the ocean current."
+	icon = 'maps/bubmarine/icons/flora_64x.dmi'
+	icon_state = "kelp"
+	layer = MOB_LAYER + 0.1
+	color = "#66ba45"
+
+/obj/structure/flora/bub/kelp/alt
+	icon_state = "kelp2"

@@ -2486,6 +2486,7 @@
 #include "code\modules\overmap\exoplanets\random_map.dm"
 #include "code\modules\overmap\exoplanets\theme.dm"
 #include "code\modules\overmap\exoplanets\turfs.dm"
+#include "code\modules\overmap\exoplanets\planet_types\bub_forest.dm"
 #include "code\modules\overmap\exoplanets\planet_types\bub_plains.dm"
 #include "code\modules\overmap\ships\landable.dm"
 #include "code\modules\overmap\ships\ship.dm"

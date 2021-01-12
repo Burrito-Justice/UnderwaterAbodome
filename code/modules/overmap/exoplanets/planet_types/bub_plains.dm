@@ -29,13 +29,8 @@
 
 /area/exoplanet/bub_plains
 	base_turf = /turf/simulated/ocean/grass
-	ambience = list('sound/effects/wind/wind_2_1.ogg','sound/effects/wind/wind_2_2.ogg','sound/effects/wind/wind_3_1.ogg','sound/effects/wind/wind_4_1.ogg','sound/ambience/eeriejungle2.ogg','sound/ambience/eeriejungle1.ogg')
-
-/area/exoplanet/bub_plains/play_ambience(var/mob/living/L)
-	..()
-	if(!L.ear_deaf && L.client && !L.client.ambience_playing)
-		L.client.ambience_playing = 1
-		L.playsound_local(get_turf(L),sound('sound/ambience/jungle.ogg', repeat = 1, wait = 0, volume = 25, channel = GLOB.ambience_sound_channel))
+	//ambience = list('sound/effects/wind/wind_2_1.ogg','sound/effects/wind/wind_2_2.ogg','sound/effects/wind/wind_3_1.ogg','sound/effects/wind/wind_4_1.ogg','sound/ambience/eeriejungle2.ogg','sound/ambience/eeriejungle1.ogg')
+	sound_env = UNDERWATER
 
 /datum/random_map/noise/exoplanet/bub_plains
 	descriptor = "grassy plains biome"

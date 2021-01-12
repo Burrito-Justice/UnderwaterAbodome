@@ -1,7 +1,7 @@
 //THE MAIN SUBMARINE
 /obj/effect/overmap/visitable/ship/ray
 	name = "ZRS Stingray"
-	desc = "Acoustic analysis reveals that this is a research submarine, commissioned by Zeng-Hu Pharmaceuticals."
+	desc = "Acoustic analysis reveals that this is a Mantaray class research submarine, commissioned by Zeng-Hu Pharmaceuticals."
 	vessel_mass = 50000
 	max_speed = 1/(1 SECONDS)
 	burn_delay = 0.5 SECONDS
@@ -16,7 +16,7 @@
 //THE DEPLOYABLE SUBMARINE
 /obj/effect/overmap/visitable/ship/landable/beluga
 	name = "ZRS Beluga"
-	desc = "Acoustic analysis reveals that this is an expeditionary craft, commissioned by Zeng-Hu Pharmaceuticals."
+	desc = "Acoustic analysis reveals that this is a Dwarf Whale class expeditionary craft, commissioned by Zeng-Hu Pharmaceuticals."
 	shuttle = "Beluga"
 	vessel_mass = 20000
 	max_speed = 1/(1 SECONDS)

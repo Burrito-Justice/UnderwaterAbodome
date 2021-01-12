@@ -152,6 +152,8 @@
 	but is certainly both unique and remarkable in its ability to cope with the extremes that the \
 	Universe can throw at it."
 
+	spawn_flags = SPECIES_IS_RESTRICTED
+
 #define MOD_BASE     0.85
 #define MOD_VARIANCE 0.35
 
@@ -168,8 +170,6 @@
 			)
 			SSkv.Put(booster, "mods", mods)
 		return mods[mod_type] || 1
-
-	spawn_flags = SPECIES_IS_RESTRICTED
 
 #undef MOD_BASE
 #undef MOD_VARIANCE

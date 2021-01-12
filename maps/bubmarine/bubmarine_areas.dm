@@ -5,12 +5,23 @@
 
 /area/bub
 	icon = 'icons/turf/areas.dmi'
+	ambience = list('maps/bubmarine/sounds/amb/sub_ambi1.ogg','maps/bubmarine/sounds/amb/sub_ambi2.ogg',
+					'maps/bubmarine/sounds/amb/sub_ambi3.ogg','maps/bubmarine/sounds/amb/sub_ambi4.ogg',
+					'maps/bubmarine/sounds/amb/sub_ambi5.ogg','maps/bubmarine/sounds/amb/sub_ambi6.ogg',
+					'maps/bubmarine/sounds/amb/sub_ambi7.ogg','maps/bubmarine/sounds/amb/sub_ambi8.ogg')
+
+/area/space
+	ambience = list('maps/bubmarine/sounds/amb/ocean_ambi1.ogg','maps/bubmarine/sounds/amb/ocean_ambi2.ogg',
+					'maps/bubmarine/sounds/amb/ocean_ambi3.ogg','maps/bubmarine/sounds/amb/ocean_ambi4.ogg')
 
 //___STINGRAY AREAS___
 /area/bub/ray/exterior
 	name = "EVA - Open Waters; Upper Level"
 	area_flags = AREA_FLAG_EXTERNAL
 	base_turf = /turf/simulated/open/bub
+	sound_env = UNDERWATER
+	ambience = list('maps/bubmarine/sounds/amb/ocean_ambi1.ogg','maps/bubmarine/sounds/amb/ocean_ambi2.ogg',
+					'maps/bubmarine/sounds/amb/ocean_ambi3.ogg','maps/bubmarine/sounds/amb/ocean_ambi4.ogg')
 
 /area/bub/ray/exterior/lower
 	name = "EVA - Open Waters; Lower Level"
@@ -20,6 +31,7 @@
 /area/bub/ray/gen
 	name = "GEN - Starboard Hallway"
 	icon_state = "hallS"
+	sound_env = HALLWAY
 
 /area/bub/ray/gen/port
 	name = "GEN - Port Hallway"
@@ -36,6 +48,7 @@
 /area/bub/ray/gen/hangar
 	name = "GEN - Hangar"
 	icon_state = "hangar"
+	sound_env = HANGAR
 
 /area/bub/ray/gen/hangar/net
 	name = "GEN - Network Processing Center"
@@ -53,6 +66,7 @@
 /area/bub/ray/srv
 	name = "SRV - Messhall"
 	icon_state = "cafeteria"
+	sound_env = STONEROOM
 
 /area/bub/ray/srv/kitchen
 	name = "SRV - Kitchen"
@@ -66,20 +80,24 @@
 /area/bub/ray/srv/dorms
 	name = "SRV - Dorms"
 	icon_state = "Sleep"
+	sound_env = LIVINGROOM
 
 /area/bub/ray/srv/dorms/shower
 	name = "SRV - Head"
 	icon_state = "toilet"
+	sound_env = BATHROOM
 
 /area/bub/ray/srv/office
 	name = "SRV - General Office"
 	icon_state = "library"
+	sound_env = SMALL_SOFTFLOOR
 
 //Maintenance
 /area/bub/ray/maint
 	name = "MNT - Aft Observation Bubble"
 	icon_state = "observatory"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
+	sound_env = TUNNEL_ENCLOSED
 
 /area/bub/ray/maint/fstarb
 	name = "MNT - Upper Fore Starboard Maintenance"
@@ -125,6 +143,7 @@
 /area/bub/ray/com
 	name = "COM - Upper Bridge"
 	icon_state = "bridge"
+	sound_env = AUDITORIUM
 
 /area/bub/ray/com/lower
 	name = "COM - Lower Bridge"
@@ -133,25 +152,30 @@
 	name = "COM - Captain's Quarters"
 	icon_state = "heads_cap"
 	req_access = list(access_captain)
+	sound_env = ROOM
 
 /area/bub/ray/com/hos
 	name = "COM - Security Marshall's Brig"
 	icon_state = "heads_hos"
 	req_access = list(access_hos)
+	sound_env = BATHROOM
 
 //Engineering
 /area/bub/ray/eng
 	name = "ENG - Engineering Foyer"
 	icon_state = "engineering"
 	req_access = list(access_engine)
+	sound_env = HANGAR
 
 /area/bub/ray/eng/locker
 	name = "ENG - Locker Room"
 	icon_state = "engineering_locker"
+	sound_env = BATHROOM
 
 /area/bub/ray/eng/storage
 	name = "ENG - Hard Storage and SMES"
 	icon_state = "engineering_storage"
+	sound_env = BATHROOM
 
 /area/bub/ray/eng/engine
 	name = "ENG - Reactor Room"
@@ -170,6 +194,7 @@
 	name = "MED - General Treatment Area"
 	icon_state = "medbay"
 	req_access = list(access_medical)
+	sound_env = BATHROOM
 
 /area/bub/ray/med/exam
 	name = "MED - Examination Room"
@@ -192,6 +217,7 @@
 	name = "XEN - Research and Xenobiology"
 	icon_state = "xeno_lab"
 	req_access = list(access_tox)
+	sound_env = UNDERWATER
 
 /area/bub/ray/xen/process
 	name = "XEN - Gas Processing Suite"
@@ -206,6 +232,7 @@
 	name = "SUP - Quartermaster's Office"
 	icon_state = "quartoffice"
 	req_access = list(access_qm)
+	sound_env = TUNNEL_ENCLOSED
 
 /area/bub/ray/sup/starb1
 	name = "SUP - Primary Starboard Warehouse"
@@ -227,6 +254,9 @@
 /area/bub/bel
 	name = "XPD - Beluga Expeditionary Submarine"
 	icon_state = "shuttle"
+	forced_ambience = list('maps/bubmarine/sounds/amb/subamb_beluga.ogg')
+	ambience = list()
+	sound_env = ROOM
 
 /area/bub/bel/med
 	name = "XPD - Beluga Medical Area"

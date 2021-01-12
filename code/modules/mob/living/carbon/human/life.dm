@@ -39,6 +39,7 @@
 	var/temperature_alert = 0
 	var/heartbeat = 0
 	var/stamina = 100
+	var/in_water = 0
 
 /mob/living/carbon/human/Life()
 	set invisibility = 0
@@ -90,6 +91,17 @@
 
 	//Update our name based on whether our face is obscured/disfigured
 	SetName(get_visible_name())
+
+	handle_water_noise()
+
+/mob/living/carbon/human/proc/handle_water_noise()
+	if(!in_water && submerged())
+		in_water = 1
+		playsound_local(src, sound('maps/bubmarine/sounds/amb/fluid_amb.ogg', repeat = 1, wait = 0, volume = 40, channel = GLOB.fluid_sound_channel))
+		playsound(src, 'maps/bubmarine/sounds/sploosh.ogg', 50, 1)
+	else if(in_water && !submerged())
+		in_water = 0
+		sound_to(src, sound(null, channel = GLOB.fluid_sound_channel))
 
 /mob/living/carbon/human/get_stamina()
 	return stamina
@@ -285,7 +297,7 @@
 		damage = Floor(damage * species.get_radiation_mod(src))
 		if(damage)
 			adjustToxLoss(damage * RADIATION_SPEED_COEFFICIENT)
-			immunity = max(0, immunity - damage * 15 * RADIATION_SPEED_COEFFICIENT) 
+			immunity = max(0, immunity - damage * 15 * RADIATION_SPEED_COEFFICIENT)
 			updatehealth()
 			if(!isSynthetic() && organs.len)
 				var/obj/item/organ/external/O = pick(organs)

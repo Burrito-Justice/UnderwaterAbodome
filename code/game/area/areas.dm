@@ -242,14 +242,12 @@ var/list/mob/living/forced_ambiance_list = new
 	var/turf/T = get_turf(L)
 	var/hum = 0
 	if(L.get_sound_volume_multiplier() >= 0.2 && !always_unpowered && power_environ)
-		for(var/obj/machinery/atmospherics/unary/vent_pump/vent in src)
-			if(vent.can_pump())
-				hum = 1
-				break
+		hum = 1
 	if(hum)
 		if(!L.client.ambience_playing)
 			L.client.ambience_playing = 1
-			L.playsound_local(T,sound('sound/ambience/shipambience.ogg', repeat = 1, wait = 0, volume = 20, channel = GLOB.ambience_sound_channel))
+			//L.playsound_local(T,sound('sound/ambience/shipambience.ogg', repeat = 1, wait = 0, volume = 20, channel = GLOB.ambience_sound_channel))
+			L.playsound_local(T,sound('maps/bubmarine/sounds/amb/subamb_ray.ogg', repeat = 1, wait = 0, volume = 20, channel = GLOB.ambience_sound_channel))
 	else
 		if(L.client.ambience_playing)
 			L.client.ambience_playing = 0

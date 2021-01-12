@@ -100,7 +100,7 @@
 	desc = "Insignia denoting assignment to a department. These are green."
 	color = "#6eaa2c"
 
-//Suits
+//Suits and stuff
 /obj/item/clothing/suit/storage/hooded/wintercoat/bub
 	name = "navy winter coat"
 	icon = 'maps/torch/icons/obj/obj_suit_solgov.dmi'
@@ -113,6 +113,76 @@
 		bomb = ARMOR_BOMB_MINOR
 		)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
+
+/obj/item/clothing/head/helmet/space/void/bub
+	name = "pressure suit helmet"
+	desc = "A large rounded helmet that probably belongs on a pressure suit. Compared to a space suit, the helmet alone looks like a tank."
+	icon_state = "divinghelmet"
+	item_state = "divinghelmet"
+	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
+	light_overlay = "helmet_light_dual"
+
+/obj/item/clothing/suit/space/void/bub
+	name = "pressure suit"
+	desc = "A bulky suit to be sure, these things are built to allow you to dive to extremely deep points in the Earth's oceans. In other words, it keeps you from being crushed."
+	icon_state = "divingsuit"
+	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
+
+/obj/item/clothing/suit/space/void/bub/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 2
+
+/obj/item/clothing/suit/space/void/bub/prepared
+	helmet = /obj/item/clothing/head/helmet/space/void/bub
+	boots = /obj/item/clothing/shoes/magboots
+
+/obj/item/clothing/head/helmet/space/void/engineering/alt/bub
+	name = "engineering pressure suit helmet"
+	desc = "A very bulky looking helmet designed to be mounted on a pressure suit. It has lil' cooling fans in there!"
+	icon_state = "divinghelmet_in"
+	item_state = "divinghelmet_in"
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
+
+/obj/item/clothing/suit/space/void/engineering/alt/bub
+	name = "enginering pressure suit"
+	desc = "A very bulky, almost mean-looking pressure suit built to withstand the crushing depths of the Earth's ocean and more. Europa's waters are no match."
+	icon_state = "divingsuit_in"
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
+
+/obj/item/clothing/suit/space/void/engineering/alt/bub/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 2
+
+/obj/item/clothing/suit/space/void/engineering/alt/bub/prepared
+	helmet = /obj/item/clothing/head/helmet/space/void/engineering/alt/bub
+	boots = /obj/item/clothing/shoes/magboots
+
+/obj/item/clothing/head/helmet/space/void/medical/alt/bub
+	name = "streamlined medical pressure suit helmet"
+	desc = "Your typical pressure suit helmet, except it's in white and has foregone the reinforcements typically seen on these sorts of helmets."
+	icon_state = "divinghelmet_med"
+	item_state = "divinghelmet_med"
+	light_overlay = "helmet_light_dual"
+	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
+
+/obj/item/clothing/suit/space/void/medical/alt/bub
+	name = "streamlined medical pressure suit"
+	icon_state = "divingsuit_med"
+	desc = "A flashier pressure suit sporting blue medical crosses for easier identification. It looks a bit lighter than most pressure suits."
+	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/firstaid,/obj/item/device/scanner/health,/obj/item/stack/medical)
+	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
+
+/obj/item/clothing/suit/space/void/medical/alt/bub/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 1
+
+/obj/item/clothing/suit/space/void/medical/alt/bub/prepared
+	helmet = /obj/item/clothing/head/helmet/space/void/medical/alt/bub
+	boots = /obj/item/clothing/shoes/magboots
 
 //Gloves
 /obj/item/clothing/gloves/thick/duty/bub
@@ -327,6 +397,35 @@
 		/obj/item/weapon/module/power_control = 3,
 		/obj/item/device/multitool = 3
 	)
+
+/obj/machinery/suit_storage_unit/engineering/alt/bub
+	name = "Engineering Pressure Suit Storage Unit"
+	suit= /obj/item/clothing/suit/space/void/engineering/alt/bub
+	helmet = /obj/item/clothing/head/helmet/space/void/engineering/alt/bub
+	boots = /obj/item/clothing/shoes/magboots
+	tank = /obj/item/weapon/tank/oxygen
+	mask = /obj/item/clothing/mask/breath/scba
+	req_access = list(access_construction)
+	islocked = 1
+
+/obj/machinery/suit_storage_unit/medical/alt/bub
+	name = "Medical Pressure Suit Storage Unit"
+	suit= /obj/item/clothing/suit/space/void/medical/alt/bub
+	helmet = /obj/item/clothing/head/helmet/space/void/medical/alt/bub
+	boots = /obj/item/clothing/shoes/magboots
+	tank = /obj/item/weapon/tank/oxygen
+	mask = /obj/item/clothing/mask/breath/scba
+	req_access = list(access_medical)
+	islocked = 1
+
+/obj/machinery/suit_storage_unit/bub
+	name = "Pressure Suit Storage Unit"
+	suit= /obj/item/clothing/suit/space/void/bub
+	helmet = /obj/item/clothing/head/helmet/space/void/bub
+	boots = /obj/item/clothing/shoes/magboots
+	tank = /obj/item/weapon/tank/oxygen
+	mask = /obj/item/clothing/mask/breath/scba
+	islocked = 0
 
 //Submarine propeller stuff
 /obj/machinery/ion_engine/bub

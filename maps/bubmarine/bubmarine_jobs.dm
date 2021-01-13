@@ -67,7 +67,7 @@
 	max_skill = list(	SKILL_PILOT       = SKILL_MAX,
 						SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 20
-	access = list(access_medical,access_tox)
+	access = list(access_hop,access_medical,access_tox)
 	total_positions = 2
 	department = "Command"
 	department_flag = COM

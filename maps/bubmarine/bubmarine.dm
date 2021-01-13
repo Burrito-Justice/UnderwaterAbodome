@@ -13,6 +13,7 @@
 	#include "bubmarine_elevator.dm"
 	#include "bubmarine_objs.dm"
 	#include "bubmarine_turfs.dm"
+	#include "bubmarine_loadout.dm"
 
 	#define using_map_DATUM /datum/map/bubmarine
 

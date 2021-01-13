@@ -12,7 +12,7 @@
 	overmap_event_areas = 2 //how many event groups are generated. groups are generated in large quantities
 	overmap_z = 3 //apparently if you set this then you get agony
 	use_overmap = 1
-	num_exoplanets = 4 //CHANGE THIS once we develop custom locations
+	num_exoplanets = 3 //CHANGE THIS once we develop custom locations
 
 	allowed_spawns = list("Dorms","Cryogenic Storage")
 	default_spawn = "Cryogenic Storage"

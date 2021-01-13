@@ -30,31 +30,31 @@
 	item_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_under_solgov.dmi')
 	icon_state = "navyutility"
 	worn_state = "navyutility"
-	starting_accessories = list(/obj/item/clothing/accessory/bub)
+	starting_accessories = list(/obj/item/clothing/accessory/bub,/obj/item/clothing/accessory/patch)
 
 /obj/item/clothing/under/bub/com
-	starting_accessories = list(/obj/item/clothing/accessory/bub/com)
+	starting_accessories = list(/obj/item/clothing/accessory/bub/com,/obj/item/clothing/accessory/patch)
 
 /obj/item/clothing/under/bub/sec
-	starting_accessories = list(/obj/item/clothing/accessory/bub/sec)
+	starting_accessories = list(/obj/item/clothing/accessory/bub/sec,/obj/item/clothing/accessory/patch)
 
 /obj/item/clothing/under/bub/med
-	starting_accessories = list(/obj/item/clothing/accessory/bub/med)
+	starting_accessories = list(/obj/item/clothing/accessory/bub/med,/obj/item/clothing/accessory/patch)
 
 /obj/item/clothing/under/bub/eng
-	starting_accessories = list(/obj/item/clothing/accessory/bub/eng)
+	starting_accessories = list(/obj/item/clothing/accessory/bub/eng,/obj/item/clothing/accessory/patch)
 
 /obj/item/clothing/under/bub/xen
-	starting_accessories = list(/obj/item/clothing/accessory/bub/xen)
+	starting_accessories = list(/obj/item/clothing/accessory/bub/xen,/obj/item/clothing/accessory/patch)
 
 /obj/item/clothing/under/bub/sup
-	starting_accessories = list(/obj/item/clothing/accessory/bub/sup)
+	starting_accessories = list(/obj/item/clothing/accessory/bub/sup,/obj/item/clothing/accessory/patch)
 
 /obj/item/clothing/under/bub/xpd
-	starting_accessories = list(/obj/item/clothing/accessory/bub/xpd)
+	starting_accessories = list(/obj/item/clothing/accessory/bub/xpd,/obj/item/clothing/accessory/patch)
 
 /obj/item/clothing/under/bub/srv
-	starting_accessories = list(/obj/item/clothing/accessory/bub/srv)
+	starting_accessories = list(/obj/item/clothing/accessory/bub/srv,/obj/item/clothing/accessory/patch)
 
 //Accessories
 /obj/item/clothing/accessory/bub
@@ -100,6 +100,31 @@
 	desc = "Insignia denoting assignment to a department. These are green."
 	color = "#6eaa2c"
 
+/obj/item/clothing/accessory/patch
+	name = "Stingray mission patch"
+	desc = "A patch representing the ZRS Stingray and its mission. \"Swim the seas 'til the sun shines through the leagues of ice.\""
+	icon = 'maps/bubmarine/icons/accessories.dmi'
+	icon_state = "ray"
+	slot = ACCESSORY_SLOT_INSIGNIA
+	accessory_icons = list(slot_w_uniform_str = 'maps/bubmarine/icons/accessories_onmob.dmi', slot_wear_suit_str = 'maps/bubmarine/icons/accessories_onmob.dmi')
+	on_rolled = list("down" = "none")
+
+/obj/item/clothing/accessory/patch/zh
+	name = "Zeng-Hu Pharm. patch"
+	desc = "A patch denoting which government/corporate entity you represent. This one is obviously the logo of Zeng-Hu. \"To building a brighter future.\""
+	icon_state = "zh"
+
+/obj/item/clothing/accessory/patch/ee
+	name = "Einstein Engines patch"
+	desc = "A patch denoting which government/corporate entity you represent. This one has two Es, representing Einstein Engines. \"Lead by our history, leading our future.\""
+	icon_state = "ee"
+
+/obj/item/clothing/accessory/patch/sol
+	name = "Sol Alliance patch"
+	desc = "A patch denoting which government/corporate entity you represent. This one has a sun over a blue and white flag, representing the Sol Alliance. \"Our Solarian Sovereignty, undisputed; \
+	Our vision, transcendent.\""
+	icon_state = "sol"
+
 //Suits and stuff
 /obj/item/clothing/suit/storage/hooded/wintercoat/bub
 	name = "navy winter coat"
@@ -119,7 +144,7 @@
 	desc = "A large rounded helmet that probably belongs on a pressure suit. Compared to a space suit, the helmet alone looks like a tank."
 	icon_state = "divinghelmet"
 	item_state = "divinghelmet"
-	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
+	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
 	light_overlay = "helmet_light_dual"
 
@@ -127,7 +152,7 @@
 	name = "pressure suit"
 	desc = "A bulky suit to be sure, these things are built to allow you to dive to extremely deep points in the Earth's oceans. In other words, it keeps you from being crushed."
 	icon_state = "divingsuit"
-	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
+	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
 
 /obj/item/clothing/suit/space/void/bub/New()
@@ -398,6 +423,26 @@
 		/obj/item/device/multitool = 3
 	)
 
+/obj/structure/closet/secure_closet/bridge
+	name = "bridge crew locker"
+	req_access = list(access_hop)
+	closet_appearance = /decl/closet_appearance/secure_closet/command/hop
+
+/obj/structure/closet/secure_closet/bridge/WillContain()
+	return list(
+		/obj/item/weapon/pen,
+		/obj/item/device/tape/random,
+		/obj/item/device/taperecorder,
+		/obj/item/device/flash,
+		/obj/item/device/megaphone,
+		/obj/item/weapon/material/clipboard,
+		/obj/item/weapon/folder/blue,
+		/obj/item/weapon/storage/belt/general,
+		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel/grey)),
+		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger)),
+		new /datum/atom_creator/weighted(list(/obj/item/device/flashlight, /obj/item/device/flashlight/flare, /obj/item/device/flashlight/flare/glowstick/random))
+	)
+
 /obj/machinery/suit_storage_unit/engineering/alt/bub
 	name = "Engineering Pressure Suit Storage Unit"
 	suit= /obj/item/clothing/suit/space/void/engineering/alt/bub
@@ -553,7 +598,7 @@ obj/machinery/power/smes/buildable/main/Initialize()
 	icon = 'maps/bubmarine/icons/flora_64x.dmi'
 	icon_state = "kelp"
 	layer = MOB_LAYER + 0.1
-	color = "#66ba45"
+	color = "#8fdb48"
 
 /obj/structure/flora/bub/kelp/alt
 	icon_state = "kelp2"

@@ -7,6 +7,7 @@
 						"Research Assistant" = /decl/hierarchy/outfit/job/bub/assistant/xen)
 	outfit_type = /decl/hierarchy/outfit/job/bub/assistant
 	supervisors = "whoever looks like they know what they are doing"
+	hud_icon = "hudassistant"
 
 //Command fellas
 /datum/job/captain
@@ -20,6 +21,7 @@
 	skill_points = 30
 	minimal_player_age = 0
 	supervisors = "Zeng-Hu advisory HQ"
+	hud_icon = "hudcommandingofficer"
 
 /* maybe don't need two command dudes
 /datum/job/hop
@@ -54,6 +56,7 @@
 	department_flag = COM
 	selection_color = "#2f2f7f"
 	supervisors = "the captain"
+	hud_icon = "hudmasteratarms"
 	total_positions = 1
 	minimal_player_age = 0
 
@@ -73,6 +76,7 @@
 	department_flag = COM
 	selection_color = "#2f2f7f"
 	supervisors = "the captain"
+	hud_icon = "hudbridgeofficer"
 
 //Engineering
 /datum/job/engineer
@@ -93,6 +97,7 @@
 	access = list(access_engine,access_engine_equip,access_atmospherics)
 	total_positions = 3
 	supervisors = "the captain"
+	hud_icon = "hudengineer"
 
 //Medical
 /datum/job/doctor
@@ -109,6 +114,7 @@
 	access = list(access_medical,access_medical_equip,access_surgery)
 	total_positions = 3
 	supervisors = "the captain"
+	hud_icon = "hudphysician"
 
 //Research
 /datum/job/scientist
@@ -118,6 +124,7 @@
 	access = list(access_tox)
 	supervisors = "the captain"
 	total_positions = 3
+	hud_icon = "hudscientist"
 
 //Cargo
 /datum/job/qm
@@ -132,12 +139,14 @@
 	skill_points = 18
 	access = list(access_qm)
 	supervisors = "the captain"
+	hud_icon = "huddecktechnician"
 
 //Service
 /datum/job/chef
 	outfit_type = /decl/hierarchy/outfit/job/bub/service
 	access = list(access_kitchen)
 	total_positions = 1
+	hud_icon = "hudcook"
 
 //Role removals
 /datum/job/cmo

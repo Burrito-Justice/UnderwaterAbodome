@@ -3,11 +3,12 @@
 	full_name = "Europan Seamount Zeng-Hu Research Sector 22-A"
 	path = "bubmarine"
 
-	admin_levels = list(7,8) //configure this and everything below as needed
-	empty_levels = list(9) //these vars shouldn't affect mapping, but will need to be cleaned when we compile
-	accessible_z_levels = list("9"=100) //change this later, this influences what z level you end up on when you get lost in space
+	//admin_levels = list(7,8) //configure this and everything below as needed
+	//empty_levels = list(9) //these vars shouldn't affect mapping, but will need to be cleaned when we compile
+	//accessible_z_levels = list("9"=100) //change this later, this influences what z level you end up on when you get lost in space
 	station_levels = list(1,2) //assuming the submarine stays two z-levels, then this will work
 	contact_levels = list(1,2) //levels that can be contacted from the station mostly for announcements
+	sealed_levels = list(3)
 	overmap_size = 20 //change this as needed when we get to overmap POIs, a value of 20 will make it 20x20
 	overmap_event_areas = 2 //how many event groups are generated. groups are generated in large quantities
 	overmap_z = 3 //apparently if you set this then you get agony

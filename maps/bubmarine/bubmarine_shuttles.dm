@@ -12,6 +12,11 @@
 										"Beluga" = list("nav_raydock_beluga")
 										)
 	//initial_generic_waypoints = list() - fill this in later
+	var/THEMAP
+
+/obj/effect/overmap/visitable/ship/ray/Initialize()
+	. = ..()
+	THEMAP = GLOB.using_map
 
 //THE DEPLOYABLE SUBMARINE
 /obj/effect/overmap/visitable/ship/landable/beluga

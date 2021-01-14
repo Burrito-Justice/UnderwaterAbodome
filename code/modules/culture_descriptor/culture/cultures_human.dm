@@ -13,14 +13,20 @@
 		LANGUAGE_FREE,
 		LANGUAGE_SIGN
 	)
-
+//Most cultural descriptions courtesy of Schwann
 //S O L  A L L I A N C E
 /decl/cultural_info/culture/human/sol
+	name = CULTURE_HUMAN_EUROPA
+	description = "You grew up on Europa, in the inky blackness below the ice that permanently covers the planet's surface. You know the Europan Sea better than almost any other member of the \
+	crew, and you may hold some local superstitions that your fellow crew view as odd. Most Europans have some degree of experience with travelling in submarines, and are not strangers to the \
+	cramped spaces found in Europa's underwater domes and submarines."
+	economic_power = 1
+
+/decl/cultural_info/culture/human/sol/jupiter
 	name = CULTURE_HUMAN_JUPITER
 	description = "You grew up on Jupiter, either in one of its floating cities or, more likely, on one of its moons. You probably know all about Jovian life: the gas giant is deadly to everything \
-	around it, the moons are creepy, and Europa stands to be even creepier according to the tall tales of many a sailor. Perhaps you're a sailor yourself, or you were just around to service the \
-	tourism industry. Either way, you're locked up in a plasteel coffin several leagues beneath the icy crust now."
-	economic_power = 1
+	around it, the moons are creepy, and Europa stands to be even creepier according to the tall tales of many a sailor. You aren't considered striclty Europan, but you have a better understanding of \
+	what goes on there than most. Either way, you're locked up in a plasteel coffin several leagues beneath the icy crust now."
 
 /decl/cultural_info/culture/human/sol/earth
 	name = CULTURE_HUMAN_EARTH
@@ -33,23 +39,31 @@
 
 /decl/cultural_info/culture/human/sol/luna
 	name = CULTURE_HUMAN_LUNA
-	description = "You're pretty much a snob. Probably. Idk I didn't read Luna lore that much."
-	economic_power = 1.3
+	description = "As a Lunarian (or Lunan) you are the best of the best of the Sol System, and the Alliance more generally. You are prim, proper, and (perhaps most importantly) the \
+	old money of humanity even whilst you are stuck beneath the ice of Europa. Compared to your colleagues in this submarine you are composed and elegant in all you do, the epitome of \
+	a true scion of Earth's only moon."
+	economic_power = 5
 
 /decl/cultural_info/culture/human/sol/cytherian
 	name = CULTURE_HUMAN_VENUSIAN
-	description = "You live in floating cities which is pretty cool I guess."
-	economic_power = 1.4
+	description = "Cytherians are some of the richest people in the Sol System and are responsible for much of the Alliance's entertainment industry. While the Lunans may act like they \
+	are the best in the Sol System you're the real deal - the common Solarian's rich friend rather than the haughty Lunan old money. While Europa is somewhat dingy that just means that \
+	you'll have to spice it up somehow - and that shouldn't be too hard, you're a Cytherian after all!"
+	economic_power = 3.5
 
 /decl/cultural_info/culture/human/sol/jintarian
 	name = CULTURE_HUMAN_VENUSLOW
-	description = "You don't live in floating cities which isn't very cool I guess."
-	economic_power = 0.9
+	description = "Life on the Venusian surface is difficult at the best of times, and most Jintarians are generally involved in manufacturing jobs or resource extraction from the \
+	Venusian surface. This has led to a longstanding sense of resentment towards their party-loving Cytherian counterparts, which often come off as hedonistic and lazy to Jintarians."
+	economic_power = 0.8
 
 /decl/cultural_info/culture/human/sol/mars
 	name = CULTURE_HUMAN_MARTIAN
-	description = "While some may say you're not too far from home, you're certainly in foreign lands... or waters, perhaps."
+	description = "Mars is not, exactly, what one would consider a functional planet anymore. Most Martians found off of the planet are now expatriates or refugees, neither of which \
+	have a home to return to any longer."
+	economic_power = 0.3
 
+/*
 /decl/cultural_info/culture/human/sol/ceres
 	name = CULTURE_HUMAN_BELTER
 	description = "You are from Ceres. The people of Ceres and the wider asteroid belt are colloquially known as 'Belters.' Traditionally a people rooted in the mining industry, \
@@ -58,59 +72,77 @@
 	culture being mainly about embracing change, new people and new experiences, as well as a sense of pride in their work, as the reputation of Ceres shipbuilding is widely known across \
 	human space."
 	economic_power = 1
-
+*/
 /decl/cultural_info/culture/human/sol/silversun
 	name = CULTURE_HUMAN_SILVER
-	description = "Fun in the sun amirite?"
-	economic_power = 1.1
+	description = "Silversun remains the most beloved tourist destination despite ongoing crises throughout the Orion Spur. Silversun is divided into two major cultural groups: \
+	the Originals, which are the original settlers of the planet before Idris Incorporated, and the Expatriates, later settlers which tend to be affiliated with Idris Incorporated - \
+	the planet's largest employer in the present day."
+	economic_power = 2
 
 /decl/cultural_info/culture/human/sol/nhp
 	name = CULTURE_HUMAN_NHP
-	description = "Cough cough asthma noises."
+	description = "New Hai Phong is regarded as the industrial heartland of the Solarian Alliance, and is dominated by Hephaestus Industries. While they often suffer from respiratory \
+	complications due to Hai's industrial pollution and constant sandstorms, Hai Phongese Solarians are often employed on Europa's submarines due to their smaller and thinner statures."
 	economic_power = 0.9
 
 //E R I D A N I  F E D E R A T I O N
 /decl/cultural_info/culture/human/eri
 	name = CULTURE_HUMAN_ERIDANI
-	description = "Filthy corpo rat."
-	economic_power = 1.2
+	description = "Eridanian Corporates, or Suits, are often found in the employ of Zeng-Hu Pharmaceuticals throughout the Solarian Alliance and broader Orion Spur. While Zeng Hu's \
+	Europan facilities are hardly a blue sky posting, a proactive employee goes where they are told to go by their esteemed colleagues. Keep your chin up and push the needle."
+	economic_power = 2.2
 	additional_langs = list(LANGUAGE_TRADE)
 
 //R E P U B L I C  O F  B I E S E L
 /decl/cultural_info/culture/human/rob
 	name = CULTURE_HUMAN_CETI
-	description = "You're from Tau Ceti so no one likes you lol."
-	economic_power = 0.7
+	description = "As a refugee from the corporate-controlled Republic of Biesel, you are not - by any means - the richest or most liked of the Alliance's residents. \
+	You've come a long way from NanoTrasen's statelet to the inky depths of Europa, and have no intention of going back to Biesel - even if it's bigger now."
+	economic_power = 0.9
 	additional_langs = list(LANGUAGE_TCB)
 
+/*
 /decl/cultural_info/culture/human/rob/gibson
 	name = CULTURE_HUMAN_GIBSON
 	description = "You probably talk like you're from Brooklyn."
-
+*/
 /decl/cultural_info/culture/human/rob/mictlan
 	name = CULTURE_HUMAN_MICTLAN
-	description = "Filthy tree hugger. Also you're probably used to Sol life."
-	economic_power = 0.8
+	description = "Mictlan was never the best of Sol's member states, even before it defected to the Republic of Biesel. You opted not to follow a lot of your fellow \
+	Mictlaners to the Republic of Biesel, and remain in the Alliance. For the time being, at least."
+	economic_power = 0.7
 
 //C O A L I T I O N  O F  C O L O N I E S
 /decl/cultural_info/culture/human/xan
 	name = CULTURE_HUMAN_XANU
-	description = "You're a yeehaw guy. Yeehaw."
-	economic_power = 0.7
+	description = "The Coalition of Colonies represents a very, very broad set of peoples and backgrounds - from Vysokans best at home on the open plains to Himeans \
+	used to working underground. While it is often rare for a Coalition citizen to be found this far into the Solarian Alliance, corporations hire all types - \
+	including those from as far afield as Xanu Prime and other Coalition planets."
+	economic_power = 1
 	additional_langs = list(LANGUAGE_FREE)
 
 //R E P U B L I C  O F  E L Y R A
 /decl/cultural_info/culture/human/ely
 	name = CULTURE_HUMAN_ELYRAN
-	description = "Feels good to have phoron lmao suck it Sol."
-	economic_power = 0.8
+	description = "The Serene Republic of Elyra is easily the richest, most prosperous human state in the Orion Spur. So why are you on Europa and working in \
+	a submarine? The thrill of adventure, perhaps?"
+	economic_power = 2.5
 
 //E M P I R E  O F  D O M I N I A
 /decl/cultural_info/culture/human/dom
 	name = CULTURE_HUMAN_DOMINIAN
-	description = "Filthy dominians get out."
+	description = "The nobility of the Empire of Dominia has a mixed reputation abroad. While they are often viewed as imperialists by the Coalition and an \
+	amusing second-rate power by the Alliance, the fact remains that they are a fairly wealthy and well-educated people. Geneboosted nobles should perhaps \
+	not find employment inside a submarine."
+	economic_power = 2
+	additional_langs = list(LANGUAGE_TRADE)
+
+/decl/cultural_info/culture/human/dom/com
+	name = CULTURE_HUMAN_DOMCOM
+	description = "Dominian commoners are a very, very diverse group of people ranging from rebellious Fisanduhians, Imperial commoners, and colonial Ma'zals. \
+	Most of them, Fisanduhians aside, are saddled by the Mo’ri’zal blood debt - the Empire's favoured form of taxation."
 	economic_power = 1
-	additional_langs = list(LANGUAGE_FREE)
 
 /*
 /decl/cultural_info/culture/human/ceti
@@ -154,15 +186,6 @@
 	name = CULTURE_HUMAN_OTHER
 	description = "Some people are from places no one has ever heard of or places too wild and fantastical to make it into Encyclopedia Galactica. You are one of these."
 	economic_power = 1
-	secondary_langs = list (LANGUAGE_HUMAN_EURO,
-		LANGUAGE_HUMAN_CHINESE,
-		LANGUAGE_HUMAN_ARABIC,
-		LANGUAGE_HUMAN_INDIAN,
-		LANGUAGE_HUMAN_IBERIAN,
-		LANGUAGE_HUMAN_RUSSIAN,
-		LANGUAGE_SPACER,
-		LANGUAGE_GUTTER,
-		LANGUAGE_SIGN)
 
 /decl/cultural_info/culture/human/vatgrown
 	name = CULTURE_HUMAN_VATGROWN

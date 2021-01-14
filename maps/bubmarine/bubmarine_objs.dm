@@ -22,6 +22,14 @@
 	job_access_type = /datum/job/bridge
 	detail_color = COLOR_BLUE_GRAY
 
+//Hats
+/obj/item/clothing/head/bub
+	name = "utility cover"
+	desc = "A navy blue utility cover, for when you're really at a loss as to what to wear to complete your drab sailor look."
+	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
+	icon_state = "navyutility"
+	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
+
 //Uniforms
 /obj/item/clothing/under/bub
 	name = "submarine utility uniform"
@@ -362,7 +370,6 @@
 		/obj/item/weapon/tank/emergency/oxygen/engi,
 		/obj/item/clothing/glasses/hud/health,
 		/obj/item/device/scanner/health,
-		/obj/item/device/radio/off,
 		/obj/random/medical,
 		/obj/item/weapon/crowbar,
 		/obj/item/weapon/extinguisher/mini,

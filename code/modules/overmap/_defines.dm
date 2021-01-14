@@ -67,16 +67,18 @@ proc/toggle_move_stars(zlevel, direction)
 		moving_levels["[zlevel]"] = gen_dir
 
 		var/list/spaceturfs = block(locate(1, 1, zlevel), locate(world.maxx, world.maxy, zlevel))
-		for(var/turf/space/T in spaceturfs)
-			if(!gen_dir)
-				T.icon_state = "white"
-			else
-				T.icon_state = "speedspace_[gen_dir]_[rand(1,15)]"
-				for(var/atom/movable/AM in T)
-					if (AM.simulated && !AM.anchored)
-						AM.throw_at(get_step(T,reverse_direction(direction)), 5, 1)
-						CHECK_TICK
-			CHECK_TICK
+		var/list/outside_turfs = list(/turf/simulated/ocean/void, /turf/simulated/open/bub)
+		for(var/turf/T in spaceturfs)
+			if(is_type_in_list(T, outside_turfs))
+				if(!gen_dir)
+					T.icon_state = "white"
+				else
+					T.icon_state = "speedspace_[gen_dir]_[rand(1,15)]"
+					for(var/atom/movable/AM in T)
+						if (AM.simulated && !AM.anchored)
+							AM.throw_at(get_edge_target_turf(T,reverse_direction(direction)), 100, 1)
+							CHECK_TICK
+				CHECK_TICK
 
 /proc/is_edge_turf(turf/T) //borrowed from random_map.dm:45
 	var/area/A = get_area(T)

@@ -1,10 +1,11 @@
 //Assistant duderino
 /datum/job/assistant
 	title = "Crewman"
-	alt_titles = list(	"Expeditionary Crewman" = /decl/hierarchy/outfit/job/bub/assistant/xpd,
-						"Medical Intern" = /decl/hierarchy/outfit/job/bub/assistant/med,
+	alt_titles = list(	"Expeditionary Crewman"  = /decl/hierarchy/outfit/job/bub/assistant/xpd,
+						"Medical Assistant"      = /decl/hierarchy/outfit/job/bub/assistant/med,
 						"Engineering Apprentice" = /decl/hierarchy/outfit/job/bub/assistant/eng,
-						"Research Assistant" = /decl/hierarchy/outfit/job/bub/assistant/xen)
+						"Research Assistant"     = /decl/hierarchy/outfit/job/bub/assistant/xen,
+						"Off Duty"               = /decl/hierarchy/outfit/job/bub/assistant)
 	outfit_type = /decl/hierarchy/outfit/job/bub/assistant
 	supervisors = "whoever looks like they know what they are doing"
 	hud_icon = "hudassistant"
@@ -57,7 +58,7 @@
 	selection_color = "#2f2f7f"
 	supervisors = "the captain"
 	hud_icon = "hudmasteratarms"
-	total_positions = 1
+	total_positions = 2
 	minimal_player_age = 0
 
 /datum/job/bridge
@@ -95,13 +96,13 @@
 						SKILL_ENGINES      = SKILL_MAX)
 	skill_points = 20
 	access = list(access_engine,access_engine_equip,access_atmospherics)
-	total_positions = 3
+	total_positions = 4
 	supervisors = "the captain"
 	hud_icon = "hudengineer"
 
 //Medical
 /datum/job/doctor
-	alt_titles = list("Surgeon")
+	alt_titles = list("Physician","Surgeon")
 	outfit_type = /decl/hierarchy/outfit/job/bub/medical
 	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
 						SKILL_MEDICAL     = SKILL_EXPERT,
@@ -121,6 +122,11 @@
 	title = "Xenobiologist"
 	alt_titles = list("Xenoarcheologist","Marine Biologist")
 	outfit_type = /decl/hierarchy/outfit/job/bub/research
+	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
+						SKILL_CHEMISTRY   = SKILL_ADEPT,
+						SKILL_SCIENCE     = SKILL_ADEPT)
+	max_skill = list(	SKILL_SCIENCE     = SKILL_MAX,
+						SKILL_CHEMISTRY   = SKILL_MAX)
 	access = list(access_tox)
 	supervisors = "the captain"
 	total_positions = 3
@@ -143,9 +149,10 @@
 
 //Service
 /datum/job/chef
+	alt_titles = list("Cook","Messhall Crew")
 	outfit_type = /decl/hierarchy/outfit/job/bub/service
 	access = list(access_kitchen)
-	total_positions = 1
+	total_positions = 2
 	hud_icon = "hudcook"
 
 //Role removals

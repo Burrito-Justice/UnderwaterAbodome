@@ -7,9 +7,9 @@
 /datum/gear/accessory/patch/New()
 	..()
 	var/subpatches = list()
-	subpatches["Zeng-Hu patch"] = /obj/item/clothing/accessory/patch/zh
+	subpatches["Zeng-Hu patch"]          = /obj/item/clothing/accessory/patch/zh
 	subpatches["Einstein Engines patch"] = /obj/item/clothing/accessory/patch/ee
-	subpatches["Sol Alliance patch"] = /obj/item/clothing/accessory/patch/sol
+	subpatches["Sol Alliance patch"]     = /obj/item/clothing/accessory/patch/sol
 	gear_tweaks += new/datum/gear_tweak/path(subpatches)
 
 /datum/gear/suit/navywinter
@@ -23,3 +23,24 @@
 	description = "For when you're really at a loss as to what to wear to complete your drab sailor look."
 	path = /obj/item/clothing/head/bub
 	cost = 0
+
+/datum/gear/uniform/fatigues
+	display_name = "alternative submarine uniform selection"
+	description = "An alternative selection of default navy uniform. Please pick the one corresponding to your \
+	department. This won't work if you're Unathi!"
+	path = /obj/item/clothing/under/bub/alt
+	cost = 0
+
+/datum/gear/uniform/fatigues/New()
+	..()
+	var/fatigues = list()
+	fatigues["Assistant fatigues"]   = /obj/item/clothing/under/bub/alt
+	fatigues["Command fatigues"]     = /obj/item/clothing/under/bub/alt/com
+	fatigues["Security fatigues"]    = /obj/item/clothing/under/bub/alt/sec
+	fatigues["Medical fatigues"]     = /obj/item/clothing/under/bub/alt/med
+	fatigues["Engineering fatigues"] = /obj/item/clothing/under/bub/alt/eng
+	fatigues["Research fatigues"]    = /obj/item/clothing/under/bub/alt/xen
+	fatigues["Supply fatigues"]      = /obj/item/clothing/under/bub/alt/sup
+	fatigues["Expedition fatigues"]  = /obj/item/clothing/under/bub/alt/xpd
+	fatigues["Service fatigues"]     = /obj/item/clothing/under/bub/alt/srv
+	gear_tweaks += new/datum/gear_tweak/path(fatigues)

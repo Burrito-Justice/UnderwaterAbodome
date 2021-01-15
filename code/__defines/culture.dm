@@ -193,7 +193,13 @@
 
 #define HOME_SYSTEM_SERPENTIDS "Tau-Wilo"
 
-// Unathi cultures.
+// Unathi culturess
+#define CULTURE_UNATHI_HEGEMONY    "Izweski Hegemony"
+#define CULTURE_UNATHI_TRADITIONAL "Traditionalist"
+#define CULTURE_UNATHI_WASTELAND   "Wastelander"
+#define CULTURE_UNATHI_DOMINIA     "Dominian Unathi"
+#define CULTURE_UNATHI_GUWAN       "Guwan"
+//Unused
 #define CULTURE_UNATHI_YEOSA_ABYSS    "Abyssal Yeosa Clans"
 #define CULTURE_UNATHI_YEOSA_LITTORAL "Littoral Yeosa Clans"
 #define CULTURE_UNATHI_DIAMOND_PEAKS  "Diamond Peak Clans"
@@ -205,9 +211,11 @@
 #define CULTURE_UNATHI_TERSTEN        "Tersten Clans"
 
 #define HOME_SYSTEM_MOGHES          "Moghes"
-#define HOME_SYSTEM_OUERE           "Ouere"
-#define HOME_SYSTEM_UNATHI_TERSTEN  "Tersten - Unathi Clans"
+#define HOME_SYSTEM_OUERE           "Ouerea"
+#define HOME_SYSTEM_ALTERIM         "Alterim Balteulis"
 #define HOME_SYSTEM_OFFWORLD        "Off-world"
+//Unused
+#define HOME_SYSTEM_UNATHI_TERSTEN  "Tersten - Unathi Clans"
 
 #define FACTION_UNATHI_HEGEMONY          "Moghes Hegemony"
 #define FACTION_UNATHI_TERSTEN_HEGEMONY  "Tersten Hegemony"

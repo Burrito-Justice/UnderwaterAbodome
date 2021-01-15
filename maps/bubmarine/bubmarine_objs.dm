@@ -39,6 +39,9 @@
 	icon_state = "navyutility"
 	worn_state = "navyutility"
 	starting_accessories = list(/obj/item/clothing/accessory/bub,/obj/item/clothing/accessory/patch)
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'maps/bubmarine/icons/unathi.dmi'
+		)
 
 /obj/item/clothing/under/bub/com
 	starting_accessories = list(/obj/item/clothing/accessory/bub/com,/obj/item/clothing/accessory/patch)
@@ -64,7 +67,39 @@
 /obj/item/clothing/under/bub/srv
 	starting_accessories = list(/obj/item/clothing/accessory/bub/srv,/obj/item/clothing/accessory/patch)
 
+/obj/item/clothing/under/bub/alt
+	name = "submarine utility fatigues"
+	desc = "For when coveralls are somehow impractical, these fatigues are a good alternative."
+	icon_state = "navycombat"
+	worn_state = "navycombat"
+	starting_accessories = list(/obj/item/clothing/accessory/bub/alt,/obj/item/clothing/accessory/patch)
+
+/obj/item/clothing/under/bub/alt/com
+	starting_accessories = list(/obj/item/clothing/accessory/bub/com/alt,/obj/item/clothing/accessory/patch)
+
+/obj/item/clothing/under/bub/alt/sec
+	starting_accessories = list(/obj/item/clothing/accessory/bub/sec/alt,/obj/item/clothing/accessory/patch)
+
+/obj/item/clothing/under/bub/alt/med
+	starting_accessories = list(/obj/item/clothing/accessory/bub/med/alt,/obj/item/clothing/accessory/patch)
+
+/obj/item/clothing/under/bub/alt/eng
+	starting_accessories = list(/obj/item/clothing/accessory/bub/eng/alt,/obj/item/clothing/accessory/patch)
+
+/obj/item/clothing/under/bub/alt/xen
+	starting_accessories = list(/obj/item/clothing/accessory/bub/xen/alt,/obj/item/clothing/accessory/patch)
+
+/obj/item/clothing/under/bub/alt/sup
+	starting_accessories = list(/obj/item/clothing/accessory/bub/sup/alt,/obj/item/clothing/accessory/patch)
+
+/obj/item/clothing/under/bub/alt/xpd
+	starting_accessories = list(/obj/item/clothing/accessory/bub/xpd/alt,/obj/item/clothing/accessory/patch)
+
+/obj/item/clothing/under/bub/alt/srv
+	starting_accessories = list(/obj/item/clothing/accessory/bub/srv/alt,/obj/item/clothing/accessory/patch)
+
 //Accessories
+//Insignia
 /obj/item/clothing/accessory/bub
 	name = "department insignia"
 	desc = "Insignia denoting assignment to a department. These appear blank."
@@ -73,41 +108,70 @@
 	icon_state = "dept_fleet"
 	on_rolled = list("down" = "none", "rolled" = "dept_fleet_sleeves")
 	slot = ACCESSORY_SLOT_DEPT
-	removable = FALSE
+	removable = TRUE
 	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi')
+	w_class = ITEM_SIZE_TINY
+
+/obj/item/clothing/accessory/bub/alt
+	icon_state = "dept_exped"
 
 /obj/item/clothing/accessory/bub/com
-	desc = "Insignia denoting assignment to a department. These are gold."
+	desc = "Insignia denoting assignment to command. These are gold."
 	color = "#e5ea4f"
 
+/obj/item/clothing/accessory/bub/com/alt
+	icon_state = "dept_exped"
+
 /obj/item/clothing/accessory/bub/sec
-	desc = "Insignia denoting assignment to a department. These are blood red."
+	desc = "Insignia denoting assignment to security. These are blood red."
 	color = "#820000"
 
+/obj/item/clothing/accessory/bub/sec/alt
+	icon_state = "dept_exped"
+
 /obj/item/clothing/accessory/bub/med
-	desc = "Insignia denoting assignment to a department. These are blue."
+	desc = "Insignia denoting assignment to medical. These are blue."
 	color = "#4c9ce4"
 
+/obj/item/clothing/accessory/bub/med/alt
+	icon_state = "dept_exped"
+
 /obj/item/clothing/accessory/bub/eng
-	desc = "Insignia denoting assignment to a department. These are orange."
+	desc = "Insignia denoting assignment to engineering. These are orange."
 	color = "#ff7f00"
 
+/obj/item/clothing/accessory/bub/eng/alt
+	icon_state = "dept_exped"
+
 /obj/item/clothing/accessory/bub/xen
-	desc = "Insignia denoting assignment to a department. These are purple."
+	desc = "Insignia denoting assignment to research. These are purple."
 	color = "#68099e"
 
+/obj/item/clothing/accessory/bub/xen/alt
+	icon_state = "dept_exped"
+
 /obj/item/clothing/accessory/bub/sup
-	desc = "Insignia denoting assignment to a department. These are brown."
+	desc = "Insignia denoting assignment to cargo. These are brown."
 	color = "#bb9042"
 
+/obj/item/clothing/accessory/bub/sup/alt
+	icon_state = "dept_exped"
+
 /obj/item/clothing/accessory/bub/xpd
-	desc = "Insignia denoting assignment to a department. These are red."
+	desc = "Insignia denoting assignment to exploration. These are red."
 	color = "#bf0000"
 
+/obj/item/clothing/accessory/bub/xpd/alt
+	icon_state = "dept_exped"
+
 /obj/item/clothing/accessory/bub/srv
-	desc = "Insignia denoting assignment to a department. These are green."
+	desc = "Insignia denoting assignment to culinary service. These are green."
 	color = "#6eaa2c"
 
+/obj/item/clothing/accessory/bub/srv/alt
+	icon_state = "dept_exped"
+
+//Shoulder patches
 /obj/item/clothing/accessory/patch
 	name = "Stingray mission patch"
 	desc = "A patch representing the ZRS Stingray and its mission. \"Swim the seas 'til the sun shines through the leagues of ice.\""
@@ -449,6 +513,31 @@
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger)),
 		new /datum/atom_creator/weighted(list(/obj/item/device/flashlight, /obj/item/device/flashlight/flare, /obj/item/device/flashlight/flare/glowstick/random))
 	)
+
+/obj/item/weapon/storage/box/insignia
+	name = "box of insignias"
+	desc = "Crewman looking for a change of pace? Rip his colors off and give him some new ones!"
+	max_storage_space = 54
+	startswith = list(
+		/obj/item/clothing/accessory/bub = 3,
+		/obj/item/clothing/accessory/bub/alt = 3,
+		/obj/item/clothing/accessory/bub/com = 3,
+		/obj/item/clothing/accessory/bub/com/alt = 3,
+		/obj/item/clothing/accessory/bub/sec = 3,
+		/obj/item/clothing/accessory/bub/sec/alt = 3,
+		/obj/item/clothing/accessory/bub/med = 3,
+		/obj/item/clothing/accessory/bub/med/alt = 3,
+		/obj/item/clothing/accessory/bub/eng = 3,
+		/obj/item/clothing/accessory/bub/eng/alt = 3,
+		/obj/item/clothing/accessory/bub/xen = 3,
+		/obj/item/clothing/accessory/bub/xen/alt = 3,
+		/obj/item/clothing/accessory/bub/sup = 3,
+		/obj/item/clothing/accessory/bub/sup/alt = 3,
+		/obj/item/clothing/accessory/bub/xpd = 3,
+		/obj/item/clothing/accessory/bub/xpd/alt = 3,
+		/obj/item/clothing/accessory/bub/srv = 3,
+		/obj/item/clothing/accessory/bub/srv/alt = 3
+		)
 
 /obj/machinery/suit_storage_unit/engineering/alt/bub
 	name = "Engineering Pressure Suit Storage Unit"

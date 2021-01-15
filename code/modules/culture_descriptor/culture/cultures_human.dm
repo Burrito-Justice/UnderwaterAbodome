@@ -141,7 +141,7 @@
 /decl/cultural_info/culture/human/dom/com
 	name = CULTURE_HUMAN_DOMCOM
 	description = "Dominian commoners are a very, very diverse group of people ranging from rebellious Fisanduhians, Imperial commoners, and colonial Ma'zals. \
-	Most of them, Fisanduhians aside, are saddled by the Mo’ri’zal blood debt - the Empire's favoured form of taxation."
+	Most of them, Fisanduhians aside, are saddled by the Mo'ri'zal blood debt - the Empire's favoured form of taxation."
 	economic_power = 1
 
 /*

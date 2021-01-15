@@ -199,13 +199,14 @@
 	overmap_event_handler.update_hazards(T)
 
 /obj/effect/overmap/event/meteor
-	name = "asteroid field"
+	name = "abnormal terrain"
 	events = list(/datum/event/meteor_wave/overmap)
 	event_icon_states = list("meteor1", "meteor2", "meteor3", "meteor4")
 	difficulty = EVENT_LEVEL_MAJOR
 	weaknesses = OVERMAP_WEAKNESS_MINING | OVERMAP_WEAKNESS_EXPLOSIVE
 	color = "#a08444"
 
+/*
 /obj/effect/overmap/event/electric
 	name = "electrical storm"
 	events = list(/datum/event/electrical_storm)
@@ -214,14 +215,15 @@
 	difficulty = EVENT_LEVEL_MAJOR
 	weaknesses = OVERMAP_WEAKNESS_EMP
 	color = "#e8e85c"
-
+*/
 /obj/effect/overmap/event/dust
-	name = "dust cloud"
+	name = "needle shrimp"
 	events = list(/datum/event/dust)
 	event_icon_states = list("dust1", "dust2", "dust3", "dust4")
 	weaknesses = OVERMAP_WEAKNESS_MINING | OVERMAP_WEAKNESS_EXPLOSIVE | OVERMAP_WEAKNESS_FIRE
 	color = "#6c6c6c"
 
+/*
 /obj/effect/overmap/event/ion
 	name = "ion cloud"
 	events = list(/datum/event/ionstorm, /datum/event/computer_damage)
@@ -230,7 +232,7 @@
 	difficulty = EVENT_LEVEL_MAJOR
 	weaknesses = OVERMAP_WEAKNESS_EMP
 	color = "#7cb4d4"
-
+*/
 /obj/effect/overmap/event/carp
 	name = "carp shoal"
 	events = list(/datum/event/carp_migration/overmap)
@@ -255,32 +257,32 @@
 	var/continuous = TRUE //if it should form continous blob, or can have gaps
 
 /datum/overmap_event/meteor
-	name = "asteroid field"
+	name = "abnormal terrain"
 	count = 15
 	radius = 4
 	continuous = FALSE
 	hazards = /obj/effect/overmap/event/meteor
-
+/*
 /datum/overmap_event/electric
 	name = "electrical storm"
 	count = 11
 	radius = 3
 	opacity = 0
 	hazards = /obj/effect/overmap/event/electric
-
+*/
 /datum/overmap_event/dust
-	name = "dust cloud"
+	name = "needle shrimp cloud"
 	count = 16
 	radius = 4
 	hazards = /obj/effect/overmap/event/dust
-
+/*
 /datum/overmap_event/ion
 	name = "ion cloud"
 	count = 8
 	radius = 3
 	opacity = 0
 	hazards = /obj/effect/overmap/event/ion
-
+*/
 /datum/overmap_event/carp
 	name = "carp shoal"
 	count = 8

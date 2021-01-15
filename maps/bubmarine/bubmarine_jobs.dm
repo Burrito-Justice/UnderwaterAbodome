@@ -257,6 +257,12 @@
 	id_types = list(/obj/item/weapon/card/id/gold)
 	pda_type = /obj/item/modular_computer/pda/captain
 
+/decl/hierarchy/outfit/job/bub/command/captain/New()
+	..()
+	backpack_overrides[/decl/backpack_outfit/backpack]      = /obj/item/weapon/storage/backpack/captain
+	backpack_overrides[/decl/backpack_outfit/satchel]       = /obj/item/weapon/storage/backpack/satchel/cap
+	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger/com
+
 /*
 /decl/hierarchy/outfit/job/bub/command/hop
 	name = OUTFIT_JOB_NAME("First Mate")
@@ -268,12 +274,20 @@
 	id_types = list(/obj/item/weapon/card/id/security/head)
 	pda_type = /obj/item/modular_computer/pda/heads/hos
 
+/decl/hierarchy/outfit/job/bub/security/New()
+	..()
+	BACKPACK_OVERRIDE_SECURITY
+
 //Engineering
 /decl/hierarchy/outfit/job/bub/engineer
 	name = OUTFIT_JOB_NAME("Engineer")
 	uniform = /obj/item/clothing/under/bub/eng
 	id_types = list(/obj/item/weapon/card/id/engineering)
 	pda_type = /obj/item/modular_computer/pda/engineering
+
+/decl/hierarchy/outfit/job/bub/engineer/New()
+	..()
+	BACKPACK_OVERRIDE_ENGINEERING
 
 //Medical
 /decl/hierarchy/outfit/job/bub/medical
@@ -282,12 +296,20 @@
 	id_types = list(/obj/item/weapon/card/id/medical)
 	pda_type = /obj/item/modular_computer/pda/medical
 
+/decl/hierarchy/outfit/job/bub/medical/New()
+	..()
+	BACKPACK_OVERRIDE_MEDICAL
+
 //Research
 /decl/hierarchy/outfit/job/bub/research
 	name = OUTFIT_JOB_NAME("Xenobiologist")
 	uniform = /obj/item/clothing/under/bub/xen
 	id_types = list(/obj/item/weapon/card/id/science)
 	pda_type = /obj/item/modular_computer/pda/science
+
+/decl/hierarchy/outfit/job/bub/research/New()
+	..()
+	BACKPACK_OVERRIDE_RESEARCH
 
 //Cargo
 /decl/hierarchy/outfit/job/bub/supply

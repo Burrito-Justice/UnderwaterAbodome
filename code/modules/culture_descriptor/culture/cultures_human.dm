@@ -11,7 +11,8 @@
 		LANGUAGE_TCB,
 		LANGUAGE_TRADE,
 		LANGUAGE_FREE,
-		LANGUAGE_SIGN
+		LANGUAGE_SIGN,
+		LANGUAGE_EAL
 	)
 //Most cultural descriptions courtesy of Schwann
 //S O L  A L L I A N C E

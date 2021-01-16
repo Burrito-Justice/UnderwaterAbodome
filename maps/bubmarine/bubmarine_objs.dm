@@ -667,6 +667,11 @@ obj/machinery/power/smes/buildable/main/Initialize()
 	desc = "A set of bright red and orange reeds, looking quite stick-y and brittle."
 	icon_state = "red"
 
+/obj/structure/flora/bub/red/Initialize()
+	. = ..()
+	pixel_x = rand(-12,12)
+	pixel_y = rand(-12,12)
+
 /obj/structure/flora/bub/purple
 	name = "purple nettle"
 	desc = "A large nettle of sorts that looks like a large leaf of some kind."
@@ -696,5 +701,9 @@ obj/machinery/power/smes/buildable/main/Initialize()
 	layer = MOB_LAYER + 0.1
 	color = "#8fdb48"
 
-/obj/structure/flora/bub/kelp/alt
-	icon_state = "kelp2"
+/obj/structure/flora/bub/kelp/Initialize()
+	. = ..()
+	icon_state = pick("kelp","kelp2")
+	pixel_x = rand(-24,24)
+	pixel_y = rand(-24,24)
+	color = pick("#8fdb48","#72a83e","#4ed126","#98b514","#c26936")

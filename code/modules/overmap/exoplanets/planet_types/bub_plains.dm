@@ -37,7 +37,7 @@
 	descriptor = "grassy plains biome"
 	smoothing_iterations = 2
 	land_type = /turf/simulated/ocean/grass
-	water_type = /turf/simulated/ocean
+	water_type = /turf/simulated/ocean/sand
 	water_level_min = 1
 	water_level_max = 4
 

@@ -9,10 +9,78 @@
 /turf/simulated/ocean
 	temperature = T0C + 2
 	initial_gas = list(GAS_OXYGEN = MOLES_O2STANDARD * 4, GAS_NITROGEN = MOLES_N2STANDARD * 4)
+	var/icon_edge_layer = EXT_EDGE_SEAFLOOR
+	var/icon_has_corners = FALSE
+	var/icon_edge_states
 
 /turf/simulated/ocean/Initialize()
 	. = ..()
 	update_icon()
+
+//PORTED FROM NEBULA - ADAPTED TO EUROPA
+/turf/simulated/ocean/on_update_icon(var/update_neighbors)
+	..() // Recalc AO and flooding overlay.
+	cut_overlays()
+	if(LAZYLEN(decals))
+		add_overlay(decals)
+
+	if(icon_edge_layer < 0)
+		return
+
+	var/neighbors = 0
+	for(var/direction in GLOB.cardinal)
+		var/turf/simulated/ocean/turf_to_check = get_step(src,direction)
+		if(!turf_to_check || turf_to_check.density)
+			continue
+		if(istype(turf_to_check, type))
+			neighbors |= direction
+			continue
+		if(!istype(turf_to_check) || icon_edge_layer > turf_to_check.icon_edge_layer)
+			var/image/I = image(icon, "edge[direction][icon_edge_states > 0 ? rand(0, icon_edge_states) : ""]")
+			I.layer = layer + icon_edge_layer
+			switch(direction)
+				if(NORTH)
+					I.pixel_y += world.icon_size
+				if(SOUTH)
+					I.pixel_y -= world.icon_size
+				if(EAST)
+					I.pixel_x += world.icon_size
+				if(WEST)
+					I.pixel_x -= world.icon_size
+			add_overlay(I)
+		if(update_neighbors)
+			turf_to_check.update_icon()
+
+	if(icon_has_corners)
+		for(var/direction in GLOB.cornerdirs)
+			var/turf/simulated/ocean/turf_to_check = get_step(src,direction)
+			if(!isturf(turf_to_check) || turf_to_check.density || istype(turf_to_check, type))
+				continue
+
+			if(!istype(turf_to_check) || icon_edge_layer > turf_to_check.icon_edge_layer)
+				var/draw_state
+				var/res = (neighbors & direction)
+				if(res == 0)
+					draw_state = "edge[direction]"
+				else if(res == direction)
+					draw_state = "corner[direction]"
+				if(draw_state && check_state_in_icon(draw_state, icon))
+					var/image/I = image(icon, draw_state)
+					I.layer = layer + icon_edge_layer
+					if(direction & NORTH)
+						I.pixel_y += world.icon_size
+					else if(direction & SOUTH)
+						I.pixel_y -= world.icon_size
+					if(direction & EAST)
+						I.pixel_x += world.icon_size
+					else if(direction & WEST)
+						I.pixel_x -= world.icon_size
+					add_overlay(I)
+
+	if(update_neighbors)
+		for(var/direction in GLOB.cornerdirs)
+			var/turf/turf_to_check = get_step(src,direction)
+			turf_to_check?.update_icon()
 
 //Parallax and Skybox. This is the bottom-most ocean turf in most cases, but it gives the illusion that it goes deeper
 /turf/simulated/ocean/void
@@ -23,6 +91,7 @@
 	flooded = TRUE
 	plane = SPACE_PLANE
 	z_eventually_space = TRUE
+	icon_edge_layer = EXT_EDGE_OCEAN
 
 /turf/simulated/ocean/void/add_decal()
 	return 0
@@ -80,10 +149,24 @@
 	set_light(0.6, 1, 1, 3, "#c9eaff")
 	update_icon()
 
-/turf/simulated/ocean/grass //this is for the aquarium in research
+/turf/simulated/ocean/grass
 	name = "seagrass"
 	desc = "Some rough tufts of Europan seagrass."
 	icon_state = "grass-dark"
+	icon_edge_layer = EXT_EDGE_SAND
+	icon_has_corners = TRUE
+
+/turf/simulated/ocean/sand
+	name = "sand"
+	desc = "Sand on the seafloor, ever present. It looks especially sandy."
+	icon = 'icons/turf/desert.dmi'
+	icon_state = "desert"
+	icon_edge_layer = EXT_EDGE_GRASS
+	icon_has_corners = TRUE
+
+/turf/simulated/ocean/sand/Initialize()
+	. = ..()
+	icon_state = "desert[pick("","0","1","2","3")]"
 
 //Overmap Coziness
 /turf/unsimulated/map

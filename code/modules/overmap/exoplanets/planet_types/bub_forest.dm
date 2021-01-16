@@ -37,16 +37,16 @@
 	descriptor = "kelp forest biome"
 	smoothing_iterations = 2
 	land_type = /turf/simulated/ocean/grass
-	water_type = /turf/simulated/ocean
+	water_type = /turf/simulated/ocean/sand
 	water_level_min = 1
 	water_level_max = 2
 
 	flora_prob = 3
 	large_flora_prob = 0
 	flora_diversity = 1
-	megafauna_types = list()
+	megafauna_types = list(/mob/living/simple_animal/hostile/retaliate/giant_crab)
 	fauna_types = list(/mob/living/simple_animal/aquatic/fish,/mob/living/simple_animal/aquatic/fish/grump,/mob/living/simple_animal/aquatic/fish/judge,
-		/mob/living/simple_animal/hostile/retaliate/aquatic/carp,/mob/living/simple_animal/hostile/retaliate/giant_crab)
+		/mob/living/simple_animal/hostile/retaliate/aquatic/carp)
 
 /datum/random_map/noise/exoplanet/bub_forest/get_additional_spawns(var/value, var/turf/T)
 	..()
@@ -55,4 +55,4 @@
 	var/v = noise2value(value)
 	if(v > 6)
 		if(prob(60))
-			pick(new/obj/structure/flora/bub/kelp(T),new/obj/structure/flora/bub/kelp/alt(T))
+			new/obj/structure/flora/bub/kelp(T)

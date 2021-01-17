@@ -24,7 +24,6 @@
 	startswith = list(
 		/obj/item/weapon/crowbar/red,
 		/obj/item/weapon/extinguisher/mini,
-		/obj/item/device/radio,
 		/obj/item/weapon/weldingtool/mini,
 		/obj/item/weapon/welder_tank/mini
 	)

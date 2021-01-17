@@ -95,7 +95,7 @@
 						SKILL_ATMOS        = SKILL_MAX,
 						SKILL_ENGINES      = SKILL_MAX)
 	skill_points = 20
-	access = list(access_engine,access_engine_equip,access_atmospherics)
+	access = list(access_engine,access_engine_equip,access_construction,access_atmospherics)
 	total_positions = 4
 	supervisors = "the captain"
 	hud_icon = "hudengineer"
@@ -112,7 +112,7 @@
 						SKILL_ANATOMY     = SKILL_MAX,
 						SKILL_CHEMISTRY   = SKILL_MAX)
 	skill_points = 20
-	access = list(access_medical,access_medical_equip,access_surgery)
+	access = list(access_medical,access_medical_equip,access_surgery,access_chemistry)
 	total_positions = 3
 	supervisors = "the captain"
 	hud_icon = "hudphysician"
@@ -127,7 +127,7 @@
 						SKILL_SCIENCE     = SKILL_ADEPT)
 	max_skill = list(	SKILL_SCIENCE     = SKILL_MAX,
 						SKILL_CHEMISTRY   = SKILL_MAX)
-	access = list(access_tox)
+	access = list(access_tox,access_xenoarch,access_xenobiology,access_tox_storage)
 	supervisors = "the captain"
 	total_positions = 3
 	hud_icon = "hudscientist"

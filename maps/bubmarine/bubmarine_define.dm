@@ -2,6 +2,7 @@
 	name = "Sector 22-A"
 	full_name = "Europan Seamount Zeng-Hu Research Sector 22-A"
 	path = "bubmarine"
+	lobby_screens = list('maps/bubmarine/icons/lobby.gif')
 
 	//admin_levels = list(7,8) //configure this and everything below as needed
 	//empty_levels = list(9) //these vars shouldn't affect mapping, but will need to be cleaned when we compile

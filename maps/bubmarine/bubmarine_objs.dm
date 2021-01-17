@@ -217,7 +217,7 @@
 	icon_state = "divinghelmet"
 	item_state = "divinghelmet"
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
-	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC)
 	light_overlay = "helmet_light_dual"
 
 /obj/item/clothing/suit/space/void/bub
@@ -225,7 +225,7 @@
 	desc = "A bulky suit to be sure, these things are built to allow you to dive to extremely deep points in the Earth's oceans. In other words, it keeps you from being crushed."
 	icon_state = "divingsuit"
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
-	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC)
 
 /obj/item/clothing/suit/space/void/bub/New()
 	..()
@@ -240,13 +240,13 @@
 	desc = "A very bulky looking helmet designed to be mounted on a pressure suit. It has lil' cooling fans in there!"
 	icon_state = "divinghelmet_in"
 	item_state = "divinghelmet_in"
-	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC)
 
 /obj/item/clothing/suit/space/void/engineering/alt/bub
 	name = "enginering pressure suit"
 	desc = "A very bulky, almost mean-looking pressure suit built to withstand the crushing depths of the Earth's ocean and more. Europa's waters are no match."
 	icon_state = "divingsuit_in"
-	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC)
 
 /obj/item/clothing/suit/space/void/engineering/alt/bub/New()
 	..()
@@ -263,7 +263,7 @@
 	item_state = "divinghelmet_med"
 	light_overlay = "helmet_light_dual"
 	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
-	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC)
 
 /obj/item/clothing/suit/space/void/medical/alt/bub
 	name = "streamlined medical pressure suit"
@@ -271,7 +271,7 @@
 	desc = "A flashier pressure suit sporting blue medical crosses for easier identification. It looks a bit lighter than most pressure suits."
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/firstaid,/obj/item/device/scanner/health,/obj/item/stack/medical)
 	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
-	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC)
 
 /obj/item/clothing/suit/space/void/medical/alt/bub/New()
 	..()
@@ -509,9 +509,27 @@
 		/obj/item/weapon/material/clipboard,
 		/obj/item/weapon/folder/blue,
 		/obj/item/weapon/storage/belt/general,
+		/obj/item/clothing/gloves/thick/duty/bub/cmd,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel/grey)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger)),
 		new /datum/atom_creator/weighted(list(/obj/item/device/flashlight, /obj/item/device/flashlight/flare, /obj/item/device/flashlight/flare/glowstick/random))
+	)
+
+/obj/structure/closet/secure_closet/xenobio/bub
+	name = "xenobiologist's locker"
+	req_access = list(access_xenobiology)
+	closet_appearance = /decl/closet_appearance/secure_closet/expedition/science
+
+/obj/structure/closet/secure_closet/xenobio/bub/WillContain()
+	return list(
+		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/messenger/tox, /obj/item/weapon/storage/backpack/satchel/tox)),
+		/obj/item/clothing/under/rank/scientist,
+		/obj/item/clothing/suit/storage/toggle/labcoat,
+		/obj/item/clothing/shoes/white,
+		/obj/item/clothing/mask/gas,
+		/obj/item/clothing/gloves/latex,
+		/obj/item/weapon/material/clipboard,
+		/obj/item/weapon/storage/belt/general
 	)
 
 /obj/item/weapon/storage/box/insignia
@@ -614,6 +632,19 @@
 /obj/structure/shuttle/engine/heater/bub/large
 	icon = 'maps/bubmarine/icons/big_propellers.dmi'
 	icon_state = "bigsubheater"
+
+/obj/structure/engine
+	name = "propulsion system"
+	desc = "An absolutely colossal propulsion unit, which takes power from the engine to turn the shaft to spin the screws so that the sub can move."
+	icon = 'maps/bubmarine/icons/engine_96x.dmi'
+	icon_state = "engine_unit"
+	density = 1
+
+/obj/structure/engine/axle
+	name = "propulsion shaft"
+	desc = "A large, spinning shaft that is most likely turning the crews on the outside of the sub."
+	icon = 'maps/bubmarine/icons/engine.dmi'
+	icon_state = "engine_axle"
 
 //SMES
 /obj/machinery/power/smes/buildable/prop

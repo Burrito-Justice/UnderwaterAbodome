@@ -274,20 +274,34 @@
 	lift_announce_str = "Arriving at Hangar Deck: Hangar, Atmospherics, EVA, Supply."
 	base_turf = /turf/simulated/floor/plating
 
-/area/turbolift/ray_ground/med
+/area/turbolift/ray_ground_med
 	name = "lift (bottom deck, med)"
+	lift_floor_label = "Lwr Med"
+	lift_floor_name = "Lower Medical"
+	lift_announce_str = "Arriving at Lower Medical: Chemistry, Morgue, Equipment."
+	base_turf = /turf/simulated/floor/plating
 
-/area/turbolift/ray_ground/xen
+/area/turbolift/ray_ground_xen
 	name = "lift (bottom deck, xen)"
+	lift_floor_label = "Lwr Res"
+	lift_floor_name = "Lower Research"
+	lift_announce_str = "Arriving at Lower Research: Research Chemistry, Aquarium Observation."
+	base_turf = /turf/simulated/floor/plating
 
 /area/turbolift/ray_above
 	name = "lift (top deck)"
 	lift_floor_label = "Top Deck"
 	lift_floor_name = "Operations Deck"
-	lift_announce_str = "Arriving at Hangar Deck: Bridge, Medical, Xenobiology, Messhall, Engineering."
+	lift_announce_str = "Arriving at Operations Deck: Bridge, Medical, Xenobiology, Messhall, Engineering."
 
-/area/turbolift/ray_above/med
+/area/turbolift/ray_above_med
 	name = "lift (top deck, med)"
+	lift_floor_label = "Top Med"
+	lift_floor_name = "Upper Medical"
+	lift_announce_str = "Arriving at Upper Medical: Lobby, GTR, Exam, Surgery."
 
-/area/turbolift/ray_above/xen
+/area/turbolift/ray_above_xen
 	name = "lift (top deck, xen)"
+	lift_floor_label = "Top Res"
+	lift_floor_name = "Upper Research"
+	lift_announce_str = "Arriving at Upper Research: Aquarium Access, Gas Mix Suite."

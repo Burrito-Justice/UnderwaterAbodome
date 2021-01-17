@@ -200,7 +200,6 @@
 		/obj/item/device/core_sampler,
 		/obj/item/device/gps,
 		/obj/item/weapon/pinpointer/radio,
-		/obj/item/clothing/glasses/meson,
 		/obj/item/clothing/glasses/science,
 		/obj/item/weapon/pickaxe,
 		/obj/item/device/measuring_tape,

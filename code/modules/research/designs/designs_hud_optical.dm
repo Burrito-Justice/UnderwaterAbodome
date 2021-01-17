@@ -34,14 +34,6 @@
 	name = "Optical glasses design ([item_name])"
 	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 50)
 
-/datum/design/item/optical/mesons
-	name = "mesons"
-	desc = "Using the meson-scanning technology those glasses allow you to see through walls, floor or anything else."
-	id = "mesons"
-	req_tech = list(TECH_MAGNET = 2, TECH_ENGINEERING = 2)
-	build_path = /obj/item/clothing/glasses/meson
-	sort_string = "GBAAA"
-
 /datum/design/item/optical/material
 	name = "material"
 	id = "mesons_material"

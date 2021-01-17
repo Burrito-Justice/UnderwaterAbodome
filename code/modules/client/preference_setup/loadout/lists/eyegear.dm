@@ -75,23 +75,9 @@
 	path = /obj/item/clothing/glasses/eyepatch/hud/medical
 	cost = 2
 
-/datum/gear/eyes/meson
-	display_name = "Meson Goggles"
-	path = /obj/item/clothing/glasses/meson
-	allowed_roles = list(/datum/job/chief_engineer, /datum/job/engineer, /datum/job/mining, /datum/job/scientist, /datum/job/rd)
-
-/datum/gear/eyes/meson/prescription
-	display_name = "Meson Goggles, prescription"
-	path = /obj/item/clothing/glasses/meson/prescription
-
 /datum/gear/eyes/welding
 	display_name = "Welding Goggles"
 	path = /obj/item/clothing/glasses/welding
-
-/datum/gear/eyes/meson/ipatch
-	display_name = "HUDpatch, Meson"
-	path = /obj/item/clothing/glasses/eyepatch/hud/meson
-	cost = 2
 
 /datum/gear/eyes/material
 	display_name = "Material Goggles"

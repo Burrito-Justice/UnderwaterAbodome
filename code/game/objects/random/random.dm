@@ -784,8 +784,6 @@ obj/random/obstruction/spawn_choices()
 /obj/random/glasses/spawn_choices()
 	return list(/obj/item/clothing/glasses/sunglasses = 3,
 				/obj/item/clothing/glasses/prescription = 7,
-				/obj/item/clothing/glasses/meson = 5,
-				/obj/item/clothing/glasses/meson/prescription = 4,
 				/obj/item/clothing/glasses/science = 6,
 				/obj/item/clothing/glasses/material = 5,
 				/obj/item/clothing/glasses/welding = 3,

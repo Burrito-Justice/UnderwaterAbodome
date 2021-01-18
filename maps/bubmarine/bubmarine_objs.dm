@@ -197,6 +197,11 @@
 	Our vision, transcendent.\""
 	icon_state = "sol"
 
+/obj/item/clothing/accessory/patch/id
+	name = "Idris Incorporated patch"
+	desc = "A patch denoting which government/corporate entity you represent. This one has Idris Incorporated's distinctive teal logo. \"Astronomical Figures. Unlimited Power.\""
+	icon_state = "id"
+
 //Suits and stuff
 /obj/item/clothing/suit/storage/hooded/wintercoat/bub
 	name = "navy winter coat"

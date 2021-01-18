@@ -10,6 +10,7 @@
 	subpatches["Zeng-Hu patch"]          = /obj/item/clothing/accessory/patch/zh
 	subpatches["Einstein Engines patch"] = /obj/item/clothing/accessory/patch/ee
 	subpatches["Sol Alliance patch"]     = /obj/item/clothing/accessory/patch/sol
+	subpatches["Idris Incorporated patch"] = /obj/item/clothing/accessory/patch/id
 	gear_tweaks += new/datum/gear_tweak/path(subpatches)
 
 /datum/gear/suit/navywinter

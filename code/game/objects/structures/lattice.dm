@@ -17,7 +17,7 @@
 /obj/structure/lattice/Initialize(mapload, var/new_material)
 	. = ..()
 	DELETE_IF_DUPLICATE_OF(/obj/structure/lattice)
-	if(!(istype(src.loc, /turf/space) || istype(src.loc, /turf/simulated/open)))
+	if(!(istype(src.loc, /turf/space) || istype(src.loc, /turf/simulated/open) || istype(src.loc, /turf/simulated/ocean)))
 		return INITIALIZE_HINT_QDEL
 	if(!new_material)
 		new_material = init_material
@@ -84,12 +84,14 @@
 
 /obj/structure/lattice/on_update_icon()
 	var/dir_sum = 0
+	var/list/ignore_turfs = list(/turf/space,/turf/simulated/open,/turf/simulated/ocean)
 	for (var/direction in GLOB.cardinal)
 		var/turf/T = get_step(src, direction)
 		if(locate(/obj/structure/lattice, T) || locate(/obj/structure/catwalk, T))
 			dir_sum += direction
 		else
-			if(!(istype(get_step(src, direction), /turf/space)) && !(istype(get_step(src, direction), /turf/simulated/open)))
+			//if(!(istype(get_step(src, direction), /turf/space)) && !(istype(get_step(src, direction), /turf/simulated/open) && !(istype(get_step(src, direction), /turf/simulated/ocean)))
+			if(!is_type_in_list(get_step(src, direction), ignore_turfs))
 				dir_sum += direction
 
 	icon_state = "lattice[dir_sum]"

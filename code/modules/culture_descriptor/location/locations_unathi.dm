@@ -4,15 +4,8 @@
 	this is the home of the unathi. Unathi believe this world was once lush and full of life, but due to the \
 	decisions of the precursors, it was killed and left to rot. For the unathi, it is their duty to bring it \
 	back to life, or to become strong enough that they don't have to."
-	ruling_body = "Clan Hegemony"
+	ruling_body = "Izweski Hegemony"
 	distance = "20 light-years"
-	secondary_langs = list(
-		LANGUAGE_UNATHI_SINTA,
-		LANGUAGE_UNATHI_YEOSA,
-		LANGUAGE_SIGN,
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_SPACER
-	)
 
 /decl/cultural_info/location/ouere
 	name = HOME_SYSTEM_OUERE
@@ -21,15 +14,16 @@ planet of Ouere has seen many clans and small groups stepping through it into th
 no clear consensus on how to treat this new world - either as a logical extension of Moghes, a completely new entity, \
 or simply as a resource base for improving the home planet. Many colonists, artifact hunters, and ostracised groups have \
 flocked to the planet, with Markesheli communities growing quite rapidly in numbers compared to other parts of Moghes. "
-	ruling_body = "Clan Hegemony"
-	distance = "20 light-years"	
-	secondary_langs = list(
-		LANGUAGE_UNATHI_SINTA,
-		LANGUAGE_UNATHI_YEOSA,
-		LANGUAGE_SIGN,
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_SPACER
-	)
+	ruling_body = "Izweski Hegemony"
+	distance = "20 light-years"
+
+/decl/cultural_info/location/alterim
+	description = "Often called by the equally popular name of Ignotum Balteum by the resident Unathi and populated by \
+	roughly 300 million, this is a dry world with a mixed climate of savannas, deserts and arid polar regions. The Temple \
+	of the Ancestors can be found in the planet's capital of Salstiliska. Many Unathi are known to dwell here and the \
+	Moroz Holy Tribunal's power is at its most potent: its influence here can even surpass the Emperor's in some cases."
+	ruling_body = "Empire of Dominia"
+	distance = "33 light-years"
 
 /decl/cultural_info/location/offworld
 	name = HOME_SYSTEM_OFFWORLD
@@ -38,19 +32,8 @@ flocked to the planet, with Markesheli communities growing quite rapidly in numb
 	that be on the scorching heats of Cinu, the tropical paradises of Kingston, or the bustling shipyards of Ceres."
 	ruling_body = "Varies"
 	distance = "Varies"
-	secondary_langs = list(
-		LANGUAGE_UNATHI_SINTA,
-		LANGUAGE_UNATHI_YEOSA,
-		LANGUAGE_SIGN,
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_HUMAN_CHINESE,
-		LANGUAGE_HUMAN_ARABIC,
-		LANGUAGE_HUMAN_INDIAN,
-		LANGUAGE_HUMAN_IBERIAN,
-		LANGUAGE_HUMAN_RUSSIAN,
-		LANGUAGE_SPACER
-	)
 
+/*
 /decl/cultural_info/location/tersten
 	name = HOME_SYSTEM_UNATHI_TERSTEN
 	description = "Tersten opened it's arms to Unathi in the wake of the golden age. Though the clans still enjoy a great deal \
@@ -71,3 +54,4 @@ flocked to the planet, with Markesheli communities growing quite rapidly in numb
 		LANGUAGE_HUMAN_RUSSIAN,
 		LANGUAGE_SPACER
 	)
+*/

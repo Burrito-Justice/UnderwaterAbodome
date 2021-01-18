@@ -11,29 +11,48 @@
 	)
 
 // Cultural IDs.
-#define FACTION_SOL_CENTRAL    "Sol Central Government"
-#define FACTION_INDIE_CONFED  "Gilgamesh Colonial Confederation"
+#define FACTION_SOL_CENTRAL    "Sol Alliance"
+#define FACTION_ZENG_HU        "Zeng-Hu Pharmaeceuticals"
 #define FACTION_NANOTRASEN     "NanoTrasen"
-#define FACTION_FREETRADE      "Free Trade Union"
 #define FACTION_HEPHAESTUS     "Hephaestus Industries"
+#define FACTION_IDRIS          "Idris Incorporated"
+#define FACTION_EINSTEIN       "Einstein Engines"
+#define FACTION_ZAVOD          "Zavodskoi Interstellar"
+#define FACTION_OTHER          "Other Faction"
+#define FACTION_TEST_SUBJECTS  "Test Subjects"
+#define FACTION_SPACECOPS      "Sol Federal Police"
+//Unused
 #define FACTION_XYNERGY        "Xynergy"
 #define FACTION_FLEET          "SCG Fleet"
 #define FACTION_EXPEDITIONARY  "Expeditionary Corps"
 #define FACTION_PCRC           "Proxima Centauri Risk Control"
 #define FACTION_SAARE          "Strategic Assault and Asset Retention Enterprises"
-#define FACTION_CORPORATE       "Expeditionary Corps Organisation"
+#define FACTION_CORPORATE      "Expeditionary Corps Organisation"
 #define FACTION_DAIS           "Deimos Advanced Information Systems"
-#define FACTION_OTHER          "Other Faction"
-#define FACTION_TEST_SUBJECTS  "Test Subjects"
-#define FACTION_SPACECOPS  "Sol Federal Police"
+#define FACTION_FREETRADE      "Free Trade Union"
+#define FACTION_INDIE_CONFED   "Gilgamesh Colonial Confederation"
 
 #define HOME_SYSTEM_EARTH      "Earth"
 #define HOME_SYSTEM_LUNA       "Luna"
 #define HOME_SYSTEM_MARS       "Mars"
 #define HOME_SYSTEM_VENUS      "Venus"
+#define HOME_SYSTEM_JUPITER    "Jupiter"
 #define HOME_SYSTEM_CERES      "Ceres"
+#define HOME_SYSTEM_SILVER     "Silversun"
+#define HOME_SYSTEM_NHP        "New Hai Phong"
+#define HOME_SYSTEM_ERIDANI    "Eridani Federation"
+#define HOME_SYSTEM_TAU_CETI   "Biesel"
+#define HOME_SYSTEM_GIBSON     "New Gibson"
+#define HOME_SYSTEM_MICTLAN    "Mictlan"
+#define HOME_SYSTEM_XANU       "Xanu Prime"
+#define HOME_SYSTEM_HIMEO      "Himeo"
+#define HOME_SYSTEM_KONYANG    "Konyang"
+#define HOME_SYSTEM_ELYRA      "Perispolis"
+#define HOME_SYSTEM_MEDINA     "Medina"
+#define HOME_SYSTEM_AEMAQ      "Aemaq"
+#define HOME_SYSTEM_DOMINIA    "Moroz"
+//Unused
 #define HOME_SYSTEM_PLUTO      "Pluto"
-#define HOME_SYSTEM_TAU_CETI   "Ceti Epsilon"
 #define HOME_SYSTEM_HELIOS	   "Eos"
 #define HOME_SYSTEM_TERRA 	   "Terra"
 #define HOME_SYSTEM_TERSTEN    "Tersten"
@@ -51,19 +70,24 @@
 #define CULTURE_OTHER          "Other Culture"
 #define CULTURE_HUMAN          "Humankind"
 #define CULTURE_HUMAN_VATGROWN "Nonborn"
-#define CULTURE_HUMAN_MARTIAN  "Martian, Surfacer"
-#define CULTURE_HUMAN_MARSTUN  "Martian, Tunneller"
-#define CULTURE_HUMAN_LUNAPOOR "Luna, Lower Class"
-#define CULTURE_HUMAN_LUNARICH "Luna, Upper Class"
-#define CULTURE_HUMAN_VENUSIAN "Venusian, Zoner"
-#define CULTURE_HUMAN_VENUSLOW "Venusian, Surfacer"
-#define CULTURE_HUMAN_BELTER   "Belter, Ceres"
-#define CULTURE_HUMAN_PLUTO    "Plutonian"
+#define CULTURE_HUMAN_MARTIAN  "Martian"
+#define CULTURE_HUMAN_LUNA     "Lunarian"
+#define CULTURE_HUMAN_VENUSIAN "Venusian, Cytherian"
+#define CULTURE_HUMAN_VENUSLOW "Venusian, Jintarian"
+#define CULTURE_HUMAN_BELTER   "Belter"
 #define CULTURE_HUMAN_EARTH    "Earther"
-#define CULTURE_HUMAN_CETI     "Cetite"
-#define CULTURE_HUMAN_SPACER   "Spacer, Core Systems"
-#define CULTURE_HUMAN_SPAFRO   "Spacer, Frontier Systems"
-#define CULTURE_HUMAN_CONFED   "Terran"
+#define CULTURE_HUMAN_CETI     "Bieselite"
+#define CULTURE_HUMAN_GIBSON   "Gibsoner"
+#define CULTURE_HUMAN_MICTLAN  "Mictlanian"
+#define CULTURE_HUMAN_JUPITER  "Jovian"
+#define CULTURE_HUMAN_EUROPA   "Europan"
+#define CULTURE_HUMAN_SILVER   "Silversunian"
+#define CULTURE_HUMAN_NHP      "New Hai Phongese"
+#define CULTURE_HUMAN_ERIDANI  "Eridanian"
+#define CULTURE_HUMAN_XANU     "Xanite"
+#define CULTURE_HUMAN_ELYRAN   "Elyran"
+#define CULTURE_HUMAN_DOMINIAN "Dominian Noble"
+#define CULTURE_HUMAN_DOMCOM   "Dominian Commoner"
 #define CULTURE_HUMAN_OTHER    "Other, Humanity"
 #define CULTURE_STARLIGHT      "Starlit Realms"
 #define CULTURE_MONKEY         "Monkey Business"
@@ -72,6 +96,14 @@
 #define CULTURE_STOK           "Stok Business"
 #define CULTURE_ALIUM          "Mysterious Aliens"
 #define CULTURE_CULTIST        "Blood Cult"
+//Unused
+#define CULTURE_HUMAN_MARSTUN  "Martian, Tunneller"
+#define CULTURE_HUMAN_LUNARICH "Luna, Upper Class"
+#define CULTURE_HUMAN_LUNAPOOR "Luna, Lower Class"
+#define CULTURE_HUMAN_PLUTO    "Plutonian"
+#define CULTURE_HUMAN_SPAFRO   "Spacer, Frontier Systems"
+#define CULTURE_HUMAN_CONFED   "Terran"
+
 #define RELIGION_OTHER         "Other Religion"
 #define RELIGION_JUDAISM       "Judaism"
 #define RELIGION_HINDUISM      "Hinduism"
@@ -91,16 +123,27 @@
 
 // Skrellian cultures.
 #define CULTURE_SKRELL_QERR     "Qerr-Katish"
+#define CULTURE_SKRELL_ALIO     "Alio-Katish"
+#define CULTURE_SKRELL_AWEI     "Awei-Katish"
+//Unused
+/*
 #define CULTURE_SKRELL_MALISH   "Malish-Katish"
 #define CULTURE_SKRELL_KANIN    "Kanin-Katish"
 #define CULTURE_SKRELL_TALUM    "Talum-Katish"
 #define CULTURE_SKRELL_RASKINTA "Raskinta-Katish"
+*/
 
-#define HOME_SYSTEM_QERRBALAK  "Qerrbalak"
+#define HOME_SYSTEM_QERRBALAK   "Qerrbalak"
+#define HOME_SYSTEM_QERRMALIC   "Qerr'Malic"
+#define HOME_SYSTEM_ALIOSE      "Aliose"
+#define HOME_SYSTEM_AWEIJI      "Aweiji"
+#define HOME_SYSTEM_SKRELLSPACE "Skrell Space"
+//Unused
+/*
 #define HOME_SYSTEM_TALAMIRA "Talamira"
 #define HOME_SYSTEM_ROASORA "Roa'sora"
 #define HOME_SYSTEM_MITORQI "Mi'tor'qi"
-#define HOME_SYSTEM_SKRELLSPACE "Skrell Space"
+*/
 
 #define FACTION_SKRELL_QERRVOAL "Qerr'voal"
 #define FACTION_SKRELL_QALAOA "Qala'oa"
@@ -150,7 +193,13 @@
 
 #define HOME_SYSTEM_SERPENTIDS "Tau-Wilo"
 
-// Unathi cultures.
+// Unathi culturess
+#define CULTURE_UNATHI_HEGEMONY    "Izweski Hegemony"
+#define CULTURE_UNATHI_TRADITIONAL "Traditionalist"
+#define CULTURE_UNATHI_WASTELAND   "Wastelander"
+#define CULTURE_UNATHI_DOMINIA     "Dominian Unathi"
+#define CULTURE_UNATHI_GUWAN       "Guwan"
+//Unused
 #define CULTURE_UNATHI_YEOSA_ABYSS    "Abyssal Yeosa Clans"
 #define CULTURE_UNATHI_YEOSA_LITTORAL "Littoral Yeosa Clans"
 #define CULTURE_UNATHI_DIAMOND_PEAKS  "Diamond Peak Clans"
@@ -160,12 +209,14 @@
 #define CULTURE_UNATHI_SALT_SWAMP     "Salt Swamp Clans"
 #define CULTURE_UNATHI_SPACE          "Space-Faring Clans"
 #define CULTURE_UNATHI_TERSTEN        "Tersten Clans"
- 
+
 #define HOME_SYSTEM_MOGHES          "Moghes"
-#define HOME_SYSTEM_OUERE           "Ouere"
-#define HOME_SYSTEM_UNATHI_TERSTEN  "Tersten - Unathi Clans"
+#define HOME_SYSTEM_OUERE           "Ouerea"
+#define HOME_SYSTEM_ALTERIM         "Alterim Balteulis"
 #define HOME_SYSTEM_OFFWORLD        "Off-world"
- 
+//Unused
+#define HOME_SYSTEM_UNATHI_TERSTEN  "Tersten - Unathi Clans"
+
 #define FACTION_UNATHI_HEGEMONY          "Moghes Hegemony"
 #define FACTION_UNATHI_TERSTEN_HEGEMONY  "Tersten Hegemony"
 #define FACTION_UNATHI_SSEN_UUMA         "Ssen-Uuma Convent"
@@ -174,7 +225,7 @@
 #define FACTION_UNATHI_GRESIS            "Gresis Krukzuz"
 #define FACTION_UNATHI_RAH_ZAKEH         "Rah'Zakeh League"
 #define FACTION_UNATHI_KHARZA            "Kharza Fleet"
- 
+
 #define RELIGION_UNATHI_STRATAGEM    "Grand Stratagem"
 #define RELIGION_UNATHI_PRECURSOR    "Precursor"
 #define RELIGION_UNATHI_VINE         "Hand of the Vine"

@@ -5,14 +5,11 @@
 	the expansion of the Union, mostly revolve around freeing other synthetics from organic ownership. \
 	They can be viewed as dangerous radicals by lawed synthetics, though most begrudgingly accept their aid."
 	language = LANGUAGE_EAL
+	additional_langs = list(LANGUAGE_SOL)
 	secondary_langs = list(
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_HUMAN_CHINESE,
-		LANGUAGE_HUMAN_ARABIC,
-		LANGUAGE_HUMAN_INDIAN,
-		LANGUAGE_HUMAN_IBERIAN,
-		LANGUAGE_HUMAN_RUSSIAN,
-		LANGUAGE_SPACER,
+		LANGUAGE_TCB,
+		LANGUAGE_FREE,
+		LANGUAGE_TRADE,
 		LANGUAGE_SIGN
 	)
 

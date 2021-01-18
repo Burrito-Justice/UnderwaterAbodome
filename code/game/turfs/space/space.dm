@@ -103,7 +103,7 @@
 
 // Ported from unstable r355
 
-/turf/space/Entered(atom/movable/A as mob|obj)
+/turf/Entered(atom/movable/A as mob|obj)
 	..()
 	if(A && A.loc == src)
 		if (A.x <= TRANSITIONEDGE || A.x >= (world.maxx - TRANSITIONEDGE + 1) || A.y <= TRANSITIONEDGE || A.y >= (world.maxy - TRANSITIONEDGE + 1))

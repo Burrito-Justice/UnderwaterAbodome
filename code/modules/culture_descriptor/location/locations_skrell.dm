@@ -1,16 +1,46 @@
-/decl/cultural_info/location/qerrbalak
+/decl/cultural_info/location/skrell
 	name = HOME_SYSTEM_QERRBALAK
-	description = "Qerr'Balak, in the Qerr'Valis system, is the ancient home of skrellkind. A large, swampy world, it consists of two continents separated by \
-		an archipelago filled ocean. The smaller continent, and original home of the Skrell civilisation, Qorr'gloa, is mostly swampland, with most cities being \
-		built on the coast. It is separated by the Qo'rria Sea from the other, larger continent, Xi'Krri'oal, which is more populous and varied, with snowy \
-		mountains in the south to temperate zones in the inner areas. Composed of hundreds of city-states, Qerr'Balak is still home to a sizable population of Skrell. \
-		While no longer the sole powerhouse of the Skrell civilisation, it is still widely respected among skrellkind as their homeworld, and for its academic and \
-		scientific prowess."
-	capital = "None"
-	ruling_body = "None"
-	distance = "67 light years"
+	description = "Qerrbalak is the fourth planet from Nrallak, and the origin of the Skrell. One of two habitable planets within the system, \
+	comprised of various climates ranging from taigas to tropical rainforests. Qerrbalak is 1.8 times the size of Earth. Qerrbalak is currently \
+	undergoing slow terraforming efforts to reduce the damage inflicted by the Skrell during unenlightened times."
+	distance = "23.2 light years"
+	capital = "Kal'lo"
+	ruling_body = "Jargon Federation"
 	economic_power = 1.5
 
+/decl/cultural_info/location/skrell/qerrmalic
+	name = HOME_SYSTEM_QERRMALIC
+	description = "Qerrbalak's only moon, Qerr'Malic could perhaps be compared to most other moons; no liquid water, no atmosphere, quite small. Even \
+	so, its orbit influences its parent body's tides more than most moons. Though baren and subject to common meteor showers, it has managed to become \
+	one of the Federation's largest ship yards due primarily to the fact that the moon sports an abundance of resources used in the construction of \
+	warp drives."
+	capital = "Zul'Veq"
+
+/decl/cultural_info/location/skrell/aliose
+	name = HOME_SYSTEM_ALIOSE
+	description = "A rather cold snowball, Aliose is the fifth planet in the Nralakk system, and the result of the first serious colonization effort. \
+	It's known as one of the Federation's scientific powerhouses and, in a bitter-sweet way, became a symbol for patriotism and duty as a result of the \
+	fight against Glorsh-Omega. Skrell from Aliose typically have pale skin as a result of genetic treatments to resist the cold climate."
+	capital = "Fedas"
+
+/decl/cultural_info/location/skrell/aweiji
+	name = HOME_SYSTEM_AWEIJI
+	description = "The first Skrell colony outside of their home system, Aweiji - having been terraformed from the dusty boulder that it was - is a garden world \
+	with a handful of islands and a vast, nearly all-encompassing sea. Aweiji suffered from a prolonged sense of isolation when Glorsh-Omega was eliminated, being \
+	totally cut off from the Skrell homeworld. Even in the Federation's absence, Aweiji made its best effort to rebuild and, eventually, was able to make contact \
+	with others and reincorporate itself into the Federation."
+	distance = "26.7 light years"
+	capital = "Tresja"
+
+/decl/cultural_info/location/skrell/skrellspace
+	name = HOME_SYSTEM_SKRELLSPACE
+	description = "The Skrell have expanded to more worlds than one can count on two hands. Though some are worth mention more than others, you probably live \
+	in one of the less important colonies."
+	capital = "N/A"
+	distance = "N/A"
+	economic_power = 1.9
+
+/*
 /decl/cultural_info/location/talamira
 	name = HOME_SYSTEM_TALAMIRA
 	description = "Talamira, in the Ri'Qora system, is located far on the other side of Skrell space far into what is, to humans, unchartered and unexplored territory.\
@@ -49,14 +79,4 @@
 	ruling_body = "None"
 	distance = "32 light years"
 	economic_power = 1.9
-
-/decl/cultural_info/location/skrellspace
-	name = HOME_SYSTEM_SKRELLSPACE
-	description = "A very different style of living from a more traditional city-state based Skrell, those who live and reside in space belong to no particular city-state \
-	and instead are governed by the SDTF of the system in which they reside, with all services and installations under the control of the local Raskinta SDTF Commander \
-	rather than a Qerr-Skria.Life in these circumstances is often more regimented and disciplined, with a stronger emphasis on community and collaboration, with varying extremes \
-	depending on the status, funding and level of military engagements the SDTF is currently in."
-	capital = "None"
-	ruling_body = "Your local SDTF"
-	distance = "None"
-	economic_power = 1.9
+*/

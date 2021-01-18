@@ -66,7 +66,6 @@
 		/obj/item/device/radio/headset/headset_eng,
 		/obj/item/clothing/suit/storage/hazardvest,
 		/obj/item/clothing/mask/gas,
-		/obj/item/clothing/glasses/meson,
 		/obj/item/taperoll/engineering
 	)
 

@@ -24,6 +24,7 @@
 		)
 
 	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_TONE_GRAV | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR
+	spawn_flags = SPECIES_IS_RESTRICTED
 
 /datum/species/human/spacer
 	name = SPECIES_SPACER
@@ -50,6 +51,7 @@
 
 	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_TONE_SPCR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR
 	species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED
+	spawn_flags = SPECIES_IS_RESTRICTED
 
 	hazard_high_pressure = HAZARD_HIGH_PRESSURE * 0.8            // Dangerously high pressure.
 	warning_high_pressure = WARNING_HIGH_PRESSURE * 0.8          // High pressure warning.
@@ -75,6 +77,9 @@
 	preview_icon= 'icons/mob/human_races/species/human/subspecies/vatgrown_preview.dmi'
 
 	toxins_mod =   1.1
+
+	spawn_flags = SPECIES_IS_RESTRICTED
+
 	has_organ = list(
 		BP_HEART =    /obj/item/organ/internal/heart,
 		BP_STOMACH =  /obj/item/organ/internal/stomach,
@@ -120,6 +125,8 @@
 	cold_level_2 = 160
 	cold_level_3 = 100
 
+	spawn_flags = SPECIES_IS_RESTRICTED
+
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/kick,
@@ -144,6 +151,8 @@
 	shared Booster genotype is extremely unstable and liable for rapid, apparently random change, \
 	but is certainly both unique and remarkable in its ability to cope with the extremes that the \
 	Universe can throw at it."
+
+	spawn_flags = SPECIES_IS_RESTRICTED
 
 #define MOD_BASE     0.85
 #define MOD_VARIANCE 0.35
@@ -210,6 +219,8 @@
 	blood_volume =  SPECIES_BLOOD_DEFAULT * 0.85
 	min_age =       18
 	max_age =       45
+
+	spawn_flags = SPECIES_IS_RESTRICTED
 
 /datum/species/human/mule/handle_post_spawn(var/mob/living/carbon/human/H)
 	if(!H.psi)

@@ -2,15 +2,18 @@
 
 #if !defined(using_map_DATUM)
 	//MAPS
-	//#include "bubmarine.dmm"//Z1, Z2
-	//#include "transit.dmm"//Z3, includes overmap in the bottom left occupying 20x20
+	#include "bubmarine.dmm"//Z1, Z2
+	#include "transit.dmm"//Z3, includes overmap in the bottom left occupying 27x27, though functionally 20x20
 	//CODE
 	#include "bubmarine_define.dm"
-	//#include "bubmarine_shuttles.dm"
-	//#include "bubmarine_jobs.dm"
-	//#include "bubmarine_areas.dm"
-	//#include "bubmarine_objs.dm"
+	#include "bubmarine_shuttles.dm"
+	#include "bubmarine_jobs.dm"
+	#include "bubmarine_data.dm"
+	#include "bubmarine_areas.dm"
+	#include "bubmarine_elevator.dm"
+	#include "bubmarine_objs.dm"
 	#include "bubmarine_turfs.dm"
+	#include "bubmarine_loadout.dm"
 
 	#define using_map_DATUM /datum/map/bubmarine
 

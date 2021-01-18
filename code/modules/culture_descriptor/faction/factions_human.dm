@@ -1,17 +1,35 @@
 /decl/cultural_info/faction/scg
 	name = FACTION_SOL_CENTRAL
-	description = "The Sol Central Government, commonly referred to as SolGov or the SCG, is a federal republic \
-	composed of numerous human member states spanning many systems.\
-	Based in the Sol System and with most seats of Government on Olympus, Mars,\
-	the SCG governs the majority of human space. Currently engaged in a cold war with the Confederation of Gilgamesh \
-	Its primary governing bodies are the Assemblies which are led by an Assembly-elected secretary general. \
-	Member states have a great degree of freedom in their actions, though the SCG manages sapient rights, \
-	domestic security, economic policy, and diplomacy for humanity as a whole. The SCG's population is diverse \
-	including many non-humans (though they are not citizens) and encompassing a wide range of systems, territories \
-	habitats, and celestial bodies. However, it is large, cumbersome, divided and slow to respond to issues due to \
-	its massive bureaucracy and the distance between worlds. Through its member states, the SCG governs as one of the \
-	most advanced and powerful civilisations in the known galaxy."
+	description = "The human juggernaut, this federal union is the home of humanity and the largest nation in the Orion Spur. Though often held back by bureaucratic \
+	corruption and inefficiency with archaic laws, political infighting, and economic troubles that have led to over a century of decline and waning influence, many now \
+	look to reform the Alliance. Perhaps this is doomed to failure, however; the Alliance is dying out and its member states are beginning to look towards the more appealing \
+	and thriving human nations. Konyang and Mictlan have already seceded to the Coalition and Republic of Biesel respectively. The Alliance does not have long. \
+	<br><br>Whatever Sol's purpose is in Europa is niche at best; keeping Zeng-Hu's actions in check, keeping things civil, peacekeeping... whatever it may be, you're not as \
+	well off as some of these other people."
 
+/decl/cultural_info/faction/zh
+	name = FACTION_ZENG_HU
+	description = "Zeng-Hu Pharmaceuticals is a medical research and pharmaceutical conglomerate with origins on 21st century Earth. They are responsible for the research \
+	and development of many of today's medical achievements. As the foremost medical service in the galaxy, overshadowing the former monopoly NanoTrasen once had over the specialty, \
+	Zeng-Hu's influence is immense. Their responsibility extends to the health and well-being of almost all citizens of the major galactic powers, with hundreds of minor subsidiaries \
+	delving into the pedantics of healthcare across the Orion Spur. One of its more major subsidiaries is Bishop Cybernetics, specializing in premium prosthetics and chassis fabrication. \
+	<br><br>Nonetheless, Zeng-Hu remains Europa's top employer as it delves to discover the secrets of the ocean moon or, at the very least, find useful medical applications for the moon's \
+	flora and fauna."
+
+/decl/cultural_info/faction/ee
+	name = FACTION_EINSTEIN
+	description = "Einstein Engines is an engineering giant and pioneer of warp technology before the technological advent of phoron and bluespace. Ever since the development of warp technology, \
+	EE has sat comfortably on a golden throne well above any other megacorporation. That is until Nanotrasen began researching phoron, proving to be an incredible threat to the reality-bending king. \
+	This rivalry is rumored to have escalated into conflict in some places, but one thing is certain: EE is not allowed in NT-controlled Ceti space and, given recent developments, NT is not allowed \
+	in EE-dominated Sol space. Besides this, Einstein Engines has a number of subsidiaries, one of which is Terraneus Diagnostics, most notable for its development of standalone AI and IPC technology. \
+	<br><br>It's hard to say what the end goal is for Einstein Engines in Europa. Either way, they've supplied contractors to Zeng-Hu to help staff their research submarines."
+
+/decl/cultural_info/faction/other
+	name = FACTION_OTHER
+	description = "You belong to one of the many other factions that operate in the galaxy. Numerous, too numerous to list, these factions represent a variety of interests, purposes, intents and goals."
+	subversive_potential = 25
+
+/*
 /decl/cultural_info/faction/scg/fleet
 	name = FACTION_FLEET
 	description = "The Fleet is the primary component of the SCG Defence Forces. It mostly protects SCG space from pirates, smugglers, \
@@ -141,8 +159,4 @@
 	and related products, they still remain the market leader in computer technologies."
 	economic_power = 1.1
 	subversive_potential = 15
-
-/decl/cultural_info/faction/other
-	name = FACTION_OTHER
-	description = "You belong to one of the many other factions that operate in the galaxy. Numerous, too numerous to list, these factions represent a variety of interests, purposes, intents and goals."
-	subversive_potential = 25
+*/

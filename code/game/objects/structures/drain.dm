@@ -65,6 +65,7 @@
 	desc = "You probably can't get sucked down the plughole. Specially not when it's closed!"
 	icon_state = "drain_bath"
 	var/closed = FALSE
+	var/id_tag
 
 /obj/structure/hygiene/drain/bath/attack_hand(mob/user)
 	. = ..()

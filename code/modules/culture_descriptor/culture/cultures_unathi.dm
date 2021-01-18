@@ -1,4 +1,30 @@
 /decl/cultural_info/culture/unathi
+	name = CULTURE_UNATHI_HEGEMONY
+	description = "Placeholder."
+	economic_power = 1
+	language = LANGUAGE_UNATHI_SINTA
+
+/decl/cultural_info/culture/unathi/traditional
+	name = CULTURE_UNATHI_TRADITIONAL
+	description = "Placeholder."
+	economic_power = 0.9
+
+/decl/cultural_info/culture/unathi/wasteland
+	name = CULTURE_UNATHI_WASTELAND
+	description = "Placeholder."
+	economic_power = 0.7
+
+/decl/cultural_info/culture/unathi/dominia
+	name = CULTURE_UNATHI_DOMINIA
+	description = "Placeholder."
+
+/decl/cultural_info/culture/unathi/guwan
+	name = CULTURE_UNATHI_GUWAN
+	description = "YOU'RE A STINKY LIZARD."
+	economic_power = 0.5
+
+/*
+/decl/cultural_info/culture/unathi
 	name = CULTURE_UNATHI_DIAMOND_PEAKS
 	description = "Haughty and warlike, unathi from the Diamond peaks are wary of the outsiders, especially offworlders. \
 	Hierarchy and tradition are the core values of their clans. From their mountainous strongholds they exercise power \
@@ -50,7 +76,7 @@
 		LANGUAGE_HUMAN_EURO,
 		LANGUAGE_SPACER
 	)
-	
+
 /decl/cultural_info/culture/unathi_salt_swamp
 	name = CULTURE_UNATHI_SALT_SWAMP
 	description = "Combining assorted elements of various cultures with an adventurous spirit and resolve, salt swamp unathi are noted for their friendliness and openness to outsiders, \
@@ -127,3 +153,4 @@
 		LANGUAGE_HUMAN_EURO,
 		LANGUAGE_SPACER
 	)
+*/

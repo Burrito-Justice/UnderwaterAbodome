@@ -1,7 +1,6 @@
 /datum/species/machine
 	name = SPECIES_IPC
 	name_plural = "machines"
-
 	description = "Positronic intelligence really took off in the 26th century, and it is not uncommon to see independant, free-willed \
 	robots on many human stations, particularly in fringe systems where standards are slightly lax and public opinion less relevant \
 	to corporate operations. IPCs (Integrated Positronic Chassis) are a loose category of self-willed robots with a humanoid form, \
@@ -33,8 +32,8 @@
 	passive_temp_gain = 5  // This should cause IPCs to stabilize at ~80 C in a 20 C environment.
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_POISON
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED | SPECIES_NO_FBP_CONSTRUCTION
-	appearance_flags = HAS_UNDERWEAR | HAS_EYE_COLOR //IPCs can wear undies too :(
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION
+	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_SKIN_TONE_NORMAL
 
 	blood_color = "#1f181f"
 	flesh_color = "#575757"
@@ -52,27 +51,27 @@
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
-			CULTURE_POSITRONICS
-		),
-		TAG_HOMEWORLD = list(
-			HOME_SYSTEM_ROOT,
-			HOME_SYSTEM_EARTH,
-			HOME_SYSTEM_LUNA,
-			HOME_SYSTEM_MARS,
-			HOME_SYSTEM_VENUS,
-			HOME_SYSTEM_CERES,
-			HOME_SYSTEM_PLUTO,
-			HOME_SYSTEM_TAU_CETI,
-			HOME_SYSTEM_OTHER
+			CULTURE_HUMAN_EUROPA,
+			CULTURE_HUMAN_JUPITER,
+			CULTURE_HUMAN_MARTIAN,
+			CULTURE_HUMAN_LUNA,
+			CULTURE_HUMAN_VENUSIAN,
+			CULTURE_HUMAN_VENUSLOW,
+			CULTURE_HUMAN_EARTH,
+			CULTURE_HUMAN_CETI,
+			CULTURE_HUMAN_MICTLAN,
+			CULTURE_HUMAN_XANU,
+			CULTURE_HUMAN_SILVER,
+			CULTURE_HUMAN_NHP,
+			CULTURE_HUMAN_ERIDANI,
+			CULTURE_HUMAN_XANU,
+			CULTURE_HUMAN_ELYRAN,
+			CULTURE_HUMAN_OTHER
 		),
 		TAG_FACTION = list(
-			FACTION_POSITRONICS,
+			FACTION_ZENG_HU,
+			FACTION_EINSTEIN,
 			FACTION_SOL_CENTRAL,
-			FACTION_INDIE_CONFED,
-			FACTION_NANOTRASEN,
-			FACTION_FREETRADE,
-			FACTION_XYNERGY,
-			FACTION_EXPEDITIONARY,
 			FACTION_OTHER
 		)
 	)

@@ -31,6 +31,7 @@
 	var/tag_pump_out_scrubber
 
 	var/tag_air_alarm
+	var/tag_waterdrain
 
 /datum/computer/file/embedded_program/airlock/New(var/obj/machinery/embedded_controller/M)
 	..(M)
@@ -63,6 +64,7 @@
 		tag_airlock_mech_sensor = controller.tag_airlock_mech_sensor? controller.tag_airlock_mech_sensor : "[id_tag]_airlock_mech"
 		tag_shuttle_mech_sensor = controller.tag_shuttle_mech_sensor? controller.tag_shuttle_mech_sensor : "[id_tag]_shuttle_mech"
 		tag_air_alarm = controller.tag_air_alarm || "[id_tag]_alarm"
+		tag_waterdrain = controller.tag_waterdrain? controller.tag_waterdrain : "[id_tag]_drain"
 		memory["secure"] = controller.tag_secure
 
 		spawn(10)
@@ -285,6 +287,10 @@
 	memory["purge"] = cycle_to_external_air
 	playsound(master, 'sound/machines/warning-buzzer.ogg', 50)
 	shutAlarm()
+	for(var/obj/structure/hygiene/drain/bath/B in range(5))
+		if(B.id_tag == tag_waterdrain)
+			B.closed = 0
+			B.update_icon()
 
 /datum/computer/file/embedded_program/airlock/proc/begin_dock_cycle()
 	state = STATE_IDLE
@@ -298,6 +304,10 @@
 	memory["purge"] = cycle_to_external_air
 	playsound(master, 'sound/machines/warning-buzzer.ogg', 50)
 	shutAlarm()
+	for(var/obj/structure/hygiene/drain/bath/B in range(5))
+		if(B.id_tag == tag_waterdrain)
+			B.closed = 1
+			B.update_icon()
 
 /datum/computer/file/embedded_program/airlock/proc/close_doors()
 	toggleDoor(memory["interior_status"], tag_interior_door, 1, "close")

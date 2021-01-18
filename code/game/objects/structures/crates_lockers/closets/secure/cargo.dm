@@ -31,6 +31,5 @@
 		/obj/item/clothing/suit/fire/firefighter,
 		/obj/item/weapon/tank/emergency/oxygen,
 		/obj/item/clothing/mask/gas,
-		/obj/item/clothing/glasses/meson,
 		/obj/item/clothing/head/soft,
 	)

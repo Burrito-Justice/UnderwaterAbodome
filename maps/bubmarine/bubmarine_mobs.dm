@@ -66,6 +66,10 @@
 	health = 5
 	harm_intent_damage = 3
 
+/mob/living/simple_animal/jellyfish/Initialize()
+	. = ..()
+	color = pick("#ff675c","#ff9036","#e4ff36","#3dff5a","#3ddbff","#843dff")
+
 //S Q U I D
 /mob/living/simple_animal/hostile/retaliate/jelly/squid
 	name = "brutallix massacresquid"

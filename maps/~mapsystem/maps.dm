@@ -141,6 +141,7 @@ var/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 		TAG_FACTION = list(
 			FACTION_ZENG_HU,
 			FACTION_EINSTEIN,
+			FACTION_IDRIS,
 			FACTION_SOL_CENTRAL,
 			FACTION_OTHER
 		),

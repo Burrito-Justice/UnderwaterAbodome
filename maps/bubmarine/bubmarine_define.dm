@@ -23,6 +23,10 @@
 						/datum/job/engineer,/datum/job/doctor,/datum/job/scientist,/datum/job/qm,
 						/datum/job/chef)
 
+	local_currency_name = "credits"
+	local_currency_name_singular = "credit"
+	local_currency_name_short = "C"
+
 	//The following is mostly used for announcements from random events and such.
 	station_name = "Zeng-Hu Research Submarine \"Stingray\""
 	station_short = "ZRS Stingray"

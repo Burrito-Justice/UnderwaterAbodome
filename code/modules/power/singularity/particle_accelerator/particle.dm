@@ -25,6 +25,7 @@
 	energy = 15
 
 /obj/effect/accelerated_particle/New(loc, dir = 2)
+	..()
 	set_dir(dir)
 	if(movement_range > 20)
 		movement_range = 20

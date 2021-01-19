@@ -24,6 +24,16 @@
 	in EE-dominated Sol space. Besides this, Einstein Engines has a number of subsidiaries, one of which is Terraneus Diagnostics, most notable for its development of standalone AI and IPC technology. \
 	<br><br>It's hard to say what the end goal is for Einstein Engines in Europa. Either way, they've supplied contractors to Zeng-Hu to help staff their research submarines."
 
+/decl/cultural_info/faction/id
+	name = FACTION_IDRIS
+	description = "Idris Incorporated is an interstellar corporate bank based in Mendell City, Biesel. They own the largest banks in humanity. They are also known for providing secure Credit \
+	storage and designer clothing labels. Idris Incorporated exercises authority over seven million major banks spread across Human space and beyond, and has come to find itself in virtually \
+	every major power's pocket in some form or fashion. While not openly contesting NanoTrasen's net worth, Idris and its services can be found to extend as far as its looming superior can see. \
+	While it is the go-to business for any and all banking this side of the galaxy, the corporation is notably secret, and with good reason: it, being the biggest banking firm in the Orion Spur, \
+	has the financial information of practically everyone. It's probably best to not think too hard about it. \
+	<br><br>Idris has very large stakes in Europa alongside Zeng-Hu, most notably in the tourism industry. Though their ventures into submersible craft really only extends to tourism transport and \
+	sight-seeing ferries, they're obviously more geared towards service than most other sectors. Still, individuals under the cyan label can be relied upon to provide the Idris Experience."
+
 /decl/cultural_info/faction/other
 	name = FACTION_OTHER
 	description = "You belong to one of the many other factions that operate in the galaxy. Numerous, too numerous to list, these factions represent a variety of interests, purposes, intents and goals."

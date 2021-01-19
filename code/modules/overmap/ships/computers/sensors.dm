@@ -42,7 +42,7 @@
 		else if(!sensors.powered())
 			data["status"] = "NO POWER"
 		else if(!sensors.in_vacuum())
-			data["status"] = "VACUUM SEAL BROKEN"
+			data["status"] = "FLUID BODY DISCONNECT"
 		else
 			data["status"] = "OK"
 		var/list/contacts = list()
@@ -115,8 +115,8 @@
 		linked.set_light(0)
 
 /obj/machinery/shipsensors
-	name = "sensors suite"
-	desc = "Long range gravity scanner with various other sensors, used to detect irregularities in surrounding space. Can only run in vacuum to protect delicate quantum BS elements."
+	name = "sonar array"
+	desc = "A LMF-HF SONAR sphere built for both \"passive\" and \"active\" SONAR operations. You probably don't want to be in the water when this thing transmits."
 	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "sensors"
 	anchored = 1
@@ -152,10 +152,8 @@
 /obj/machinery/shipsensors/proc/in_vacuum()
 	var/turf/T=get_turf(src)
 	if(istype(T))
-		var/datum/gas_mixture/environment = T.return_air()
-		if(environment && environment.return_pressure() > MINIMUM_PRESSURE_DIFFERENCE_TO_SUSPEND)
-			return 0
-	return 1
+		return T.get_fluid_depth() > FLUID_DEEP
+	return 0
 
 /obj/machinery/shipsensors/on_update_icon()
 	if(use_power)

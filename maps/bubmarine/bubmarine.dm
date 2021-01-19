@@ -14,6 +14,7 @@
 	#include "bubmarine_objs.dm"
 	#include "bubmarine_turfs.dm"
 	#include "bubmarine_loadout.dm"
+	#include "bubmarine_mobs.dm"
 
 	#define using_map_DATUM /datum/map/bubmarine
 

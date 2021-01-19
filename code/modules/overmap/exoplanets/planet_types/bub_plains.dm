@@ -44,6 +44,5 @@
 	flora_prob = 5
 	large_flora_prob = 0
 	flora_diversity = 3
-	megafauna_types = list(/mob/living/simple_animal/hostile/retaliate/jelly/mega)
-	fauna_types = list(/mob/living/simple_animal/aquatic/fish,/mob/living/simple_animal/aquatic/fish/grump,/mob/living/simple_animal/aquatic/fish/judge,
-		/mob/living/simple_animal/hostile/retaliate/jelly/alt,/mob/living/simple_animal/hostile/retaliate/royalcrab)
+	megafauna_types = list(/mob/living/simple_animal/hostile/retaliate/cavecrab)
+	fauna_types = list(/mob/living/simple_animal/aquatic/fish,/mob/living/simple_animal/jellyfish,/mob/living/simple_animal/hostile/retaliate/jelly/squid)

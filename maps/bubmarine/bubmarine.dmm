@@ -15,7 +15,7 @@
 "ao" = (/obj/machinery/reagentgrinder,/obj/machinery/alarm{pixel_y = 24},/obj/effect/floor_decal/corner/orange/mono,/obj/item/stack/material/phoron/ten,/obj/item/stack/material/phoron/ten,/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/med/lower)
 "ap" = (/turf/simulated/wall/ocp_wall,/area/bub/ray/maint/astarb/lower/ballast)
 "aq" = (/obj/structure/closet/secure_closet/chemical,/obj/structure/sign/chemistry{pixel_x = -32},/obj/effect/floor_decal/techfloor,/obj/machinery/status_display{pixel_y = 24},/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/med/lower)
-"ar" = (/obj/structure/closet/secure_closet/medical2,/obj/machinery/light{dir = 1},/obj/effect/floor_decal/techfloor,/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/med/lower)
+"ar" = (/obj/machinery/light{dir = 1},/obj/effect/floor_decal/techfloor,/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/med/lower)
 "as" = (/turf/unsimulated/mask,/area/turbolift/ray_ground_med)
 "at" = (/obj/machinery/light/small{dir = 8},/obj/effect/floor_decal/corner/blue/half{dir = 4},/turf/simulated/floor/tiled,/area/bub/ray/med/locker)
 "au" = (/obj/structure/window/reinforced{dir = 4},/obj/effect/floor_decal/techfloor{dir = 10},/obj/structure/closet/secure_closet/medical3/bub,/obj/item/clothing/accessory/storage/drop_pouches/white,/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/med/locker)
@@ -119,7 +119,7 @@
 "co" = (/obj/machinery/light/small{dir = 1},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/turf/simulated/floor/carpet/blue,/area/bub/ray/com/captain)
 "cp" = (/obj/machinery/door/firedoor,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/airlock/mining{name = "STARBOARD WAREHOUSE"},/turf/simulated/floor/plating,/area/bub/ray/sup/starb2)
 "cq" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/multi_tile/medical{name = "MEDBAY"},/obj/effect/floor_decal/corner/blue/mono,/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/med/lower)
-"cr" = (/turf/simulated/wall/ocp_wall,/area/bub/ray/eng/atmos)
+"cr" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/light_switch{pixel_y = -24},/obj/effect/floor_decal/corner/blue/half,/obj/machinery/button/alternate/door{id_tag = "med_door"; name = "medbay door release"; pixel_x = -8; pixel_y = -24},/turf/simulated/floor/tiled/white,/area/bub/ray/med)
 "cs" = (/turf/simulated/wall/r_wall/prepainted,/area/bub/ray/eng/atmos)
 "ct" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/effect/floor_decal/corner/blue/mono,/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/med/lower)
 "cu" = (/obj/machinery/power/apc{dir = 8; pixel_x = -24; pixel_y = 0},/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 4},/obj/random_multi/single_item/skelestand/maint,/turf/simulated/floor/plating,/area/bub/ray/maint/astarb/lower)
@@ -130,7 +130,7 @@
 "cz" = (/obj/structure/railing/mapped,/turf/simulated/floor/plating,/area/bub/ray/maint/astarb/lower)
 "cA" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/visible/black,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch/maintenance,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/plating,/area/bub/ray/maint/astarb/lower/ballast)
 "cB" = (/turf/simulated/wall/r_wall/prepainted,/area/bub/ray/maint/aft)
-"cC" = (/obj/structure/table/woodentable_reinforced/walnut,/obj/machinery/photocopier/faxmachine,/turf/simulated/floor/wood/walnut,/area/bub/ray/com/captain)
+"cC" = (/obj/structure/table/woodentable_reinforced/walnut,/obj/machinery/photocopier/faxmachine{department = "Captain's Office"},/turf/simulated/floor/wood/walnut,/area/bub/ray/com/captain)
 "cD" = (/obj/structure/table/woodentable_reinforced/walnut,/obj/item/weapon/paper_bin,/obj/random/clipboard,/obj/item/device/flashlight/lamp,/obj/item/weapon/storage/box/insignia,/obj/item/weapon/stamp/captain,/turf/simulated/floor/wood/walnut,/area/bub/ray/com/captain)
 "cE" = (/obj/structure/table/woodentable_reinforced/walnut,/obj/structure/flora/pottedplant/deskferntrim,/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/wood/walnut,/area/bub/ray/com/captain)
 "cF" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/effect/floor_decal/spline/fancy/wood{dir = 8},/turf/simulated/floor/carpet/blue,/area/bub/ray/com/captain)
@@ -163,7 +163,7 @@
 "dg" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 9},/turf/simulated/ocean/void,/area/bub/ray/exterior/lower)
 "dh" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/bub/ray/gen/hangar)
 "di" = (/obj/structure/catwalk,/turf/simulated/floor/plating,/area/bub/ray/maint/aft)
-"dj" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/turf/simulated/floor/wood/walnut,/area/bub/ray/com/captain)
+"dj" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/structure/closet/crate/bin,/turf/simulated/floor/wood/walnut,/area/bub/ray/com/captain)
 "dk" = (/obj/structure/bed/chair/comfy/blue{dir = 1},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/wood/walnut,/area/bub/ray/com/captain)
 "dl" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1},/turf/simulated/floor/wood/walnut,/area/bub/ray/com/captain)
 "dm" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/effect/floor_decal/spline/fancy/wood{dir = 8},/turf/simulated/floor/carpet/blue,/area/bub/ray/com/captain)
@@ -234,7 +234,7 @@
 "ez" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging,/obj/structure/lattice,/turf/simulated/ocean/void,/area/bub/ray/exterior/lower)
 "eA" = (/turf/simulated/wall/prepainted,/area/bub/ray/gen/hangar)
 "eB" = (/turf/simulated/wall/r_titanium,/area/bub/bel/pilot)
-"eC" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/bub/bel/pilot)
+"eC" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/machinery/door/firedoor,/obj/machinery/door/blast/regular/open{id_tag = "beluga_blast"; name = "beluga blast door"},/turf/simulated/floor/plating,/area/bub/bel/pilot)
 "eD" = (/obj/machinery/light/spot{pixel_y = 32},/turf/simulated/wall/r_titanium,/area/bub/bel/pilot)
 "eE" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/tiled/monotile,/area/bub/ray/gen/hangar/storage)
 "eF" = (/obj/machinery/light/small{dir = 4},/obj/machinery/door/window/westleft,/turf/simulated/floor/bluegrid,/area/bub/ray/gen/hangar/storage)
@@ -284,14 +284,14 @@
 "fx" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch/maintenance{name = "NETWORKING"},/turf/simulated/floor/tiled/monotile,/area/bub/ray/gen/hangar/storage)
 "fy" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/monotile,/area/bub/ray/gen/lower)
 "fz" = (/obj/effect/floor_decal/industrial/warning{dir = 1},/obj/structure/table/reinforced,/obj/machinery/cell_charger,/obj/random/powercell,/obj/random/powercell,/obj/machinery/alarm{dir = 1; pixel_y = -24},/obj/machinery/firealarm{dir = 8; pixel_x = -24},/turf/simulated/floor/tiled/monotile,/area/bub/ray/gen/eva)
-"fA" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/bub/bel/med)
+"fA" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/machinery/door/firedoor,/obj/machinery/door/blast/regular/open{dir = 4; id_tag = "beluga_blast"; name = "beluga blast door"},/turf/simulated/floor/plating,/area/bub/bel/med)
 "fB" = (/obj/machinery/vitals_monitor,/turf/simulated/floor/tiled/white/monotile,/area/bub/bel/med)
 "fC" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/floor_decal/corner/blue/mono,/turf/simulated/floor/tiled/white/monotile,/area/bub/bel/med)
 "fD" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/bed,/obj/machinery/oxygen_pump{pixel_x = -32; pixel_y = 0},/turf/simulated/floor/tiled/white/monotile,/area/bub/bel/med)
 "fE" = (/obj/structure/handrai,/obj/machinery/alarm{pixel_y = 24},/turf/simulated/floor/tiled/monotile,/area/bub/bel)
-"fF" = (/obj/machinery/computer/ship/navigation/telescreen{pixel_y = 24},/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/monotile,/area/bub/bel)
+"fF" = (/obj/machinery/computer/ship/navigation/telescreen{pixel_y = 24},/obj/machinery/light{dir = 1},/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/monotile,/area/bub/bel)
 "fG" = (/obj/structure/window/reinforced{dir = 8},/obj/machinery/computer/ship/sensors{dir = 4},/obj/machinery/alarm{pixel_y = 24},/turf/simulated/floor/tiled/monotile,/area/bub/bel/pilot)
-"fH" = (/obj/structure/bed/chair/shuttle/black{dir = 1},/turf/simulated/floor/tiled/monotile,/area/bub/bel/pilot)
+"fH" = (/obj/structure/bed/chair/shuttle/black{dir = 1},/obj/machinery/button/blast_door{id_tag = "beluga_blast"; name = "Beluga blast door control"; pixel_x = 24; pixel_y = 0},/turf/simulated/floor/tiled/monotile,/area/bub/bel/pilot)
 "fI" = (/obj/structure/table/steel_reinforced,/obj/machinery/recharger,/turf/simulated/floor/tiled/monotile,/area/bub/bel/pilot)
 "fJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/bub/ray/gen/hangar)
 "fK" = (/obj/machinery/atmospherics/pipe/manifold/visible/yellow{dir = 8},/obj/item/device/radio/intercom{dir = 4; pixel_x = -24},/obj/effect/floor_decal/techfloor{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/eng/atmos)
@@ -344,7 +344,7 @@
 "gF" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/floor_decal/corner/red/half{dir = 1},/turf/simulated/floor/tiled/monotile,/area/bub/ray/gen/lower)
 "gG" = (/obj/effect/floor_decal/corner/red{dir = 1},/turf/simulated/floor/tiled/monotile,/area/bub/ray/gen/lower)
 "gH" = (/obj/structure/window/reinforced,/obj/machinery/computer/atmoscontrol{dir = 1},/obj/machinery/light/spot{dir = 8},/obj/effect/floor_decal/techfloor,/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/eng/atmos)
-"gI" = (/obj/structure/closet/emcloset,/obj/effect/floor_decal/industrial/outline/yellow,/obj/machinery/light/small{dir = 4},/turf/simulated/floor/tiled/monotile,/area/bub/ray/gen/lower)
+"gI" = (/obj/structure/closet/emcloset,/obj/effect/floor_decal/industrial/outline/yellow,/obj/machinery/light/small{dir = 4},/obj/item/device/radio/intercom{pixel_y = 24},/turf/simulated/floor/tiled/monotile,/area/bub/ray/gen/lower)
 "gJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/tiled/monotile,/area/bub/ray/gen/lower)
 "gK" = (/obj/machinery/light{dir = 8},/obj/machinery/oxygen_pump{pixel_x = -32; pixel_y = 0},/obj/effect/floor_decal/corner/red/border,/obj/machinery/portable_atmospherics/powered/pump/filled,/turf/simulated/floor/tiled/monotile,/area/bub/bel)
 "gL" = (/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/effect/floor_decal/corner/red/bordercorner{dir = 8},/turf/simulated/floor/tiled/monotile,/area/bub/bel)
@@ -399,7 +399,7 @@
 "hI" = (/turf/simulated/floor/wood/walnut,/area/bub/ray/maint)
 "hJ" = (/obj/structure/bed/chair/comfy/beige{dir = 1},/turf/simulated/floor/wood/walnut,/area/bub/ray/maint)
 "hK" = (/obj/structure/stairs/north,/turf/simulated/floor/plating,/area/bub/ray/eng/prop)
-"hL" = (/obj/effect/fluid_mapped,/turf/simulated/floor/reinforced/airless,/area/bub/ray/com/lower)
+"hL" = (/obj/effect/fluid_mapped,/turf/simulated/floor/reinforced,/area/bub/ray/com/lower)
 "hM" = (/obj/machinery/computer/station_alert/all{dir = 4},/obj/effect/floor_decal/corner/purple/mono,/turf/simulated/floor/tiled/monotile,/area/bub/ray/com/lower)
 "hN" = (/obj/effect/floor_decal/corner/purple/border{dir = 10},/turf/simulated/floor/tiled/monotile,/area/bub/ray/com/lower)
 "hO" = (/obj/item/device/radio/intercom{dir = 8; pixel_x = 24},/obj/effect/floor_decal/corner/purple/bordercorner{dir = 8},/turf/simulated/floor/tiled,/area/bub/ray/com/lower)
@@ -439,7 +439,7 @@
 "iw" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/obj/effect/floor_decal/corner/green/full,/obj/effect/floor_decal/spline/fancy/wood{dir = 5},/turf/simulated/floor/tiled,/area/bub/ray/maint)
 "ix" = (/obj/structure/bed/chair/comfy/beige,/turf/simulated/floor/wood/walnut,/area/bub/ray/maint)
 "iy" = (/turf/simulated/floor/plating,/area/bub/ray/eng/prop)
-"iz" = (/obj/machinery/shipsensors,/obj/effect/fluid_mapped,/turf/simulated/floor/reinforced/airless,/area/bub/ray/com/lower)
+"iz" = (/obj/machinery/shipsensors,/obj/effect/fluid_mapped,/turf/simulated/floor/reinforced,/area/bub/ray/com/lower)
 "iA" = (/obj/machinery/computer/ship/sensors{dir = 4},/obj/effect/floor_decal/corner/purple/mono,/turf/simulated/floor/tiled/monotile,/area/bub/ray/com/lower)
 "iB" = (/obj/structure/bed/chair/comfy/blue{dir = 8},/obj/effect/floor_decal/corner/purple/mono,/obj/effect/landmark/start{name = "Bridge Crew"},/turf/simulated/floor/tiled/monotile,/area/bub/ray/com/lower)
 "iC" = (/obj/machinery/light{dir = 4},/obj/effect/floor_decal/corner/purple/border{dir = 8},/turf/simulated/floor/tiled,/area/bub/ray/com/lower)
@@ -506,7 +506,7 @@
 "jL" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/civilian{name = "OBSERVATION"},/turf/simulated/floor/tiled/monotile,/area/bub/ray/maint)
 "jM" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled,/area/bub/ray/maint)
 "jN" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/obj/effect/floor_decal/corner/green/full,/obj/effect/floor_decal/spline/fancy/wood/corner,/turf/simulated/floor/tiled,/area/bub/ray/maint)
-"jO" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 4},/obj/effect/floor_decal/corner/purple/border{dir = 1},/turf/simulated/floor/tiled/monotile,/area/bub/ray/com/lower)
+"jO" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 4},/obj/effect/floor_decal/corner/purple/border{dir = 1},/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/monotile,/area/bub/ray/com/lower)
 "jP" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1},/obj/effect/floor_decal/corner/purple/bordercorner{dir = 1},/turf/simulated/floor/tiled/monotile,/area/bub/ray/com/lower)
 "jQ" = (/obj/machinery/alarm{pixel_y = 24},/obj/structure/window/basic{dir = 4},/obj/structure/window/basic{dir = 8},/obj/structure/closet/secure_closet/bridge,/turf/simulated/floor/tiled,/area/bub/ray/com/lower)
 "jR" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/item/device/radio/intercom{dir = 8; pixel_x = 24},/turf/simulated/floor/tiled,/area/bub/ray/com/lower)
@@ -542,7 +542,7 @@
 "kv" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/machinery/alarm{pixel_y = 24},/obj/effect/floor_decal/techfloor{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/bub/bel)
 "kw" = (/obj/machinery/power/apc{dir = 1; pixel_y = 24},/obj/structure/cable/cyan{d2 = 2; icon_state = "0-2"},/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/effect/floor_decal/techfloor{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/bub/bel)
 "kx" = (/obj/machinery/power/terminal,/obj/structure/cable/cyan{d2 = 4; icon_state = "0-4"},/obj/machinery/power/port_gen/pacman/mrs,/obj/effect/floor_decal/techfloor{dir = 5},/obj/item/stack/material/tritium/ten,/obj/item/weapon/wrench,/turf/simulated/floor/tiled/techfloor/grid,/area/bub/bel)
-"ky" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/bub/bel)
+"ky" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/machinery/door/firedoor,/obj/machinery/door/blast/regular/open{dir = 4; id_tag = "beluga_blast"; name = "beluga blast door"},/turf/simulated/floor/plating,/area/bub/bel/pilot)
 "kz" = (/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/floor_decal/corner/beige/mono,/obj/machinery/door/airlock/mining{name = "QUARTERMASTER"},/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
 "kA" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/med/lower)
 "kB" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/bub/ray/gen/hangar)
@@ -555,13 +555,13 @@
 "kI" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/bub/ray/maint/aft)
 "kJ" = (/obj/machinery/oxygen_pump{pixel_y = -32},/obj/structure/table/woodentable/walnut,/obj/machinery/chemical_dispenser/bar_coffee/full{dir = 1},/turf/simulated/floor/wood/walnut,/area/bub/ray/maint)
 "kK" = (/obj/item/device/radio/intercom{dir = 1; pixel_x = 0; pixel_y = -24},/obj/structure/table/woodentable/walnut,/obj/machinery/chemical_dispenser/bar_soft/full{dir = 1},/obj/item/weapon/storage/box/cups,/turf/simulated/floor/wood/walnut,/area/bub/ray/maint)
-"kL" = (/obj/structure/bed/chair/comfy/beige{dir = 4},/obj/machinery/light/small,/turf/simulated/floor/wood/walnut,/area/bub/ray/maint)
+"kL" = (/obj/machinery/light/small,/obj/structure/closet/crate/bin,/turf/simulated/floor/wood/walnut,/area/bub/ray/maint)
 "kM" = (/obj/machinery/power/apc{pixel_y = -24},/obj/structure/cable{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
 "kN" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/light/spot{dir = 4},/turf/simulated/floor/tiled/monotile,/area/bub/ray/com/lower)
 "kO" = (/turf/simulated/floor/plating,/area/bub/ray/maint/fport/lower)
 "kP" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/plating,/area/bub/ray/sup)
 "kQ" = (/turf/simulated/floor/tiled/dark,/area/bub/ray/gen)
-"kR" = (/obj/structure/table/rack,/obj/random/medical,/obj/random/material,/obj/random/material,/obj/random/loot,/obj/random/accessory,/obj/random/storage,/obj/random/tool,/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
+"kR" = (/obj/structure/table/rack,/obj/random/medical,/obj/random/material,/obj/random/material,/obj/random/accessory,/obj/random/storage,/obj/random/tool,/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
 "kS" = (/obj/structure/filingcabinet/wallcabinet{pixel_x = 24; pixel_y = 0},/turf/simulated/floor/wood/walnut,/area/bub/ray/sup)
 "kT" = (/obj/machinery/atmospherics/pipe/zpipe/down/cyan{dir = 8},/turf/simulated/open/bub,/area/bub/ray/exterior)
 "kU" = (/obj/structure/table/rack,/obj/item/weapon/material/hatchet/machete/deluxe,/obj/item/weapon/material/hatchet/machete/deluxe,/obj/item/clothing/accessory/storage/holster/machete,/obj/item/clothing/accessory/storage/holster/machete,/obj/item/weapon/gun/launcher/net,/obj/item/weapon/gun/launcher/net,/turf/simulated/floor/tiled/monotile,/area/bub/bel)
@@ -618,7 +618,7 @@
 "lT" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/plating,/area/bub/ray/maint/fport/lower)
 "lU" = (/obj/random/obstruction,/turf/simulated/floor/plating,/area/bub/ray/maint/fport/lower)
 "lV" = (/obj/random/clipboard,/obj/structure/table/woodentable_reinforced/walnut,/obj/item/weapon/stamp/cargo,/turf/simulated/floor/wood/walnut,/area/bub/ray/sup)
-"lW" = (/obj/effect/floor_decal/corner/beige{dir = 4},/obj/structure/table/rack,/obj/random/medical,/obj/random/medical/lite,/obj/random/loot,/obj/random/storage,/obj/random/toy,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
+"lW" = (/obj/effect/floor_decal/corner/beige{dir = 4},/obj/structure/table/rack,/obj/random/medical,/obj/random/medical/lite,/obj/random/storage,/obj/random/toy,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
 "lX" = (/obj/machinery/computer/modular/preset/civilian{dir = 1},/obj/item/device/radio/intercom{dir = 8; pixel_x = 24},/turf/simulated/floor/wood/walnut,/area/bub/ray/sup)
 "lY" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/effect/floor_decal/corner/beige{dir = 1},/obj/structure/flora/pottedplant/tropical,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
 "lZ" = (/obj/structure/closet/secure_closet/quartermaster,/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
@@ -641,7 +641,7 @@
 "mq" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/door/airlock/glass/security{name = "BRIG"},/obj/effect/floor_decal/corner/red/mono,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com/hos)
 "mr" = (/obj/machinery/alarm{dir = 4; pixel_x = -24; pixel_y = 0},/turf/simulated/floor/plating,/area/bub/ray/maint/fport/lower)
 "ms" = (/obj/machinery/light/small{dir = 8},/obj/structure/railing/mapped,/turf/simulated/floor/plating,/area/bub/ray/maint/fport/lower)
-"mt" = (/obj/structure/table/rack,/obj/random/material,/obj/random/material,/obj/random/loot,/obj/random/firstaid,/obj/random/powercell,/obj/random/tank,/obj/random/tool,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
+"mt" = (/obj/structure/table/rack,/obj/random/material,/obj/random/material,/obj/random/firstaid,/obj/random/powercell,/obj/random/tank,/obj/random/tool,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
 "mu" = (/obj/effect/floor_decal/industrial/warning,/obj/machinery/ion_engine/bub,/turf/simulated/floor/reinforced,/area/bub/bel)
 "mv" = (/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/reinforced,/area/bub/bel)
 "mw" = (/obj/structure/fuel_port{pixel_x = -32},/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/reinforced,/area/bub/bel)
@@ -664,9 +664,9 @@
 "mN" = (/obj/machinery/power/apc{dir = 8; pixel_x = -24; pixel_y = 0},/obj/structure/cable{d2 = 4; icon_state = "0-4"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/bub/ray/maint/fport/lower)
 "mO" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/bub/ray/maint/fport/lower)
 "mP" = (/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/bub/ray/maint/fport/lower)
-"mQ" = (/obj/structure/table/rack,/obj/random/material,/obj/random/material,/obj/random/masks,/obj/random/loot,/obj/random/action_figure,/obj/random/powercell,/obj/random/tank,/obj/random/toy,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
-"mR" = (/obj/structure/table/rack,/obj/random/masks,/obj/random/loot,/obj/random/firstaid,/obj/random/storage,/obj/random/tool,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
-"mS" = (/obj/structure/table/rack,/obj/random/loot,/obj/random/accessory,/obj/random/suit,/obj/random/voidhelmet,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
+"mQ" = (/obj/structure/table/rack,/obj/random/material,/obj/random/material,/obj/random/masks,/obj/random/action_figure,/obj/random/powercell,/obj/random/tank,/obj/random/toy,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
+"mR" = (/obj/structure/table/rack,/obj/random/masks,/obj/random/firstaid,/obj/random/storage,/obj/random/tool,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
+"mS" = (/obj/structure/table/rack,/obj/random/accessory,/obj/random/suit,/obj/random/voidhelmet,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
 "mT" = (/obj/item/weapon/paper_bin,/obj/structure/table/woodentable_reinforced/walnut,/obj/random/coin,/obj/item/weapon/folder/yellow,/turf/simulated/floor/wood/walnut,/area/bub/ray/sup)
 "mU" = (/obj/effect/floor_decal/spline/fancy/wood,/obj/machinery/photocopier,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
 "mV" = (/obj/machinery/button/windowtint{id = "cargo_window"; id_tag = "cargo_window"; pixel_x = 24; pixel_y = 8},/obj/machinery/light_switch{pixel_x = 24; pixel_y = -4},/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
@@ -685,7 +685,7 @@
 "ni" = (/obj/machinery/atmospherics/pipe/simple/visible/yellow{dir = 4},/obj/machinery/camera/network/engineering{dir = 1},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/atmos)
 "nj" = (/obj/machinery/atmospherics/pipe/simple/visible/yellow{dir = 4},/obj/machinery/meter,/obj/machinery/light/spot,/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/atmos)
 "nk" = (/obj/machinery/atmospherics/omni/filter{name = "N2 filter"; tag_east = 2; tag_north = 1; tag_west = 4},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/atmos)
-"nl" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
+"nl" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
 "nm" = (/obj/machinery/atmospherics/pipe/simple/visible/yellow{dir = 4},/obj/machinery/meter,/obj/machinery/firealarm{dir = 1; pixel_x = 0; pixel_y = -24},/obj/effect/floor_decal/techfloor{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/eng/atmos)
 "nn" = (/obj/machinery/atmospherics/omni/filter{name = "O2 filter"; tag_east = 3; tag_north = 2; tag_west = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/eng/atmos)
 "no" = (/obj/machinery/atmospherics/unary/outlet_injector{dir = 8; frequency = 1441; id = "o2_in"; id_tag = "o2_in"; injecting = 1; use_power = 1},/obj/machinery/air_sensor{id_tag = "o2_sensor"},/turf/simulated/floor/reinforced/oxygen,/area/bub/ray/eng/atmos)
@@ -731,7 +731,7 @@
 "oc" = (/obj/effect/floor_decal/corner/red/border{dir = 4},/obj/effect/floor_decal/corner/red/border{dir = 8},/obj/machinery/light/spot,/obj/structure/closet/secure_closet/hos/bub,/obj/item/device/flashlight/maglight,/obj/item/clothing/accessory/storage/drop_pouches/black,/obj/item/clothing/glasses/tacgoggles,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com/hos)
 "od" = (/obj/structure/bed/chair/comfy/red{dir = 4},/obj/effect/floor_decal/corner/red/mono,/obj/machinery/firealarm{dir = 1; pixel_x = 0; pixel_y = -24},/obj/effect/landmark/start{name = "Security Marshal"},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com/hos)
 "oe" = (/obj/machinery/computer/modular/preset/security{dir = 8},/obj/effect/floor_decal/corner/red/mono,/obj/machinery/light_switch{pixel_y = -24},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com/hos)
-"of" = (/obj/machinery/light/small,/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com/hos)
+"of" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 4},/obj/machinery/light,/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
 "og" = (/obj/structure/bed,/obj/machinery/camera/network/security{dir = 8},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com/hos)
 "oh" = (/turf/simulated/wall/prepainted,/area/bub/ray/sup/port2)
 "oi" = (/obj/machinery/door/firedoor,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/airlock/mining{name = "PORT WAREHOUSE"},/turf/simulated/floor/plating,/area/bub/ray/sup/port2)
@@ -790,7 +790,7 @@
 "pj" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{dir = 8; id_tag = "portbal_pump"},/obj/machinery/atmospherics/pipe/simple/hidden{dir = 5},/obj/structure/handrai{dir = 1},/turf/simulated/floor/plating,/area/bub/ray/maint/aport/lower/ballast)
 "pk" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4},/obj/machinery/door/airlock/external/bolted{frequency = 1379; id_tag = "portbal_door_ext"},/turf/simulated/floor/plating,/area/bub/ray/maint/aport/lower/ballast)
 "pl" = (/obj/effect/fluid_mapped,/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{dir = 8; id_tag = "portbal_pump_out_external"},/obj/machinery/access_button/airlock_interior{command = "cycle_exterior"; id_tag = "portbal_ext"; master_tag = "portbal"; pixel_x = -24; pixel_y = 32},/obj/machinery/airlock_sensor/airlock_exterior{id_tag = "portbal_sensor_ext"; pixel_x = -24; pixel_y = -32},/turf/simulated/floor/plating,/area/bub/ray/maint/aport/lower/ballast)
-"pm" = (/obj/machinery/firealarm{dir = 8; pixel_x = -24},/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/xen/lower)
+"pm" = (/obj/machinery/light/small,/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1},/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com/hos)
 "pn" = (/obj/machinery/hologram/holopad,/turf/simulated/floor/tiled/white,/area/bub/ray/xen/lower)
 "po" = (/obj/structure/closet/secure_closet/xenobio/bub,/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/xen/lower)
 "pp" = (/turf/unsimulated/mask,/area/turbolift/ray_ground_xen)
@@ -824,8 +824,8 @@
 "pR" = (/obj/structure/bed/chair/padded/purple{dir = 8},/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/xen/lower)
 "pS" = (/obj/item/device/radio/intercom{dir = 1; pixel_x = 0; pixel_y = -24},/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/xen/lower)
 "pT" = (/obj/machinery/oxygen_pump{pixel_y = -32},/obj/machinery/camera/network/research{dir = 1},/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/xen/lower)
-"pU" = (/obj/machinery/atmospherics/binary/pump/high_power{dir = 1},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
-"pV" = (/obj/structure/cable/orange{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
+"pU" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
+"pV" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
 "pW" = (/obj/structure/table/reinforced,/obj/machinery/reagent_temperature{pixel_x = -8},/obj/machinery/reagent_temperature/cooler{pixel_x = 8},/obj/structure/window/reinforced{dir = 8},/obj/machinery/light,/obj/item/weapon/reagent_containers/glass/beaker/large,/turf/simulated/floor/tiled/dark,/area/bub/ray/xen/lower)
 "pX" = (/obj/machinery/chem_master,/obj/machinery/status_display{pixel_y = -24},/turf/simulated/floor/tiled/dark,/area/bub/ray/xen/lower)
 "pY" = (/obj/machinery/chemical_dispenser/full,/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/tiled/dark,/area/bub/ray/xen/lower)
@@ -850,7 +850,7 @@
 "qr" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/firealarm{pixel_y = 24},/obj/effect/floor_decal/corner/blue/half{dir = 1},/turf/simulated/floor/tiled/white,/area/bub/ray/med)
 "qs" = (/obj/structure/cable/orange{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
 "qt" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/light{dir = 1},/obj/effect/floor_decal/corner/blue/half{dir = 1},/turf/simulated/floor/tiled/white,/area/bub/ray/med)
-"qu" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/power/apc{dir = 1; pixel_y = 24},/obj/effect/floor_decal/corner/blue/half{dir = 1},/turf/simulated/floor/tiled/white,/area/bub/ray/med)
+"qu" = (/obj/machinery/firealarm{dir = 8; pixel_x = -24},/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/xen/lower)
 "qv" = (/obj/effect/floor_decal/corner/blue/half{dir = 1},/obj/machinery/computer/guestpass{pixel_y = 24},/obj/structure/closet/crate/freezer,/obj/item/weapon/reagent_containers/ivbag/nanoblood,/obj/item/weapon/reagent_containers/ivbag/nanoblood,/obj/item/weapon/reagent_containers/ivbag/nanoblood,/obj/item/weapon/reagent_containers/ivbag/nanoblood,/turf/simulated/floor/tiled/white,/area/bub/ray/med)
 "qw" = (/obj/machinery/vending/medical,/obj/effect/floor_decal/corner/blue/half{dir = 1},/obj/structure/sign/warning/nosmoking_1{pixel_y = 24},/turf/simulated/floor/tiled/white,/area/bub/ray/med)
 "qx" = (/obj/structure/table/reinforced,/obj/machinery/light{dir = 1},/obj/effect/floor_decal/corner/blue/half{dir = 1},/obj/item/weapon/defibrillator/loaded,/obj/machinery/recharger,/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,/obj/item/bodybag/rescue/loaded,/obj/random/powercell,/obj/item/weapon/screwdriver,/obj/item/weapon/storage/box/masks,/obj/item/weapon/storage/box/gloves,/turf/simulated/floor/tiled/white,/area/bub/ray/med)
@@ -867,7 +867,7 @@
 "qI" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1},/obj/effect/floor_decal/corner/blue/half,/turf/simulated/floor/tiled/white,/area/bub/ray/med)
 "qJ" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/obj/effect/floor_decal/corner/blue/half,/turf/simulated/floor/tiled/white,/area/bub/ray/med)
 "qK" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/floor_decal/corner/blue/half,/turf/simulated/floor/tiled/white,/area/bub/ray/med)
-"qL" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/light_switch{pixel_y = -24},/obj/effect/floor_decal/corner/blue/half,/turf/simulated/floor/tiled/white,/area/bub/ray/med)
+"qL" = (/obj/machinery/door/firedoor,/obj/effect/floor_decal/corner/blue/mono,/obj/machinery/door/airlock/multi_tile/glass/medical{autoset_access = 1; id_tag = "med_door"; name = "MEDBAY"},/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/med)
 "qM" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/effect/floor_decal/corner/blue{dir = 8},/turf/simulated/floor/tiled/white,/area/bub/ray/med)
 "qN" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/turf/simulated/floor/tiled/white,/area/bub/ray/med)
 "qO" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled/white,/area/bub/ray/med)
@@ -880,14 +880,14 @@
 "qV" = (/obj/machinery/optable,/obj/machinery/body_scan_display{pixel_y = 24},/obj/effect/floor_decal/corner/red/half{dir = 1},/turf/simulated/floor/tiled/white,/area/bub/ray/med/surgery)
 "qW" = (/obj/machinery/vitals_monitor,/obj/machinery/atmospherics/unary/vent_scrubber/on,/obj/machinery/light{dir = 1},/obj/machinery/button/holosign{id_tag = "surgery"; pixel_x = 24},/obj/effect/floor_decal/corner/red/three_quarters{dir = 1},/turf/simulated/floor/tiled/white,/area/bub/ray/med/surgery)
 "qX" = (/obj/structure/table/standard,/obj/item/modular_computer/laptop/preset/custom_loadout/standard,/obj/effect/floor_decal/corner/green/three_quarters{dir = 8},/obj/item/weapon/folder/white,/obj/item/weapon/paper_bin,/obj/random/clipboard,/obj/item/device/flashlight/pen,/obj/machinery/status_display{pixel_y = 24},/turf/simulated/floor/tiled/white,/area/bub/ray/med/exam)
-"qY" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
-"qZ" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
+"qY" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
+"qZ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
 "ra" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/orange{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
 "rb" = (/obj/structure/bed,/obj/machinery/light{dir = 1},/obj/effect/floor_decal/corner/green/half{dir = 1},/turf/simulated/floor/tiled/white,/area/bub/ray/med/exam)
 "rc" = (/obj/machinery/atmospherics/unary/vent_pump/on,/obj/machinery/firealarm{pixel_y = 24},/obj/effect/floor_decal/corner/green/half{dir = 1},/obj/structure/iv_drip,/turf/simulated/floor/tiled/white,/area/bub/ray/med/exam)
 "rd" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/light_switch{pixel_x = 24},/obj/machinery/button/windowtint{id = "med_window"; id_tag = "med_window"; pixel_x = 32; pixel_y = 0},/obj/effect/floor_decal/corner/green/three_quarters{dir = 1},/turf/simulated/floor/tiled/white,/area/bub/ray/med/exam)
 "re" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/door/firedoor,/obj/machinery/door/airlock/glass/medical{name = "MED LOBBY"},/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/med)
-"rf" = (/obj/machinery/door/firedoor,/obj/effect/floor_decal/corner/blue/mono,/obj/machinery/door/airlock/multi_tile/glass/medical{autoset_access = 1; name = "MEDBAY"},/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/med)
+"rf" = (/obj/structure/table/marble,/obj/structure/window/reinforced{dir = 4},/obj/machinery/door/firedoor,/obj/machinery/door/blast/shutters{id_tag = "kitchen"},/obj/item/weapon/paper_bin,/obj/machinery/fabricator/micro/bartender{pixel_y = -4},/obj/item/stack/material/aluminium/ten,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
 "rg" = (/turf/simulated/wall/prepainted,/area/bub/ray/maint/aport)
 "rh" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/effect/floor_decal/corner/blue/mono,/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/med)
 "ri" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/vending/wallmed2{dir = 4; pixel_x = -24},/obj/effect/floor_decal/corner/blue/half{dir = 8},/obj/structure/iv_drip,/turf/simulated/floor/tiled/white,/area/bub/ray/med)
@@ -990,7 +990,7 @@
 "tb" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated/dark,/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/plating,/area/bub/ray/gen/port)
 "tc" = (/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped{dir = 1},/obj/structure/railing/mapped,/obj/structure/cable{d1 = 32; d2 = 1; icon_state = "32-1"},/obj/structure/lattice,/turf/simulated/open,/area/bub/ray/maint/astarb)
 "td" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/bub/ray/maint/astarb)
-"te" = (/obj/structure/closet/crate/radiation,/obj/effect/floor_decal/techfloor/orange{dir = 1},/obj/item/stack/material/tritium/ten,/obj/machinery/camera/network/engineering{dir = 4},/obj/item/stack/material/tritium/ten,/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/eng/engine)
+"te" = (/obj/structure/closet/crate/radiation,/obj/effect/floor_decal/techfloor/orange{dir = 1},/obj/item/stack/material/tritium/ten,/obj/machinery/camera/network/engineering{dir = 4},/obj/item/stack/material/tritium/ten,/obj/item/stack/material/tritium/ten,/obj/item/stack/material/tritium/ten,/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/eng/engine)
 "tf" = (/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/plating,/area/bub/ray/eng/locker)
 "tg" = (/obj/structure/table/rack,/obj/random/hat,/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped,/turf/simulated/floor/plating,/area/bub/ray/maint/astarb)
 "th" = (/obj/structure/table/rack,/obj/random/drinkbottle,/obj/structure/railing/mapped,/turf/simulated/floor/plating,/area/bub/ray/maint/astarb)
@@ -1037,7 +1037,7 @@
 "tW" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/table/steel,/obj/effect/floor_decal/techfloor/orange{dir = 8},/obj/machinery/recharger,/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/eng/locker)
 "tX" = (/obj/item/weapon/stool/padded,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/locker)
 "tY" = (/obj/machinery/hologram/holopad,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/locker)
-"tZ" = (/obj/structure/closet/secure_closet/engineering_welding,/obj/machinery/alarm{dir = 8; pixel_x = 24; pixel_y = 0},/obj/effect/floor_decal/techfloor/orange{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/eng/locker)
+"tZ" = (/obj/structure/closet/secure_closet/engineering_welding,/obj/machinery/alarm{dir = 8; pixel_x = 24; pixel_y = 0},/obj/effect/floor_decal/techfloor/orange{dir = 8},/obj/item/weapon/weldingtool/electric,/obj/item/weapon/weldingtool/electric,/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/eng/locker)
 "ua" = (/obj/machinery/atmospherics/unary/vent_pump/siphon/on/atmos/tank{dir = 4; id_tag = "n2_out"; internal_pressure_bound = 4560; internal_pressure_bound_default = 4560},/turf/simulated/floor/reinforced/nitrogen,/area/bub/ray/eng/atmos)
 "ub" = (/turf/simulated/wall/r_wall/prepainted,/area/bub/ray/com)
 "uc" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/effect/catwalk_plated/dark,/obj/machinery/camera/network{dir = 4},/turf/simulated/floor/plating,/area/bub/ray/gen)
@@ -1094,7 +1094,7 @@
 "vb" = (/obj/structure/bed/chair/office/light{dir = 8},/turf/simulated/floor/lino,/area/bub/ray/srv/office)
 "vc" = (/obj/structure/table/standard,/obj/structure/window/reinforced{dir = 4},/obj/item/device/flashlight/lamp,/turf/simulated/floor/lino,/area/bub/ray/srv/office)
 "vd" = (/obj/machinery/alarm{dir = 4; pixel_x = -24; pixel_y = 0},/obj/structure/closet/firecloset,/turf/simulated/floor/plating,/area/bub/ray/gen/storage)
-"ve" = (/obj/structure/table/steel,/obj/item/weapon/storage/box/lights,/obj/item/weapon/storage/box/lights,/obj/item/weapon/storage/box/lights,/turf/simulated/floor/plating,/area/bub/ray/gen/storage)
+"ve" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/power/apc{dir = 1; pixel_y = 24},/obj/effect/floor_decal/corner/blue/half{dir = 1},/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/white,/area/bub/ray/med)
 "vf" = (/obj/machinery/alarm{dir = 1; pixel_y = -24},/turf/simulated/floor/plating,/area/bub/ray/maint/astarb)
 "vg" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/machinery/power/apc{dir = 8; pixel_x = -24; pixel_y = 0},/obj/structure/cable{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/locker)
 "vh" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/locker)
@@ -1134,7 +1134,7 @@
 "vP" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan{dir = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
 "vQ" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan{dir = 9},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
 "vR" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
-"vS" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
+"vS" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
 "vT" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/engineering{name = "PROPULSION ROOM"},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/engine)
 "vU" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/prop)
 "vV" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/valve/shutoff/supply{dir = 4},/obj/machinery/atmospherics/valve/shutoff/scrubbers{dir = 4},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/bub/ray/gen/hangar)
@@ -1178,17 +1178,17 @@
 "wH" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/corner/orange/half{dir = 4},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng)
 "wI" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/corner/orange/mono,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng)
 "wJ" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/firedoor,/obj/effect/floor_decal/corner/orange/mono,/obj/machinery/door/airlock/engineering{name = "ENGINE ROOM"},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng)
-"wK" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
-"wL" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
-"wM" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
+"wK" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/machinery/light/spot{dir = 4},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
+"wL" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/light/spot{dir = 8},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
+"wM" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
 "wN" = (/obj/machinery/light/navigation,/obj/structure/catwalk,/turf/simulated/floor/plating/bubflood,/area/bub/ray/exterior)
 "wO" = (/obj/structure/catwalk,/turf/simulated/floor/plating/bubflood,/area/bub/ray/exterior)
-"wP" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
-"wQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
-"wR" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/machinery/light/spot{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
+"wP" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/catwalk_plated/dark,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
+"wQ" = (/obj/machinery/atmospherics/pipe/simple/visible/universal{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
+"wR" = (/obj/machinery/atmospherics/pipe/simple/visible/red{dir = 4},/obj/machinery/atmospherics/binary/pump/high_power{dir = 1},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
 "wS" = (/turf/simulated/wall/prepainted,/area/bub/ray/eng/engine)
 "wT" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/structure/sign/warning/radioactive{pixel_x = -24},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/prop)
-"wU" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/prop)
+"wU" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/machinery/light_switch{pixel_y = 24},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/prop)
 "wV" = (/obj/machinery/ion_engine/bub/large,/turf/simulated/floor/plating/bubflood,/area/bub/ray/eng/prop)
 "wW" = (/obj/machinery/computer/modular/preset/cardslot/command{dir = 1},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com)
 "wX" = (/obj/structure/table/steel,/obj/item/weapon/storage/box/donut,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com)
@@ -1220,7 +1220,7 @@
 "xx" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/effect/floor_decal/industrial/warning,/obj/structure/railing/mapped,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/prop)
 "xy" = (/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/prop)
 "xz" = (/obj/structure/table/steel,/obj/item/weapon/storage/toolbox/emergency,/obj/item/device/flashlight,/obj/effect/floor_decal/corner/paleblue/border,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com)
-"xA" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
+"xA" = (/obj/structure/cable/orange{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/binary/passive_gate{dir = 8; name = "PRESSURE RELEASE GATE"},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
 "xB" = (/obj/effect/floor_decal/corner/paleblue/bordercorner{dir = 8},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com)
 "xC" = (/obj/effect/floor_decal/corner/green/bordercorner,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com)
 "xD" = (/obj/effect/floor_decal/corner/green/border,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com)
@@ -1301,7 +1301,7 @@
 "za" = (/obj/machinery/atmospherics/pipe/manifold/visible{dir = 1},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
 "zb" = (/obj/machinery/atmospherics/valve/digital{dir = 4},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
 "zc" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 4},/obj/machinery/door/airlock/hatch/maintenance/bolted{id_tag = "rust_hatch"; name = "RUST hatch"},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
-"zd" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 6},/obj/machinery/atmospherics/unary/outlet_injector{dir = 8; injecting = 1; use_power = 1},/turf/simulated/floor/reinforced/airless,/area/bub/ray/eng/engine)
+"zd" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 6},/obj/machinery/atmospherics/unary/outlet_injector{dir = 8; injecting = 1; use_power = 1; volume_rate = 700},/turf/simulated/floor/reinforced/airless,/area/bub/ray/eng/engine)
 "ze" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 10},/obj/structure/hygiene/drain,/turf/simulated/floor/reinforced/airless,/area/bub/ray/eng/engine)
 "zf" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction,/obj/machinery/camera/network/engineering{dir = 8},/turf/simulated/floor/reinforced/airless,/area/bub/ray/eng/engine)
 "zg" = (/obj/item/device/radio/intercom{dir = 4; pixel_x = -24},/obj/effect/floor_decal/corner/paleblue/mono,/obj/effect/landmark/start{name = "Bridge Crew"},/obj/structure/bed/chair/comfy/blue,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com)
@@ -1400,7 +1400,7 @@
 "AV" = (/obj/structure/sign/deck/first{pixel_y = -32},/obj/machinery/camera/network{dir = 1},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/gen/port)
 "AW" = (/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/gen/port)
 "AX" = (/obj/machinery/vending/mredispenser{dir = 8},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/gen/port)
-"AY" = (/obj/effect/floor_decal/corner/green/half{dir = 1},/turf/simulated/floor/tiled/white,/area/bub/ray/srv)
+"AY" = (/obj/structure/closet/crate/trashcart,/turf/simulated/floor/plating,/area/bub/ray/gen/storage)
 "AZ" = (/obj/item/weapon/stool/bar/padded,/obj/effect/floor_decal/corner/green/half{dir = 1},/turf/simulated/floor/tiled/white,/area/bub/ray/srv)
 "Ba" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/floor_decal/corner/green/half{dir = 1},/obj/machinery/computer/guestpass{dir = 2; pixel_x = 24; pixel_y = 0},/turf/simulated/floor/tiled/white,/area/bub/ray/srv)
 "Bb" = (/obj/structure/cryofeed{dir = 2},/obj/machinery/cryopod{dir = 1},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/srv/dorms)
@@ -1429,8 +1429,8 @@
 "By" = (/obj/machinery/smartfridge/foods,/obj/machinery/door/firedoor,/obj/machinery/door/blast/shutters{id_tag = "kitchen"},/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
 "Bz" = (/obj/structure/table/marble,/obj/structure/window/reinforced{dir = 8},/obj/machinery/door/firedoor,/obj/machinery/door/blast/shutters{id_tag = "kitchen"},/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
 "BA" = (/obj/structure/table/marble,/obj/machinery/door/firedoor,/obj/machinery/door/blast/shutters{id_tag = "kitchen"},/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
-"BB" = (/obj/structure/table/marble,/obj/structure/window/reinforced{dir = 4},/obj/machinery/door/firedoor,/obj/machinery/door/blast/shutters{id_tag = "kitchen"},/obj/item/weapon/paper_bin,/obj/machinery/fabricator/micro/bartender,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
-"BC" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/door/window/northright,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
+"BB" = (/obj/structure/closet/secure_closet/freezer/kitchen,/obj/random/soap,/obj/item/stack/package_wrap/twenty_five,/obj/item/stack/package_wrap/twenty_five,/turf/simulated/floor/tiled/freezer,/area/bub/ray/srv/kitchen/botany)
+"BC" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/door/window/northright,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/item/device/radio/intercom{dir = 8; pixel_x = 24},/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
 "BD" = (/turf/simulated/wall/prepainted,/area/bub/ray/srv/kitchen/botany)
 "BE" = (/turf/simulated/wall/prepainted,/area/bub/ray/srv/dorms/shower)
 "BF" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/effect/floor_decal/corner/orange/mono,/obj/machinery/door/airlock/glass/engineering{name = "ENGINEERING"},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng)
@@ -1453,14 +1453,14 @@
 "BW" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/gen/port)
 "BX" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/dark,/area/bub/ray/gen/port)
 "BY" = (/obj/machinery/chem_master/condimaster,/obj/machinery/firealarm{dir = 8; pixel_x = -24},/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
-"BZ" = (/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
-"Ca" = (/obj/structure/cable{d2 = 4; icon_state = "0-4"},/obj/machinery/power/apc{dir = 1; pixel_y = 24},/obj/effect/floor_decal/corner/b_green,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
+"BZ" = (/obj/effect/floor_decal/corner/green/half{dir = 1},/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/white,/area/bub/ray/srv)
+"Ca" = (/obj/effect/floor_decal/corner/b_green,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
 "Cb" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/corner/b_green/half,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
-"Cc" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/item/device/radio/intercom{pixel_y = 24},/obj/effect/floor_decal/corner/b_green/half,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
+"Cc" = (/obj/structure/cable{d2 = 4; icon_state = "0-4"},/obj/machinery/power/apc{dir = 1; pixel_y = 24},/obj/effect/floor_decal/corner/b_green/half,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
 "Cd" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/corner/b_green/half,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
 "Ce" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/corner/b_green{dir = 8},/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
 "Cf" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/structure/hygiene/sink/kitchen{dir = 8; pixel_x = 24},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/machinery/light_switch{pixel_x = 24},/obj/machinery/button/blast_door{id_tag = "kitchen"; pixel_x = 24; pixel_y = -8},/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
-"Cg" = (/obj/machinery/portable_atmospherics/hydroponics,/obj/machinery/power/apc{dir = 1; pixel_y = 24},/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/machinery/firealarm{dir = 8; pixel_x = -24},/obj/item/weapon/material/hatchet,/turf/simulated/floor/tiled/freezer,/area/bub/ray/srv/kitchen/botany)
+"Cg" = (/obj/machinery/power/apc{dir = 1; pixel_y = 24},/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/machinery/firealarm{dir = 8; pixel_x = -24},/obj/item/weapon/material/hatchet,/obj/structure/kitchenspike,/turf/simulated/floor/tiled/freezer,/area/bub/ray/srv/kitchen/botany)
 "Ch" = (/obj/machinery/seed_extractor,/obj/machinery/alarm{pixel_y = 24},/obj/item/weapon/reagent_containers/spray/plantbgone,/turf/simulated/floor/tiled/freezer,/area/bub/ray/srv/kitchen/botany)
 "Ci" = (/obj/machinery/vending/hydronutrients/generic,/obj/item/weapon/material/minihoe,/turf/simulated/floor/tiled/freezer,/area/bub/ray/srv/kitchen/botany)
 "Cj" = (/obj/machinery/vending/hydroseeds/generic,/turf/simulated/floor/tiled/freezer,/area/bub/ray/srv/kitchen/botany)
@@ -1477,7 +1477,7 @@
 "Cu" = (/obj/machinery/firealarm{dir = 1; pixel_x = 0; pixel_y = -24},/obj/effect/floor_decal/corner/orange/half{dir = 8},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng)
 "Cv" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/civilian{name = "HEAD"},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/srv/dorms/shower)
 "Cw" = (/obj/machinery/camera/network/engineering{dir = 1},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng)
-"Cx" = (/obj/machinery/status_display{pixel_y = -24},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng)
+"Cx" = (/obj/machinery/status_display{pixel_y = -24},/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng)
 "Cy" = (/obj/machinery/light/spot,/obj/structure/table/steel,/obj/item/weapon/storage/toolbox/electrical,/obj/item/weapon/storage/toolbox/mechanical,/obj/item/device/flashlight,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng)
 "Cz" = (/obj/structure/table/steel,/obj/machinery/firealarm{dir = 1; pixel_x = 0; pixel_y = -24},/obj/item/weapon/storage/firstaid/toxin,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng)
 "CA" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/effect/floor_decal/corner/orange/half{dir = 4},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng)
@@ -1487,12 +1487,12 @@
 "CE" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/orange{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/valve/digital,/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
 "CF" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/orange{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
 "CG" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/orange{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
-"CH" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/machinery/light/spot{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
+"CH" = (/obj/machinery/atmospherics/pipe/manifold4w/visible/green,/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
 "CI" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/structure/sign/warning/radioactive{pixel_x = -24},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/prop)
 "CJ" = (/obj/structure/cable/orange{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/prop)
 "CK" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com)
 "CL" = (/obj/machinery/cooker/oven,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
-"CM" = (/obj/machinery/hologram/holopad,/obj/effect/floor_decal/corner/b_green/half{dir = 4},/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
+"CM" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/corner/b_green/half,/obj/machinery/hologram/holopad,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
 "CN" = (/obj/structure/table/marble,/obj/machinery/reagent_temperature/cooler{pixel_x = 8; pixel_y = -5},/obj/machinery/reagent_temperature{pixel_x = -8; pixel_y = -5},/obj/effect/floor_decal/corner/b_green/full,/obj/machinery/reagentgrinder/juicer{pixel_y = 10},/obj/item/weapon/reagent_containers/glass/beaker/large,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
 "CO" = (/obj/machinery/vending/dinnerware,/obj/effect/floor_decal/corner/b_green/full,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
 "CP" = (/obj/structure/table/marble,/obj/effect/floor_decal/corner/b_green/full,/obj/item/weapon/reagent_containers/food/condiment/vinegar,/obj/item/weapon/reagent_containers/food/condiment/soysauce,/obj/item/weapon/reagent_containers/food/condiment/small/peppermill,/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker,/obj/item/weapon/reagent_containers/food/condiment/enzyme,/obj/item/weapon/material/kitchen/rollingpin,/obj/item/weapon/material/knife/kitchen/cleaver,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
@@ -1503,7 +1503,7 @@
 "CU" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/tiled/freezer,/area/bub/ray/srv/kitchen/botany)
 "CV" = (/obj/effect/floor_decal/techfloor/orange{dir = 10},/turf/simulated/floor/tiled/techfloor/grid,/area/bub/ray/eng/engine)
 "CW" = (/turf/simulated/floor/tiled/freezer,/area/bub/ray/srv/kitchen/botany)
-"CX" = (/obj/structure/closet/secure_closet/freezer/kitchen,/obj/random/soap,/turf/simulated/floor/tiled/freezer,/area/bub/ray/srv/kitchen/botany)
+"CX" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
 "CY" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/hygiene/shower{dir = 4; pixel_y = -4},/obj/structure/curtain/open/shower,/obj/machinery/door/window/eastright,/obj/random/soap,/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/srv/dorms/shower)
 "CZ" = (/obj/structure/hygiene/drain,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/dorms/shower)
 "Da" = (/obj/structure/hygiene/sink{dir = 4; pixel_x = 12},/obj/item/weapon/storage/mirror{pixel_x = 24},/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/srv/dorms/shower)
@@ -1519,7 +1519,7 @@
 "Dk" = (/obj/machinery/atmospherics/unary/heat_exchanger{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
 "Dl" = (/obj/machinery/atmospherics/pipe/manifold/visible/cyan{dir = 1},/obj/machinery/meter,/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
 "Dm" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan{dir = 10},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
-"Dn" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/turf/simulated/floor/tiled/techfloor,/area/bub/ray/eng/engine)
+"Dn" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
 "Do" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/door/firedoor,/obj/structure/cable/orange{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/bub/ray/eng/prop)
 "Dp" = (/obj/structure/table/steel,/obj/machinery/firealarm{dir = 1; pixel_x = 0; pixel_y = -24},/obj/random/clipboard,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com)
 "Dq" = (/obj/structure/table/steel,/obj/machinery/light,/obj/item/weapon/paper_bin,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com)
@@ -1700,7 +1700,7 @@
 "GJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/item/device/radio/intercom{pixel_y = 24},/obj/effect/floor_decal/corner/research/half{dir = 1},/turf/simulated/floor/tiled/white,/area/bub/ray/xen/process)
 "GK" = (/obj/machinery/portable_atmospherics/canister/carbon_dioxide,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/light{dir = 1},/obj/effect/floor_decal/corner/research/half{dir = 1},/turf/simulated/floor/tiled/white,/area/bub/ray/xen/process)
 "GL" = (/obj/machinery/portable_atmospherics/canister/hydrogen,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/floor_decal/corner/research/half{dir = 1},/turf/simulated/floor/tiled/white,/area/bub/ray/xen/process)
-"GM" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/effect/floor_decal/corner/research/three_quarters{dir = 1},/obj/machinery/computer/guestpass{pixel_y = 24},/turf/simulated/floor/tiled/white,/area/bub/ray/xen/process)
+"GM" = (/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/com)
 "GN" = (/turf/unsimulated/mask,/area/turbolift/ray_above_xen)
 "GO" = (/obj/machinery/light/small{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden{dir = 6},/turf/simulated/floor/plating,/area/bub/ray/maint/aport)
 "GP" = (/obj/machinery/atmospherics/pipe/manifold/hidden{dir = 4},/obj/machinery/suit_storage_unit/bub,/turf/simulated/floor/plating,/area/bub/ray/maint/aport)
@@ -1735,7 +1735,7 @@
 "Hs" = (/obj/structure/flora/seaweed/large,/turf/simulated/ocean/grass,/area/bub/ray/xen)
 "Ht" = (/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped{dir = 1},/turf/simulated/open/bub,/area/bub/ray/xen)
 "Hu" = (/obj/machinery/door/firedoor,/obj/effect/wallframe_spawn/reinforced,/obj/machinery/door/blast/regular/open{dir = 4; id_tag = "aquarium_observe"; name = "aquarium observation doors"},/turf/simulated/floor/plating,/area/bub/ray/xen)
-"Hv" = (/obj/machinery/suit_cycler/science,/turf/simulated/floor/tiled/white,/area/bub/ray/xen)
+"Hv" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/machinery/light/spot{dir = 4},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
 "Hw" = (/obj/effect/landmark/start{name = "Xenobiologist"},/turf/simulated/floor/tiled/white,/area/bub/ray/xen)
 "Hx" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor/plating,/area/bub/ray/xen/process)
 "Hy" = (/obj/machinery/atmospherics/pipe/manifold/visible,/obj/effect/landmark/start{name = "Xenobiologist"},/turf/simulated/floor/tiled/white,/area/bub/ray/xen/process)
@@ -1773,7 +1773,7 @@
 "Ie" = (/obj/machinery/light/navigation,/obj/structure/catwalk,/turf/simulated/floor/plating/bubflood,/area/bub/ray/maint/aport)
 "If" = (/obj/structure/catwalk,/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{dir = 1; id_tag = "port_pump_out_external"},/obj/machinery/access_button/airlock_interior{command = "cycle_exterior"; id_tag = "port_ext"; master_tag = "port"; pixel_x = -24; pixel_y = 24},/obj/machinery/airlock_sensor/airlock_exterior{id_tag = "port_sensor_ext"; pixel_x = 24; pixel_y = 24},/turf/simulated/floor/plating/bubflood,/area/bub/ray/maint/aport)
 "Ig" = (/obj/machinery/recharge_station,/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/srv/dorms/shower)
-"Ih" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 4},/obj/machinery/light,/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
+"Ih" = (/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
 "Ii" = (/obj/structure/railing/mapped{dir = 4},/obj/structure/railing/mapped{dir = 1},/obj/structure/closet/secure_closet/engineering_personal/bub,/turf/simulated/floor/plating,/area/bub/ray/maint/aft)
 "Ij" = (/obj/structure/closet/secure_closet/medical3/bub,/turf/simulated/floor/plating,/area/bub/ray/sup/port2)
 "Ik" = (/obj/machinery/camera/network/mining{dir = 1},/turf/simulated/floor/tiled/monotile,/area/bub/ray/sup)
@@ -1801,7 +1801,14 @@
 "IG" = (/obj/structure/railing/mapped{dir = 4},/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped,/turf/simulated/open,/area/bub/ray/eng/prop)
 "IH" = (/obj/structure/railing/mapped{dir = 4},/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped{dir = 1},/turf/simulated/open,/area/bub/ray/eng/prop)
 "II" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/door/airlock/glass/science{name = "GAS PROCESSING"},/obj/effect/floor_decal/corner/research/mono,/turf/simulated/floor/tiled/white/monotile,/area/bub/ray/xen/process)
-"IJ" = (/obj/structure/closet/secure_closet/freezer/meat,/obj/machinery/light{dir = 4},/obj/item/weapon/reagent_containers/food/drinks/milk,/obj/item/weapon/reagent_containers/food/drinks/milk,/obj/item/weapon/reagent_containers/food/drinks/soymilk,/obj/item/weapon/reagent_containers/food/drinks/soymilk,/obj/item/weapon/reagent_containers/food/drinks/milk,/obj/item/weapon/reagent_containers/food/drinks/soymilk,/turf/simulated/floor/tiled/freezer,/area/bub/ray/srv/kitchen/botany)
+"IJ" = (/obj/structure/closet/secure_closet/freezer/meat,/obj/machinery/light{dir = 4},/obj/item/weapon/reagent_containers/food/drinks/milk,/obj/item/weapon/reagent_containers/food/drinks/milk,/obj/item/weapon/reagent_containers/food/drinks/soymilk,/obj/item/weapon/reagent_containers/food/drinks/soymilk,/obj/item/weapon/reagent_containers/food/drinks/milk,/obj/item/weapon/reagent_containers/food/drinks/soymilk,/obj/item/weapon/storage/fancy/egg_box,/obj/item/weapon/storage/fancy/egg_box,/obj/item/weapon/storage/fancy/egg_box,/turf/simulated/floor/tiled/freezer,/area/bub/ray/srv/kitchen/botany)
+"IK" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/machinery/door/firedoor,/obj/machinery/door/blast/regular/open{dir = 4; id_tag = "beluga_blast"; name = "beluga blast door"},/turf/simulated/floor/plating,/area/bub/bel)
+"IL" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/firedoor,/obj/machinery/door/blast/regular/open{dir = 4; id_tag = "beluga_blast"; name = "beluga blast door"},/turf/simulated/floor/plating,/area/bub/bel)
+"IM" = (/obj/effect/floor_decal/corner/b_green/half{dir = 4},/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
+"IN" = (/obj/structure/table/marble,/obj/effect/floor_decal/corner/b_green/full,/turf/simulated/floor/tiled/white,/area/bub/ray/srv/kitchen)
+"IO" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/effect/floor_decal/corner/research/three_quarters{dir = 1},/obj/machinery/computer/guestpass{pixel_y = 24},/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/white,/area/bub/ray/xen/process)
+"IP" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating,/area/bub/ray/eng/engine)
+"IQ" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/machinery/light_switch{pixel_y = -24},/turf/simulated/floor/tiled/dark/monotile,/area/bub/ray/eng/prop)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -1855,30 +1862,30 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaegbqbrbsbsbtbsbs
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabMbMbMbMbMbMbMbMbMbMegbNbObPbObObObObObObPhFadbQbRbSbTbUbVadbWbXbBbYbZcaapcbcccdceapcfapaIaIaIaIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabMcgchcjckclcmcncobMbwcpbwbwbwbwbwbwbwbwbwbwadcqctadadadadadcucwcxcwcyczapapapapcAapapapapapapapcBcBcBcBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabMcCcDcEcFcGbMcHcIbMcJcKcLcLcLcLcLcPcLcLcLcLcQcScTcUcVcVcVcVcWcXcYcZdacVcVcVcVdbdcdddddddddddddddididicBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabMdjdkdldmdnbMbMbMbMdodWdWdWdWdWdWdWcRcRcRcRcRepkAbEbEbEbEbEdqdqdqdqdqdqcrcrcrcsdrcscscscscscscrcrcrdscBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabMdpdtdudvdzdAbMdBcLdCdwdDdEdFdGdHdWdJdKdJdJdLdJdMdNdOdhdPdQdRdSdTdUdVdXcrdYdZebecedeeefejekeldZemcrdicBcvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaayfcvcvbMeneofjbMbMbMbMeqcRerdWdIfUesfVetdWeuevewewewexeyeBeCeCeDdydReEzzzzzzeFcreGdZeHeIeJeKeLeMeNeOdZePcrdicBcvcvcvcvcvcvcvcvcvcMcNcOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQeReSeTeUeVeWeReReXcReYdWeZfUfafVfbdWdJewfdfeffexexeBfgfheBfifxfkflFSfmfncrcrcrfoeaeaeaeafpfqfrcrcrcrdicBcvaaaaaaaaaaaadedfdgaacvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQeQfsftftfufvfvfwhnfycRcidWdIfUhTfVgEdWdJfAfBfCfDfEfFfGfHfIeCfJdqdqdqdqdqdqeAeAcsfKfLeaeaeaeafMfNcsfOdidicBcvaaaaaaaaaaaadxaaaaaacvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabMdjdkdldmdnbMbMbMbMdodWdWdWdWdWdWdWcRcRcRcRcRepkAbEbEbEbEbEdqdqdqdqdqdqcscscscsdrcscscscscscscscscsdscBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabMdpdtdudvdzdAbMdBcLdCdwdDdEdFdGdHdWdJdKdJdJdLdJdMdNdOdhdPdQdRdSdTdUdVdXcsdYdZebecedeeefejekeldZemcsdicBcvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaayfcvcvbMeneofjbMbMbMbMeqcRerdWdIfUesfVetdWeuevewewewexeyeBeCeCeDdydReEzzzzzzeFcseGdZeHeIeJeKeLeMeNeOdZePcsdicBcvcvcvcvcvcvcvcvcvcMcNcOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQeReSeTeUeVeWeReReXcReYdWeZfUfafVfbdWdJewfdfeffexexeBfgfheBfifxfkflFSfmfncscscsfoeaeaeaeafpfqfrcscscsdicBcvaaaaaaaaaaaadedfdgaacvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQeQfsftftfufvfvfwhnfycRcidWdIfUhTfVgEdWdJfAfBfCfDfEfFfGfHfIkyfJdqdqdqdqdqdqeAeAcsfKfLeaeaeaeafMfNcsfOdidicBcvaaaaaaaaaaaadxaaaaaacvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQfPftftftfQftftfReRfScRcidWdIfUfcfVgEdWdJewfYfZgagbgcgdgegfeBggghgigigjglgmgngocsgpgpeagqgreafqgscsgtdigugugugugvgvaaaaaadxaaaaaacvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQgwftftgxgygzgAgBeRgCcRgDdWfziJiIiKjudWdJexgKgLgMgNgOgOgOgPexgQgReAeAeAeAeAeAgScsgTgVgWgXgYgrfqgZcsgtdiguhahbhdhegvaaaaaaehdfdfeicvcvcvcvcvcvcvcvHdHdHdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQeQeQeQeQhghhhihjhkeRgChlhldWdWfXisfXdWdWdJhqhrhshthuexexexexexhvhweAhxhxhxhxeAgScshyhzhAhBhChDfqhEcskgdsguhGhHhIhJgvaaaaaaaaaaaaezcvaaaaaaaaaaaaabHdhKHdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQhLhLhLeQhMhNhOeRgAeRhPhlhQhRfTfWgFgGgIhlhVexhWhsgOhXhYhZiaibhZicidiehxhxhxhxeAifcsigihiiiliminfqioipiqiriLitiuiwixgvaaaaaaaaaaaaezcvaaaaaaaaaaababHdiyHdcvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQhLhLhLeQhMhNhOeRgAeRhPhlhQhRfTfWgFgGgIhlhVexhWhsgOhXhYhZiaibIKicidiehxhxhxhxeAifcsigihiiiliminfqioipiqiriLitiuiwixgvaaaaaaaaaaaaezcvaaaaaaaaaaababHdiyHdcvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQhLizhLeQiAiBiCeRiDeRiEiFiGiGgJhmiNjrhmiMdQexhWhsiOiPiQiRiSiTiUiVidiehxhxhxhxeAiWiXiYiZjajbjcinfqjdcsjejfgujgjhjijjgvaaaaaaaaaaaaezcvaaaaaaaaabababHdjkjlcvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQhLhLhLeQjmjnjoeRjpeRhPhlhQjqDEhohShUImhljvexjwhshtjyjzhZjAjBhZjCidiehxhxhxhxeAjDcszCiZjEjFjGhDfqjHjIjJjKjLjMjNkihJgvaaaaaaaaaaaaezcvaaaaaaaaaaababHdiyHdcvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQhLhLhLeQjmjnjoeRjpeRhPhlhQjqDEhohShUImhljvexjwhshtjyjzhZjAjBIKjCidiehxhxhxhxeAjDcszCiZjEjFjGhDfqjHjIjJjKjLjMjNkihJgvaaaaaaaaaaaaezcvaaaaaaaaaaababHdiyHdcvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQeQeQeQeQjOjPhijQjReRgChlhljsjshpkzhpjsjsdyhqjXjYgOjZexexexexexhvkaeAkbhxhxhxeAuJcsgHkckdeakeinfqkfcsIikhgulylzhIixgvaaaaaaaaaaaaezcvaaaaaaaaaaaaabHdkjHdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQgwftftgxkkgzgAkleRgCkmknjskRlWkolYlZjsdyhZgOgOgOkskukvkwkxkykBkCeAeAeAeAeAeAuJcszDkDkFkGkHinfqeacsgtkIgukJkKkLjjgvaaaaaadedfdfgkcvcvcvcvcvcvcvcvHdHdHdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQgwftftgxkkgzgAkleRgCkmknjskRlWkolYlZjsdyIKgOgOgOkskukvkwkxILkBkCeAeAeAeAeAeAuJcszDkDkFkGkHinfqeacsgtkIgukJkKkLjjgvaaaaaadedfdfgkcvcvcvcvcvcvcvcvHdHdHdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQfPftftftfQftftkNeRfSkmkOjsmtjWkqjWmVjsdyexkUkWkXlalblcldlfexlglhlililjlklllmvpcshclnlnlolpinlqlrcsgtkIgugugugugvgvaaaaaadxaaaaaacvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQeQlsftftltlululvlwlxkmkOjsmQjWjtmUjSjslAexlBlBexlClDexlBlBexdylElElElElElEeAeAcslFlGlHlIlJinlKlLcslMlNlOcBcvaaaaaaaaaaaadxaaaaaacvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQeReSlPlQeVeWeReRlTkmlUjsmRjWjTjUkSjsdyexmambexexexexmambexmcmdmemfmgmgmhcrcrcrmimjmjmkkemlmmmncrcrcrkIcBcvaaaaaaaaaaaaehdfgUaacvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaayfcvcvmompmpmqmomomomomrkmmsjsmSjWkplVkrjsdyexmumumvexexmwmumuexdymxmymgmgmgmzcruadZmAeKeKeKmBmCmDmEdZmFcrkIcBcvcvcvcvcvcvcvcvcvhfcNcOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamomGmHmJmKmLmMmomNmOmPkPkMIkIhmTlXjsdMmWdhdhmXdhmYmXvVdhmZnamxnbncnenenfcrugdZngeKnhninjnknmnndZnocrkIcBcvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamonpnqnrnsntnumomomonvjsjsjsjsjsjsjskmkmkmkmkmnwnxnynynynynylElElElElElEcrcrcrcsnzcscscscscscscrcrcrkhcBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeQeReSlPlQeVeWeReRlTkmlUjsmRjWjTjUkSjsdyexmambexexexexmambexmcmdmemfmgmgmhcscscsmimjmjmkkemlmmmncscscskIcBcvaaaaaaaaaaaaehdfgUaacvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaayfcvcvmompmpmqmomomomomrkmmsjsmSjWkplVkrjsdyexmumumvexexmwmumuexdymxmymgmgmgmzcsuadZmAeKeKeKmBmCmDmEdZmFcskIcBcvcvcvcvcvcvcvcvcvhfcNcOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamomGmHmJmKmLmMmomNmOmPkPkMIkofmTlXjsdMmWdhdhmXdhmYmXvVdhmZnamxnbncnenenfcsugdZngeKnhninjnknmnndZnocskIcBcvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamonpnqnrnsntnumomomonvjsjsjsjsjsjsjskmkmkmkmkmnwnxnynynynynylElElElElElEcscscscsnzcscscscscscscscscskhcBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamonAnBnCnDnDnEnFnGmonHnImOmOmOmOmOnJmOmOmOmOnKnLnMnNnOnOnOnOnPnOnQnRnSnTnUnUnUnVnWnOnOnOnOnOnOnOnYnYnZcBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamooaobocodoempofogmoohoiohohohohohohohohohohojokolojojojojojomonooopoqorososososotosososososososcBcBcBcBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamooaobocodoemppmogmoohoiohohohohohohohohohohojokolojojojojojomonooopoqorososososotosososososososcBcBcBcBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamomomomomomomomomomoouowoxoyoxoxoxoxoxoxoyIjojozoAoBoCoEoFojoGoHGSoIoJoKosoLoNoOoPosoQosoSoSoSoSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaouoToUoUoUoVoUoWoUoXoXoXojoYoZpapbpbpcGTGTGTGTGTGTGSospdpepfpgpipjpkploSoSoSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaououououGTGTGTGTGTGTGTGTGTojojpmpnpbpoGTppppppppGTaaospqprpqososososoSoSoSoSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaououououGTGTGTGTGTGTGTGTGTojojqupnpbpoGTppppppppGTaaospqprpqososososoSoSoSoSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaGTpsptpupvpspspwpxpypzpApbpbpApBppppppppGTaaospCpDoSoSoSoSoSoSoSoSoSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaGTpEpFpspspGpsptpxpApApApApApApBppppppppGTaaospHpDoSoSoSoSoSoSoSoSoSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaGTpIpIpspspspspJpKpLpApApMpMpMpBppppppppGTaaospHpNoSoSoSoSoSoSoSoSoSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -1969,9 +1976,9 @@ ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijwNwOwOwOwOwOwOwNwOwOwOwOwOwOwOwOwOwOwOwOwOwOwOwOwOwOqdqeqdijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGUGUGUGUGUGUGUGUGUGUqfqfGUGUGUGUGUGUGUGUGUGUGUGUGUGUGUGUqgGWijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGUivqhqiqjqkqlqmqnqoqpqqqrqtquqvqwqxqyqyqzqAGUqBqBqBqBGUqCGWiHiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGXqDqDqDqDqEqEqEqFivqGqHqIqJqKqLqMqNqOqPqQqRqSqBqBqBqBGUqTGWGWiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGXqUqVqWqDqXrbrcrdivivreivrfrhivrirjrkrlrjktqSqBqBqBqBGUrmGWGWiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGUivqhqiqjqkqlqmqnqoqpqqqrqtveqvqwqxqyqyqzqAGUqBqBqBqBGUqCGWiHiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGXqDqDqDqDqEqEqEqFivqGqHqIqJqKcrqMqNqOqPqQqRqSqBqBqBqBGUqTGWGWiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGXqUqVqWqDqXrbrcrdivivreivqLrhivrirjrkrlrjktqSqBqBqBqBGUrmGWGWiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGXrnrorprqrrrsrtrurvrwrxryrzrArBrCrDrErFrGrFqSqBqBqBqBGUrHrIGWiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGXrJrKrLqDrOrPrQrRrvrSrTrUrWrXrBrYrZsasbscsdGUqBqBqBqBGUsesfGWiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijijijijijijGYGYGXqDqDqDqDqEqEqEqEivivivivsgrhivivivivivivivGUGUGUGUGUGUjVshGWGWiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
@@ -1981,29 +1988,29 @@ ijijijijijijijijijijijijijijijijijijijijijijiHiHiHiHiHGYsisysLsMsNkEkEsOsOsPkEkE
 ijijijijijijijijijijijijijijijijijijijijijijiHiHiHiHGYGYtjsytktltmtnkQkQkQtokQkQkQtpkQkQkQkQkQtqkQtntmtltrjxjVtsjxjxtttdGZtutvtwtxtytztAtBtCGZtDtFtGsHswswswswswswtHtIwOwOwOijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijiHiHiHiHGYtJsitKtLtMkVkVtNtNtNkVtNtNtNkVtOkYkZkZkYtPtQtQtQtRtStTjVtUjxjxswtdGZtVtAtWtxtXtYtAtAtZGZHaHaHaHaHaHaHaHaHaHaHaHaHaHawOwOijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijleububububububububuckQkVudueueueufuhuhuikVujukulumkYunuouptQkQuqjxjVjVurusswtdGZutuuuvuwuxuyuztAuAGZuBuBuCuCuDuEuFuGuHuIuHuHuKuLkTwOijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijijijleuMuNuOuPuQuRuSubtLkQtNuTuUuUuUuVuWuXuYkVuZvavbvckYvduovetQkQtSjxjVvfjVustFtdGZvgvhvivjvkvlvmvnvoGZvqvrvsvsvtlRlSlSlSlSlSvuHaHdHdwOyhyhyhyhyhyhyhyhyhGxwOijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijijlelevvvvvvvvvvvwvxubtLkQtNuTuUuUuUvyvzvAvBkVvCvDvEvFkYvGuovHtQkQvIjxjxjxjxjxjxvJGZvKGZGZGZGZGZGZvLvLGZvMvNvOvPvPvQvRvRvRvRvRvSvTvUHdjlHdHdHdHdHdHdHdHdHdGVvWijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijygyhlevXvvvvvvvvvYvZwawbwcwdkVwewfwfwfwgwhwiwjkVwkwlwmwnkYDSwowptQwqwrwswtwtwvwwwxwywzwAwBwCwDwEwFwGwHwIwJwKwLwMwPwQwQwQwQwQwQwQwRwSwTwUjkjkjkjkjkIDjkjkjkHdHdwVijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijlelevvvvvvwWwWwXwYwZwbxaxbkVtNtNkVxcuhxdxexfkVxgndndndndndndndndxhxiHDHDHDHDHDHDxjwzxkxlwzxmxmxmxmxnxoHexAlSlRxpxqxrxrxrxsxtxtxuwSxvxwxxynIpIpBTjkjkjkxyIEHdHdijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijlexzxBxCxDxExFxGxHxIubtLkQxJmIxKtNxLxLxMxNxOkVxPxQxRxSxRxSxRxSndkQtSHDxTxTxTxTHDxUHexVwzHexWxXxYxmxnxZyanllSybuHycydyeyiyjykykylyjymymInIqIoIoIrjkjkjkyojkypHdHdGVvWijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijleyqyrysytyuyvywubyxubyyHhyzyAnXkVyByCyDyCyEkVyFyGyHyHyIyHyHyJndyKtSyLxTxTxTxTHDyMyNyOyPyQxmyRySxmyTyUyanlyVyWyXyYyZzazbzczdzezfyjovymIoIoIoIoIvIsIsIsIGIsIsIsHdHdwVijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijlezgzhzizjzkzlzmznzozpoDkEkEkEkEzqzrzsztzszuzvzwzxoMoMzyoMzAzBzEoRzFyLxTxTxTxTHDzGHezHzIzJzKyRySzLxnzMyanlzNzOzPzQzRzSzTzUzVzWzVzXovymIoIoIoItItItItItItItItItHdHdHdGxijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijlezYzZAaAbyuyvxEubAcubAdAeAfAgAhkVAjyCyCyCAkkVAlAmAmAnAoApxPAqndArAsyLxTxTxTxTHDAtAuAvAwAxAyAzAAABACADyanlCVAEAFAGAHAIAJAKALAMANyjovymIuIoIoIoIwIxIxIxIHIxIxIxHdHdvWijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijleAOAPAQARASATuRAUxIubAsphAVAWAXtNAYAZAZAZBakVBbBcBbndBdBexPBfndphAsHDxTxTxTxTHDBgHeBFwzHeBhBiBjxmBkBlyanllSpUpVBmydBnBoyjBpykykyjymymInIyIoIoIrjkjkjkyojkypHdHdGVwVijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijlelevvvvvvBqBqBrBsBtwbBuBvBwBxBxBwByBzBABBBCBDBDBDBDBDBDBECvBEBEBGBHHDHDHDHDHDHDBIwzxkxlwzxmxmxmxmBJxoHexAlSlRqsBmBKBLBMBNBOBPBPwSBRBSIBIzICICIAjkjkjkBUIEHdHdijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijygyhlevXvvvvvvvvvYBVwawbBWBXBwBYBZCaCbCcCdCeCfBDCgChCiCjBDCkClCmBECnCoCpCqCqCrCsCqCtwzxkCuCCCwCxCyCzCACBCSqYqZraCDCECFCGwQwQwQwQCHwSCIwUCJjkjkjkjkIFjkjkjkHdHdvWijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijijlelevvvvvvvvvvCKvxubAsphBxCLBZCMCNCOCPCQCRDeCTCUIlCXBDCYCZDaBEphDcrgrgrgrgrgrgDdHkFPHkHkHkHkHkHkDfDgHkAirMrNDhDiDjDkDlDmlSlSDnvTrVHdDoHdHdHdHdHdHdHdHdHdGVwVijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijijijleDpDqDrDsDtxGDuubAsphBxDvBZDwDxDyDxDzDADBDCDDCWIJBDDFDGDHBEphDIrgDJDKDJDLDMDNHkDODPDQDREnDTDUDVDWHkteDbspDXDYDjDkDZEalSlSEbHaHdHdEcyhyhyhyhyhyhyhyhyhGxwOijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijijijleububububububububEdphBwEeBZEfEfEgEhEiEjBDEkElElEmBDIgEpEqBEphErrgDJDJEsDLEtDNHkEuEvEwExEyEzEAEBECHksIEosKEDEEEFEGEHEIEJuHuHuKuLkTEcijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijijijleuMuNuOuPuQuRuSubtLkQtNuTuUuUuUuVuWuXuYkVuZvavbvckYvduovHtQkQtSjxjVvfjVustFtdGZvgvhvivjvkvlvmvnvoGZvqvrvsvsvtlRlSlSlSlSlSvuHaHdHdwOyhyhyhyhyhyhyhyhyhGxwOijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijijlelevvvvvvvvvvvwvxubtLkQtNuTuUuUuUvyvzvAvBkVvCvDvEvFkYvGuoAYtQkQvIjxjxjxjxjxjxvJGZvKGZGZGZGZGZGZvLvLGZvMvNvOvPvPvQvRvRvRvRvRnlvTvUHdjlHdHdHdHdHdHdHdHdHdGVvWijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijygyhlevXvvvvvvvvvYvZwawbwcwdkVwewfwfwfwgwhwiwjkVwkwlwmwnkYDSwowptQwqwrwswtwtwvwwwxwywzwAwBwCwDwEwFwGwHwIwJpUpVqYqZvSvSvSvSvSvSvSwKwSwTwUjkjkjkjkjkIDjkjkjkHdHdwVijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijlelevvvvvvwWwWwXwYwZwbxaxbkVtNtNkVxcuhxdxexfkVxgndndndndndndndndxhxiHDHDHDHDHDHDxjwzxkxlwzxmxmxmxmxnxoHewLlSlRxpxqxrxrxrxsxtxtxuwSxvxwxxynIpIpBTjkjkjkxyIEHdHdijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijlexzxBxCxDxExFxGxHxIubtLkQxJmIxKtNxLxLxMxNxOkVxPxQxRxSxRxSxRxSndkQtSHDxTxTxTxTHDxUHexVwzHexWxXxYxmxnxZyawMlSybuHycydyeyiyjykykylyjymymInIqIoIoIrjkjkjkyojkypHdHdGVvWijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijleyqyrysytyuyvywubyxubyyHhyzyAnXkVyByCyDyCyEkVyFyGyHyHyIyHyHyJndyKtSyLxTxTxTxTHDyMyNyOyPyQxmyRySxmyTyUyawMyVyWyXyYyZzazbzczdzezfyjovymIoIoIoIoIvIsIsIsIGIsIsIsHdHdwVijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijlezgzhzizjzkzlzmznzozpoDkEkEkEkEzqzrzsztzszuzvzwzxoMoMzyoMzAzBzEoRzFyLxTxTxTxTHDzGHezHzIzJzKyRySzLxnzMyawMzNzOzPzQzRzSzTzUzVzWzVzXovymIoIoIoItItItItItItItItItHdHdHdGxijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijlezYzZAaAbyuyvxEubAcubAdAeAfAgAhkVAjyCyCyCAkkVAlAmAmAnAoApxPAqndArAsyLxTxTxTxTHDAtAuAvAwAxAyAzAAABACADyawMCVAEAFAGAHAIAJAKALAMANyjovymIuIoIoIoIwIxIxIxIHIxIxIxHdHdvWijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijleAOAPAQARASATuRAUxIubAsphAVAWAXtNBZAZAZAZBakVBbBcBbndBdBexPBfndphAsHDxTxTxTxTHDBgHeBFwzHeBhBiBjxmBkBlyawPwQwRxACHydBnBoyjBpykykyjymymInIyIoIoIrjkjkjkyojkypHdHdGVwVijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijlelevvvvvvBqBqBrBsBtwbBuBvBwBxBxBwByBzBArfBCBDBDBDBDBDBDBECvBEBEBGBHHDHDHDHDHDHDBIwzxkxlwzxmxmxmxmBJxoHewLlSlRqsBmBKBLBMBNBOBPBPwSBRBSIBIzICICIAjkjkjkBUIEHdHdijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijygyhlevXvvvvvvvvvYBVwawbBWBXBwBYCaCcCbCMCdCeCfBDCgChCiCjBDCkClCmBECnCoCpCqCqCrCsCqCtwzxkCuCCCwCxCyCzCACBCSCXDnraCDCECFCGvSvSvSvSHvwSCIIQCJjkjkjkjkIFjkjkjkHdHdvWijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijijleleGMvvvvvvvvCKvxubAsphBxCLIMINCNCOCPCQCRDeCTCUIlBBBDCYCZDaBEphDcrgrgrgrgrgrgDdHkFPHkHkHkHkHkHkDfDgHkAirMrNDhDiDjDkDlDmlSlSIPvTrVHdDoHdHdHdHdHdHdHdHdHdGVwVijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijijijleDpDqDrDsDtxGDuubAsphBxDvDwDxDxDyDxDzDADBDCDDCWIJBDDFDGDHBEphDIrgDJDKDJDLDMDNHkDODPDQDREnDTDUDVDWHkteDbspDXDYDjDkDZEalSlSEbHaHdHdEcyhyhyhyhyhyhyhyhyhGxwOijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijijijleububububububububEdphBwEeIhEfEfEgEhEiEjBDEkElElEmBDIgEpEqBEphErrgDJDJEsDLEtDNHkEuEvEwExEyEzEAEBECHksIEosKEDEEEFEGEHEIEJuHuHuKuLkTEcijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijiHiHiHiHEKELEMENAsEOBwBwBxBxBxBwBxBxBxBDBDEPEPBDBDBEBEBEBEEQAsERDJDJrgrgEtESHkETEUEUEUEUEUEUEVEWHkHaHaHaHaHaHaHaHaHaHaHaHaHaHaEXEYijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijiHiHiHiHEKEKEZFaFbFcFdFephphphFfphphphFgphphphphphphphFeFdFcFhrgDJFirgrgFjDNHkFkFlFmFnFoFpFqFrFsHkFtFuDMFwFxFyFyFyFyFyFzFAFBFBEYijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijiHiHiHiHiHEKEMFaFCFDFEoRoRBQBQFFoRoRoRwuoRtbFGoRoRFFBQBQFEFDFHrgFIFJrgrgEtDNHkHkHkHkHkHkHkFKHkHkHkFxFyFyFyFLFMFNFOHmHmHmHmwNijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijiHiHiHiHiHEKEMFaFaFaFaFaFaFaFaFaFaFaFaFaGrFQrgrgrgrgrgrgrgrgrgrgFRFTFUFVFWFXEtEtEtEtEtEtFwFYFZGaFyFLHmHmHmHmHmHmHmHmHmHmijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijiHiHiHiHiHEKEMGbGcGcGcGcGdGcGcGcGeGcGcGfGgGhGiGjGjGjGkGlGmGjGjGjGjGnEtEtGoEtHmHmHmHmHmHmHmHmHmHmHmHmHmijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijijijijijijEKEKGpGpGqGqGqGqGqGqGpGpGqGqGpGGGsGtGtGtGtGtGtGtGuGuGuGuGuGuDJGvHmHmiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGpGwGwGyGyGyGyGyGzGAGBGCGDGEGFIIGHGIGJGKGLGMGuGNGNGNGNGuGOGPHmiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGpGwGwGyGyGyGyGyGzGAGBGCGDGEGFIIGHGIGJGKGLIOGuGNGNGNGNGuGOGPHmiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGpGQGRGyGyGyGyGRGyGpGpGpGpHbHcGtHfHgHiHjHlHnHoGNGNGNGNGuHpHqHmiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
-ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGpHrGyGyGyGyHsGyHttEtEtEHuHvHwHxHfHgHyHzHAHBHoGNGNGNGNGuHCHmHmiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
+ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGpHrGyGyGyGyHsGyHttEtEtEHuHGHwHxHfHgHyHzHAHBHoGNGNGNGNGuHCHmHmiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGpHEGyHsGyGyGyHsHFtEtEtEHuHGHHHxHIHJHKHLHMHNHoGNGNGNGNGuHOHmHmiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGpHPGyGyGyGyGyGytEtEtEtEHuHQHRGtHSHTHUHVHWHXGuGNGNGNGNGuHYHmiHiHiHiHiHiHiHiHiHiHiHijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij
 ijijijijijijijijijijijijijijijijijijijijijijijijijijijijijGpGpHZHZHZHZHZHZGpGpGpGpGpGpGpGuGuGuGuGuGuGuGuGuGuGuGuGuIaHmijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijijij

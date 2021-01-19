@@ -47,7 +47,7 @@
 	heat_discomfort_strings = list(
 		"Your CPU temperature probes warn you that you are approaching critical heat levels!"
 		)
-	genders = list(NEUTER)
+	genders = list(MALE,FEMALE,PLURAL,NEUTER)
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
@@ -67,12 +67,6 @@
 			CULTURE_HUMAN_XANU,
 			CULTURE_HUMAN_ELYRAN,
 			CULTURE_HUMAN_OTHER
-		),
-		TAG_FACTION = list(
-			FACTION_ZENG_HU,
-			FACTION_EINSTEIN,
-			FACTION_SOL_CENTRAL,
-			FACTION_OTHER
 		)
 	)
 

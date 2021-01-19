@@ -44,9 +44,8 @@
 	flora_prob = 3
 	large_flora_prob = 0
 	flora_diversity = 1
-	megafauna_types = list(/mob/living/simple_animal/hostile/retaliate/giant_crab)
-	fauna_types = list(/mob/living/simple_animal/aquatic/fish,/mob/living/simple_animal/aquatic/fish/grump,/mob/living/simple_animal/aquatic/fish/judge,
-		/mob/living/simple_animal/hostile/retaliate/aquatic/carp)
+	megafauna_types = list(/mob/living/simple_animal/hostile/retaliate/batshark)
+	fauna_types = list(/mob/living/simple_animal/aquatic/fish/grump,/mob/living/simple_animal/hostile/retaliate/aquatic/carp)
 
 /datum/random_map/noise/exoplanet/bub_forest/get_additional_spawns(var/value, var/turf/T)
 	..()

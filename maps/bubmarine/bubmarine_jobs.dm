@@ -71,7 +71,7 @@
 	max_skill = list(	SKILL_PILOT       = SKILL_MAX,
 						SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 20
-	access = list(access_hop,access_medical,access_tox)
+	access = list(access_hop,access_bridge,access_medical,access_tox)
 	total_positions = 2
 	department = "Command"
 	department_flag = COM
@@ -149,7 +149,7 @@
 
 //Service
 /datum/job/chef
-	alt_titles = list("Cook","Messhall Crew")
+	alt_titles = list("Cook","Messhall Crew","Bartender")
 	outfit_type = /decl/hierarchy/outfit/job/bub/service
 	access = list(access_kitchen)
 	total_positions = 2

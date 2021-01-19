@@ -28,9 +28,13 @@
 	display_name = "deck of tarot cards"
 	path = /obj/item/weapon/deck/tarot
 
+/datum/gear/fortune
+	display_name = "deck of Europan fortune cards"
+	path = /obj/item/weapon/deck/tarot/europan
+
 /datum/gear/holder
 	display_name = "card holder"
-	path = /obj/item/weapon/deck/holder
+	path = /obj/item/weapon/storage/card
 
 /datum/gear/cardemon_pack
 	display_name = "Cardemon booster pack"
@@ -158,6 +162,10 @@
 	display_name = "pipe, corn"
 	path = /obj/item/clothing/mask/smokable/pipe/cobpipe
 
+/datum/gear/whalepipe
+	display_name = "pipe, whalebone"
+	path = /obj/item/clothing/mask/smokable/pipe/bonepipe
+
 /datum/gear/matchbook
 	display_name = "matchbook"
 	path = /obj/item/weapon/storage/box/matches
@@ -191,6 +199,10 @@
 	colours["bronze"] = /obj/item/weapon/flame/lighter/zippo/bronze
 	colours["pink"] = /obj/item/weapon/flame/lighter/zippo/pink
 	gear_tweaks += new/datum/gear_tweak/path(colours)
+
+/datum/gear/europan_zippo
+	display_name = "zippo, Europan"
+	path = /obj/item/weapon/flame/lighter/zippo/custom/europa
 
 /datum/gear/ashtray
 	display_name = "ashtray, plastic"
@@ -279,3 +291,76 @@
 	cointype["coin, phoron"] = /obj/item/weapon/material/coin/phoron
 	cointype["coin, platinum"] = /obj/item/weapon/material/coin/platinum
 	gear_tweaks += new/datum/gear_tweak/path(cointype)
+
+/datum/gear/banner
+	display_name = "banner selection"
+	path = /obj/item/flag
+
+/datum/gear/banner/New()
+	..()
+	var/banners = list()
+	banners["banner, SolGov"] = /obj/item/flag/sol
+	banners["banner, Dominia"] = /obj/item/flag/dominia
+	banners["banner, Elyra"] = /obj/item/flag/elyra
+	banners["banner, Hegemony"] = /obj/item/flag/hegemony
+	banners["banner, Jargon"] = /obj/item/flag/jargon
+	banners["banner, NanoTrasen"] = /obj/item/flag/nanotrasen
+	banners["banner, Eridani Fed"] = /obj/item/flag/eridani
+	banners["banner, Sedantis"] = /obj/item/flag/vaurca
+	banners["banner, People's Republic of Adhomai"] = /obj/item/flag/pra
+	banners["banner, Democratic People's Republic of Adhomai"] = /obj/item/flag/dpra
+	banners["banner, New Kingdom of Adhomai"] = /obj/item/flag/nka
+	banners["banner, Republic of Biesel"] = /obj/item/flag/biesel
+	banners["banner, Dominian Diona"] = /obj/item/flag/diona
+	banners["banner, Trinary Perfection"] = /obj/item/flag/trinaryperfection
+	banners["banner, Hephaestus Industries"] = /obj/item/flag/heph
+	banners["banner, Idris Incorporated"] = /obj/item/flag/idris
+	banners["banner, Zenghu Pharmaceuticals"] = /obj/item/flag/zenghu
+	banners["banner, Zavodskoi Interstellar"] = /obj/item/flag/zavodskoi
+	banners["banner, Coalition of Colonies"] = /obj/item/flag/coalition
+	gear_tweaks += new/datum/gear_tweak/path(banners)
+
+/datum/gear/flag
+	display_name = "flag selection"
+	cost = 2
+	path = /obj/item/flag
+
+/datum/gear/flag/New()
+	..()
+	var/flags = list()
+	flags["flag, SolGov"] = /obj/item/flag/sol/l
+	flags["flag, Dominia"] = /obj/item/flag/dominia/l
+	flags["flag, Elyra"] = /obj/item/flag/elyra/l
+	flags["flag, Hegemony"] = /obj/item/flag/hegemony/l
+	flags["flag, Jargon"] = /obj/item/flag/jargon/l
+	flags["flag, NanoTrasen"] = /obj/item/flag/nanotrasen/l
+	flags["flag, Eridani Fed"] = /obj/item/flag/eridani/l
+	flags["flag, Sedantis"] = /obj/item/flag/vaurca/l
+	flags["flag, People's Republic of Adhomai"] = /obj/item/flag/pra/l
+	flags["flag, Democratic People's Republic of Adhomai"] = /obj/item/flag/dpra/l
+	flags["flag, New Kingdom of Adhomai"] = /obj/item/flag/nka/l
+	flags["flag, Republic of Biesel"] = /obj/item/flag/biesel/l
+	flags["flag, Trinary Perfection"] = /obj/item/flag/trinaryperfection/l
+	flags["flag, Hephaestus Industries"] = /obj/item/flag/heph/l
+	flags["flag, Idris Incorporated"] = /obj/item/flag/idris/l
+	flags["flag, Zeng-Hu Pharmaceuticals"] = /obj/item/flag/zenghu/l
+	flags["flag, Zavodskoi Interstellar"] = /obj/item/flag/zavodskoi/l
+	flags["flag, Coalition of Colonies"] = /obj/item/flag/coalition/l
+	gear_tweaks += new/datum/gear_tweak/path(flags)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

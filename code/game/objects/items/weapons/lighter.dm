@@ -186,6 +186,11 @@
 	color = COLOR_PINK
 	name = "pink zippo"
 
+/obj/item/weapon/flame/lighter/zippo/custom/europa
+	name = "\improper Europan Zippo lighter"
+	desc = "A smokeless electrical coil lighter in the style of a zippo with the tricolour of the Jovian moon Europa on the side. It even its outside feels somewhat hot to the touch when it is turned on."
+	icon_state = "europazippo"
+
 //Spawn using the colour list in the master type
 /obj/item/weapon/flame/lighter/zippo/random
 	random_colour = TRUE

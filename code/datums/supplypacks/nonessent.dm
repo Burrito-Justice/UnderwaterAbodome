@@ -33,7 +33,7 @@
 	num_contained = 5
 	contains = list(/obj/item/weapon/pack/cardemon,
 					/obj/item/weapon/pack/spaceball,
-					/obj/item/weapon/deck/holder)
+					/obj/item/weapon/storage/card)
 	name = "Rec - Trading Cards"
 	cost = 20
 	containername = "trading cards crate"

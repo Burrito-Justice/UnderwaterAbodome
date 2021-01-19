@@ -129,3 +129,9 @@
 	desc = "A simple bracelet with a clasp."
 	icon_state = "bracelet"
 	body_location = HANDS
+
+/obj/item/clothing/accessory/whalebone
+	name = "Europan bone charm"
+	desc = "A common Europan superstition, bone charms made from native sea creatures are often carried as a good luck charm."
+	icon_state = "europa_whalebone"
+	item_state = "europa_whalebone"

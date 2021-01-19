@@ -33,6 +33,21 @@
 	display_name = "poncho, supply"
 	path = /obj/item/clothing/suit/poncho/roles/cargo
 
+/datum/gear/suit/dominia_cape
+	display_name = "dominian cape"
+	path = /obj/item/clothing/accessory/poncho/dominia_cape
+
+/datum/gear/suit/dominia_cape/New()
+	..()
+	var/dominiacape = list()
+	dominiacape["dominian cape"] = /obj/item/clothing/accessory/poncho/dominia_cape
+	dominiacape["dominian cape, strelitz"] = /obj/item/clothing/accessory/poncho/dominia_cape/strelitz
+	dominiacape["dominian cape, volvalaad"] = /obj/item/clothing/accessory/poncho/dominia_cape/volvalaad
+	dominiacape["dominian cape, kazhkz"] = /obj/item/clothing/accessory/poncho/dominia_cape/kazhkz
+	dominiacape["dominian cape, caladius"] = /obj/item/clothing/accessory/poncho/dominia_cape/caladius
+	dominiacape["dominian cape, zhao"] = /obj/item/clothing/accessory/poncho/dominia_cape/zhao
+	gear_tweaks += new/datum/gear_tweak/path(dominiacape)
+
 /datum/gear/suit/suit_jacket
 	display_name = "standard suit jackets"
 	path = /obj/item/clothing/suit/storage/toggle/suit
@@ -112,12 +127,9 @@
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(jackets)
 
 /datum/gear/suit/wintercoat
-	display_name = "winter coat"
+	display_name = "winter coat selection"
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat
-
-/datum/gear/suit/wintercoat_dais
-	display_name = "winter coat, DAIS"
-	path = /obj/item/clothing/suit/storage/hooded/wintercoat/dais
+	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/suit/track
 	display_name = "track jacket selection"
@@ -154,3 +166,8 @@
 	trenchcoats += /obj/item/clothing/suit/storage/det_trench/grey
 	trenchcoats += /obj/item/clothing/suit/leathercoat
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(trenchcoats)
+
+/datum/gear/suit/submariner
+	display_name = "submariner's coat"
+	path = /obj/item/clothing/suit/storage/toggle/overlay/submariner
+	flags = GEAR_HAS_COLOR_SELECTION

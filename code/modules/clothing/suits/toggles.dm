@@ -177,3 +177,25 @@
 	min_cold_protection_temperature = T0C - 20
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
+
+/obj/item/clothing/suit/storage/toggle/overlay
+	var/build_from_parts = TRUE
+	var/worn_overlay
+
+/obj/item/clothing/suit/storage/toggle/overlay/Initialize()
+	. = ..()
+	update_clothing_icon()
+
+/obj/item/clothing/suit/storage/toggle/overlay/update_clothing_icon()
+	..()
+	if(build_from_parts)
+		cut_overlays()
+		add_overlay(overlay_image(icon, "[icon_state]_[worn_overlay]", flags=RESET_COLOR)) //add the overlay w/o coloration of the original sprite
+
+/obj/item/clothing/suit/storage/toggle/overlay/submariner
+	name = "submariner's coat"
+	desc = "A leather jacket with a synthetic fur collar. It looks comfortable and warm."
+	icon_state = "submariner_coat"
+	icon_open = "submariner_coat_open"
+	icon_closed = "submariner_coat"
+	worn_overlay = "collar"

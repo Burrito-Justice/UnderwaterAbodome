@@ -23,13 +23,18 @@
 /obj/structure/sign/attackby(obj/item/tool as obj, mob/user as mob)	//deconstruction
 	if(isScrewdriver(tool) && !istype(src, /obj/structure/sign/double))
 		to_chat(user, "You unfasten the sign with your [tool.name].")
-		var/obj/item/sign/S = new(src.loc)
-		S.SetName(name)
-		S.desc = desc
-		S.icon_state = icon_state
-		S.sign_state = icon_state
-		qdel(src)
+		unfasten()
 	else ..()
+
+/obj/structure/sign/proc/unfasten()
+	var/obj/item/sign/S = new(src.loc)
+	S.name = name
+	S.desc = desc
+	S.icon_state = icon_state
+	//var/icon/I = icon('icons/obj/decals.dmi', icon_state)
+	//S.icon = I.Scale(24, 24)
+	S.sign_state = icon_state
+	qdel(src)
 
 /obj/item/sign
 	name = "sign"
@@ -454,3 +459,479 @@
 		to_chat(user,"This one belongs to Dr.[claimant], MD.")
 	else
 		to_chat(user,"The name is left blank for some reason.")
+
+//flags
+/obj/item/flag
+	name = "boxed flag"
+	desc = "A flag neatly folded into a wooden container."
+	icon = 'icons/obj/decals.dmi'
+	icon_state = "flag_boxed"
+	var/flag_path
+	var/flag_size = 0
+
+/obj/item/flag/afterattack(var/atom/A, var/mob/user, var/adjacent, var/clickparams)
+	if (!adjacent)
+		return
+
+	if((!iswall(A) && !istype(A, /obj/structure/window)) || !isturf(user.loc))
+		to_chat(user, SPAN_WARNING("You can't place this here!"))
+		return
+
+	var/placement_dir = get_dir(user, A)
+	if (!(placement_dir in GLOB.cardinal))
+		to_chat(user, SPAN_WARNING("You must stand directly in front of the location you wish to place that on."))
+		return
+
+	var/obj/structure/sign/flag/P = new(user.loc)
+
+	switch(placement_dir)
+		if(NORTH)
+			P.pixel_y = 32
+		if(SOUTH)
+			P.pixel_y = -32
+		if(EAST)
+			P.pixel_x = 32
+		if(WEST)
+			P.pixel_x = -32
+
+	P.dir = placement_dir
+	if(flag_size)
+		P.icon_state = "[flag_path]_l"
+		var/obj/structure/sign/flag/P2 = new(user.loc)
+		P2.icon_state = "[flag_path]_r"
+		P2.dir = P.dir
+		switch(P2.dir)
+			if(NORTH)
+				P2.pixel_y = P.pixel_y
+				P2.pixel_x = 32
+			if(SOUTH)
+				P2.pixel_y = P.pixel_y
+				P2.pixel_x = 32
+			if(EAST)
+				P2.pixel_x = P.pixel_x
+				P2.pixel_y = -32
+			if(WEST)
+				P2.pixel_x = P.pixel_x
+				P2.pixel_y = 32
+		P2.name = name
+		P2.desc = desc
+	else
+		P.icon_state = "[flag_path]"
+	P.name = name
+	P.desc = desc
+	qdel(src)
+
+
+/obj/structure/sign/flag/attack_hand(mob/user as mob)
+
+	if(alert("Do you want to rip \the [src] from its place?","You think...","Yes","No") == "Yes")
+
+		if(!do_after(user, 2 SECONDS, src))
+			return 0
+
+		visible_message(SPAN_WARNING("\The [user] rips \the [src] in a single, decisive motion!" ))
+		playsound(src.loc, 'sound/items/poster_ripped.ogg', 100, 1)
+		icon_state = "poster_ripped"
+		name = "ripped poster"
+		desc = "You can't make out anything from the flag's original print. It's ruined."
+		add_fingerprint(user)
+
+/obj/structure/sign/flag/attackby(obj/item/W, mob/user)
+	if(isflamesource(W) || is_hot(W))
+
+		visible_message(SPAN_WARNING("\The [user] starts to burn \the [src] down!"))
+
+		if(!do_after(user, 2 SECONDS, src))
+			return 0
+		visible_message(SPAN_WARNING("\The [user] burns \the [src] down!"))
+		playsound(src.loc, 'sound/items/zippo_open.ogg', 100, 1)
+		new /obj/effect/decal/cleanable/ash(src.loc)
+
+		qdel(src)
+		return
+	..()
+
+/obj/structure/sign/flag/blank
+	name = "blank banner"
+	desc = "A blank blue flag."
+	icon_state = "flag"
+
+/obj/structure/sign/flag/blank/left
+	icon_state = "flag_l"
+
+/obj/structure/sign/flag/blank/right
+	icon_state = "flag_r"
+
+/obj/structure/sign/flag/sol
+	name = "Sol Alliance flag"
+	desc = "The bright blue flag of the Alliance of Sovereign Solarian Nations."
+	icon_state = "solgov"
+
+/obj/structure/sign/flag/sol/left
+	icon_state = "solgov_l"
+
+/obj/structure/sign/flag/sol/right
+	icon_state = "solgov_r"
+
+/obj/item/flag/sol
+	name = "Sol Alliance flag"
+	desc = "The bright blue flag of the Alliance of Sovereign Solarian Nations."
+	flag_path = "solgov"
+
+/obj/item/flag/sol/l
+	flag_size = 1
+
+/obj/structure/sign/flag/dominia
+	name = "Dominian Empire flag"
+	desc = "The Imperial Standard of Emperor Boleslaw Keeser of Dominia."
+	icon_state = "dominia"
+
+/obj/structure/sign/flag/dominia/left
+	icon_state = "dominia_l"
+
+/obj/structure/sign/flag/dominia/right
+	icon_state = "dominia_r"
+
+/obj/item/flag/dominia
+	name = "Dominian Empire flag"
+	desc = "The Imperial Standard of Emperor Boleslaw Keeser of Dominia."
+	flag_path = "dominia"
+
+/obj/item/flag/dominia/l
+	flag_size = 1
+
+/obj/structure/sign/flag/elyra
+	name = "Elyran flag"
+	desc = "The hopeful colors of the Serene Republic of Elyra."
+	icon_state = "elyra"
+
+/obj/structure/sign/flag/elyra/left
+	icon_state = "elyra_l"
+
+/obj/structure/sign/flag/elyra/right
+	icon_state = "elyra_r"
+
+/obj/item/flag/elyra
+	name = "Elyran flag"
+	desc = "The hopeful colors of the Serene Republic of Elyra."
+	flag_path = "elyra"
+
+/obj/item/flag/elyra/l
+	flag_size = 1
+
+/obj/structure/sign/flag/hegemony
+	name = "Hegemony flag"
+	desc = "The feudal standard of the Izweski Hegemony."
+	icon_state = "izweski"
+
+/obj/structure/sign/flag/hegemony/left
+	icon_state = "izweski_l"
+
+/obj/structure/sign/flag/hegemony/right
+	icon_state = "izweski_r"
+
+/obj/item/flag/hegemony
+	name = "Hegemony flag"
+	desc = "The feudal standard of the Izweski Hegemony."
+	flag_path = "izweski"
+
+/obj/item/flag/hegemony/l
+	flag_size = 1
+
+/obj/structure/sign/flag/jargon
+	name = "Jargon Federation flag"
+	desc = "The insignia of the Jargon Federation."
+	icon_state = "jargon"
+
+/obj/structure/sign/flag/jargon/left
+	icon_state = "jargon_l"
+
+/obj/structure/sign/flag/jargon/right
+	icon_state = "jargon_r"
+
+/obj/item/flag/jargon
+	name = "Jargon Federation flag"
+	desc = "The insignia of the Jargon Federation"
+	flag_path = "jargon"
+
+/obj/item/flag/jargon/l
+	flag_size = 1
+
+/obj/structure/sign/flag/nanotrasen
+	name = "NanoTrasen Corporation flag"
+	desc = "The logo of NanoTrasen on a flag."
+	icon_state = "nanotrasen"
+
+/obj/structure/sign/flag/nanotrasen/left
+	icon_state = "nanotrasen_l"
+
+/obj/structure/sign/flag/nanotrasen/right
+	icon_state = "nanotrasen_r"
+
+/obj/item/flag/nanotrasen
+	name = "NanoTrasen Corporation flag"
+	desc = "The logo of NanoTrasen on a flag."
+	flag_path = "nanotrasen"
+
+/obj/item/flag/nanotrasen/l
+	flag_size = 1
+
+/obj/structure/sign/flag/eridani
+	name = "Eridani Corporate Federation flag"
+	desc = "The logo of the Eridani Corporate Federation on a flag."
+	icon_state = "eridani"
+
+/obj/structure/sign/flag/eridani/left
+	icon_state = "eridani_l"
+
+/obj/structure/sign/flag/eridani/right
+	icon_state = "eridani_r"
+
+/obj/item/flag/eridani
+	name = "Eridani Corporate Federation flag"
+	desc = "The logo of the Eridani Corporate Federation on a flag."
+	flag_path = "eridani"
+
+/obj/item/flag/eridani/l
+	flag_size = 1
+
+/obj/structure/sign/flag/coalition
+	name = "Coalition of Colonies flag"
+	desc = "The flag of the diverse Coalition of Colonies."
+	icon_state = "coalition"
+
+/obj/structure/sign/flag/coalition/left
+	icon_state = "coalition_l"
+
+/obj/structure/sign/flag/coalition/right
+	icon_state = "coalition_r"
+
+/obj/item/flag/coalition
+	name = "Coalition of Colonies flag"
+	desc = "The flag of the diverse Coalition of Colonies."
+	flag_path = "coalition"
+
+/obj/item/flag/coalition/l
+	flag_size = 1
+
+/obj/structure/sign/flag/vaurca
+	name = "Sedantis flag"
+	desc = "The emblem of Sedantis on a flag, emblematic of Vaurca longing."
+	icon_state = "sedantis"
+
+/obj/structure/sign/flag/vaurca/left
+	icon_state = "sedantis_l"
+
+/obj/structure/sign/flag/vaurca/right
+	icon_state = "sedantis_r"
+
+/obj/item/flag/vaurca
+	name = "Sedantis flag"
+	desc = "The emblem of Sedantis on a flag, emblematic of Vaurca longing."
+	flag_path = "sedantis"
+
+/obj/item/flag/vaurca/l
+	flag_size = 1
+
+/obj/structure/sign/flag/america
+	name = "Old World flag"
+	desc = "The banner of an ancient nation, its glory old."
+	icon_state = "oldglory"
+
+/obj/structure/sign/flag/america/left
+	icon_state = "oldglory_l"
+
+/obj/structure/sign/flag/america/right
+	icon_state = "oldglory_r"
+
+/obj/item/flag/america
+	name = "Old World flag"
+	desc = "The banner of an ancient nation, its glory old."
+	flag_path = "oldglory"
+
+/obj/item/flag/america/l
+	flag_size = 1
+
+/obj/item/flag/dpra
+	name = "Democratic People's Republic of Adhomai flag"
+	desc = "The black flag of the Democratic People's Republic of Adhomai."
+	flag_path = "dpra"
+
+/obj/item/flag/dpra/l
+	flag_size = 1
+
+/obj/structure/sign/flag/dpra
+	name = "Democratic People's Republic of Adhomai flag"
+	desc = "The black flag of the Democratic People's Republic of Adhomai."
+	icon_state = "dpra"
+
+/obj/structure/sign/flag/dpra/left
+	icon_state = "dpra_l"
+
+/obj/structure/sign/flag/dpra/right
+	icon_state = "dpra_r"
+
+/obj/item/flag/pra
+	name = "People's Republic of Adhomai flag"
+	desc = "The tajaran flag of the People's Republic of Adhomai."
+	flag_path = "pra"
+
+/obj/item/flag/pra/l
+	flag_size = 1
+
+/obj/structure/sign/flag/pra
+	name = "People's Republic of Adhomai flag"
+	desc = "The tajaran flag of the People's Republic of Adhomai."
+	icon_state = "pra"
+
+/obj/structure/sign/flag/pra/left
+	icon_state = "pra_l"
+
+/obj/structure/sign/flag/pra/right
+	icon_state = "pra_r"
+
+/obj/item/flag/nka
+	name = "New Kingdom of Adhomai flag"
+	desc = "The blue flag of the New Kingdom of Adhomai."
+	flag_path = "nka"
+
+/obj/item/flag/nka/l
+	flag_size = 1
+
+/obj/structure/sign/flag/nka
+	name = "New Kingdom of Adhomai flag"
+	desc = "The blue flag of the New Kingdom of Adhomai."
+	icon_state = "nka"
+
+/obj/structure/sign/flag/nka/left
+	icon_state = "nka_l"
+
+/obj/structure/sign/flag/nka/right
+	icon_state = "nka_r"
+
+/obj/item/flag/heph
+	name = "Hephaestus Industries flag"
+	desc = "The logo of Hephaestus Industries on a flag."
+	flag_path = "heph"
+
+/obj/item/flag/heph/l
+	flag_size = 1
+
+/obj/structure/sign/flag/heph
+	name = "Hephaestus Industries flag"
+	desc = "The logo of Hephaestus Industries on a flag."
+	icon_state = "heph"
+
+/obj/structure/sign/flag/heph/left
+	icon_state = "heph_l"
+
+/obj/structure/sign/flag/heph/right
+	icon_state = "heph_r"
+
+/obj/item/flag/zenghu
+	name = "Zeng-Hu Pharmaceuticals flag"
+	desc = "The logo of Zeng-Hu Pharmaceuticals on a flag."
+	flag_path = "zenghu"
+
+/obj/item/flag/zenghu/l
+	flag_size = 1
+
+/obj/structure/sign/flag/zenghu
+	name = "Zeng-Hu Pharmaceuticals flag"
+	desc = "The logo of Zeng-Hu Pharmaceuticals on a flag."
+	icon_state = "zenghu"
+
+/obj/structure/sign/flag/zenghu/left
+	icon_state = "zenghu_l"
+
+/obj/structure/sign/flag/zenghu/right
+	icon_state = "zenghu_r"
+
+/obj/structure/sign/flag/zavodskoi
+	name = "Zavodskoi Interstellar flag"
+	desc = "The logo of Zavodskoi Interstellar on a flag."
+	icon_state = "zavodskoi"
+
+/obj/structure/sign/flag/zavodskoi/left
+	icon_state = "zavodskoi_l"
+
+/obj/structure/sign/flag/zavodskoi/right
+	icon_state = "zavodskoi_r"
+
+/obj/item/flag/zavodskoi
+	name = "Zavodskoi Interstellar flag"
+	desc = "The logo of Zavodskoi Interstellar on a flag."
+	flag_path = "zavodskoi"
+
+/obj/item/flag/zavodskoi/l
+	flag_size = 1
+
+/obj/structure/sign/flag/idris
+	name = "Idris Incorporated flag"
+	desc = "The logo of Idris Incorporated on a flag."
+	icon_state = "idris"
+
+/obj/structure/sign/flag/idris/left
+	icon_state = "idris_l"
+
+/obj/structure/sign/flag/idris/right
+	icon_state = "idris_r"
+
+/obj/item/flag/idris
+	name = "Idris Incorporated flag"
+	desc = "The logo of Idris Incorporated on a flag."
+	flag_path = "idris"
+
+/obj/item/flag/idris/l
+	flag_size = 1
+
+/obj/structure/sign/flag/trinaryperfection
+	name = "Trinary Perfection flag"
+	desc = "The flag of the Trinary Perfection."
+	icon_state = "trinaryperfection"
+
+/obj/structure/sign/flag/trinaryperfection/left
+	icon_state = "trinaryperfection_l"
+
+
+/obj/structure/sign/flag/trinaryperfection/right
+	icon_state = "trinaryperfection_r"
+
+/obj/item/flag/trinaryperfection
+	name = "Trinary Perfection flag"
+	desc = "The flag of the Trinary Perfection."
+	flag_path = "trinaryperfection"
+
+/obj/item/flag/trinaryperfection/l
+	flag_size = 1
+
+/obj/item/flag/diona
+	name = "Imperial Diona standard"
+	desc = "A green Dominian standard which represents the dionae within the Empire."
+	flag_path = "diona"
+
+/obj/structure/sign/flag/diona
+	name = "Imperial Diona standard"
+	desc = "A green Dominian standard which represents the dionae within the Empire."
+	icon_state = "diona"
+
+
+/obj/structure/sign/flag/biesel
+	name = "Republic of Biesel flag"
+	desc = "The colours and symbols of the Republic of Biesel."
+	icon_state = "biesel"
+
+/obj/structure/sign/flag/biesel/left
+	icon_state = "biesel_l"
+
+/obj/structure/sign/flag/biesel/right
+	icon_state = "biesel_r"
+
+/obj/item/flag/biesel
+	name = "Republic of Biesel flag"
+	desc = "The flag representing the Republic of Biesel."
+	flag_path = "biesel"
+
+/obj/item/flag/biesel/l
+	name = "Large Republic of Biesel flag"
+	flag_size = 1

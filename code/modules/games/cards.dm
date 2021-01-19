@@ -42,10 +42,14 @@
 					P.use_custom_back = card_decl["use_custom_back"]
 				cards += P
 
-/obj/item/weapon/deck/holder
+
+/obj/item/weapon/storage/card
 	name = "card box"
 	desc = "A small leather case to show how classy you are compared to everyone else."
+	icon = 'icons/obj/playing_cards.dmi'
 	icon_state = "card_holder"
+	can_hold = list(/obj/item/weapon/deck, /obj/item/weapon/hand, /obj/item/weapon/pack, /obj/item/weapon/card) //sneaky folks can hide ID and other cards
+	storage_slots = 1 //can hold one deck
 
 /obj/item/weapon/deck/cards
 	name = "deck of cards"

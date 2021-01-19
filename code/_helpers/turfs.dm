@@ -103,6 +103,9 @@
 		return TRUE
 	return FALSE
 
+/proc/iswall(turf/T)
+	return (istype(T, /turf/simulated/wall) || istype(T, /turf/unsimulated/wall))
+
 /*
 	Turf manipulation
 */

@@ -552,3 +552,11 @@
 	item_state = "cobpipeoff"
 	icon_on = "cobpipeon"  //Note - these are in masks.dmi
 	chem_volume = 35
+
+/obj/item/clothing/mask/smokable/pipe/bonepipe
+	name = "whalebone pipe"
+	desc = "A smoking pipe made out of the bones of the Europan bone whale."
+	icon_state = "bonepipeoff"
+	item_state = "bonepipeoff"
+	icon_on = "bonepipeon"
+	chem_volume = 30

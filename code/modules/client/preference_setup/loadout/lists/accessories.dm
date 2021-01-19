@@ -127,3 +127,7 @@
 	cost = 1
 	flags = GEAR_HAS_COLOR_SELECTION
 
+/datum/gear/accessory/whalebone
+	display_name = "whalebone charm"
+	path = /obj/item/clothing/accessory/whalebone
+	cost = 1

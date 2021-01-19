@@ -28,9 +28,13 @@
 	display_name = "deck of tarot cards"
 	path = /obj/item/weapon/deck/tarot
 
+/datum/gear/fortune
+	display_name = "deck of Europan fortune cards"
+	path = /obj/item/weapon/deck/tarot/europan
+
 /datum/gear/holder
 	display_name = "card holder"
-	path = /obj/item/weapon/deck/holder
+	path = /obj/item/weapon/storage/card
 
 /datum/gear/cardemon_pack
 	display_name = "Cardemon booster pack"
@@ -158,6 +162,10 @@
 	display_name = "pipe, corn"
 	path = /obj/item/clothing/mask/smokable/pipe/cobpipe
 
+/datum/gear/whalepipe
+	display_name = "pipe, whalebone"
+	path = /obj/item/clothing/mask/smokable/pipe/bonepipe
+
 /datum/gear/matchbook
 	display_name = "matchbook"
 	path = /obj/item/weapon/storage/box/matches
@@ -191,6 +199,10 @@
 	colours["bronze"] = /obj/item/weapon/flame/lighter/zippo/bronze
 	colours["pink"] = /obj/item/weapon/flame/lighter/zippo/pink
 	gear_tweaks += new/datum/gear_tweak/path(colours)
+
+/datum/gear/europan_zippo
+	display_name = "zippo, Europan"
+	path = /obj/item/weapon/flame/lighter/zippo/custom/europa
 
 /datum/gear/ashtray
 	display_name = "ashtray, plastic"

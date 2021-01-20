@@ -2,7 +2,7 @@
 /obj/effect/overmap/visitable/sector/exoplanet/bub_sand
 	name = "sandy plains biome"
 	desc = "A biome that is notably active in flora and fauna, though only barely. These sandy plains are usually the in-betweens for biomes with greater ecological sustainability."
-	color = "#e8e082"
+	color = "#00ff00"
 	planetary_area = /area/exoplanet/bub_sand
 	rock_colors = list(COLOR_ASTEROID_ROCK, COLOR_GRAY80, COLOR_BROWN)
 	plant_colors = list("#0e1e14","#1a3e38","#5a7467","#9eab88","#6e7248","RANDOM")

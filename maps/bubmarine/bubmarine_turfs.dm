@@ -168,6 +168,15 @@
 	. = ..()
 	icon_state = "desert[pick("","0","1","2","3")]"
 
+/turf/simulated/ocean/ice
+	name = "ice"
+	desc = "A thick layer of salty ice coating some surface."
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "ice"
+	icon_edge_layer = EXT_EDGE_SEAFLOOR
+	icon_has_corners = TRUE
+
+
 //Overmap Coziness
 /turf/unsimulated/map
 	icon = 'maps/bubmarine/icons/overmap.dmi'

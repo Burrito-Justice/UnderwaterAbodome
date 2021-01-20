@@ -761,3 +761,14 @@ obj/machinery/power/smes/buildable/main/Initialize()
 	pixel_x = rand(-24,24)
 	pixel_y = rand(-24,24)
 	color = pick("#8fdb48","#72a83e","#4ed126","#98b514","#c26936")
+
+/obj/structure/flora/bub/kelp/icy
+	name = "ice kelp"
+	desc = "A blue-looking strand of kelp, rooted harshly into the floor."
+
+/obj/structure/flora/bub/kelp/icy/Initialize()
+	. = ..()
+	icon_state = pick("kelp","kelp2")
+	pixel_x = rand(-24,24)
+	pixel_y = rand(-24,24)
+	color = pick("#77eded","#74b0b0","#74a0b0","#3a94b5","#4592d9")

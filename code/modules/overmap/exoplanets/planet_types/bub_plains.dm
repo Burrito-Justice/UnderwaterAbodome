@@ -2,7 +2,7 @@
 /obj/effect/overmap/visitable/sector/exoplanet/bub_plains
 	name = "grassy plains biome"
 	desc = "Biome with sparse biodiversity but rolling plains of seagrass."
-	color = "#60e090"
+	color = "#00ff00"
 	planetary_area = /area/exoplanet/bub_plains
 	rock_colors = list(COLOR_ASTEROID_ROCK, COLOR_GRAY80, COLOR_BROWN)
 	plant_colors = list("#0e1e14","#1a3e38","#5a7467","#9eab88","#6e7248","RANDOM")

@@ -2,7 +2,7 @@
 /obj/effect/overmap/visitable/sector/exoplanet/bub_forest
 	name = "kelp forest biome"
 	desc = "A biome comprised almost exclusively of kelp. These ecosystems are usually rife with herbivores and capitalistic carnivores."
-	color = "#407c40"
+	color = "#00ff00"
 	planetary_area = /area/exoplanet/bub_forest
 	rock_colors = list(COLOR_ASTEROID_ROCK, COLOR_GRAY80, COLOR_BROWN)
 	plant_colors = list("#0e1e14","#1a3e38","#5a7467","#9eab88","#6e7248","RANDOM")

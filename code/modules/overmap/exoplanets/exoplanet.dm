@@ -398,7 +398,7 @@
 	. += jointext(extra_data, "<br>")
 
 /obj/effect/overmap/visitable/sector/exoplanet/get_skybox_representation()
-	return skybox_image
+	return null//skybox_image
 
 /obj/effect/overmap/visitable/sector/exoplanet/proc/get_base_image()
 	var/image/base = image('icons/skybox/planet.dmi', "base")

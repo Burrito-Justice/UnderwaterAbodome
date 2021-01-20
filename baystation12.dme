@@ -2488,6 +2488,7 @@
 #include "code\modules\overmap\exoplanets\theme.dm"
 #include "code\modules\overmap\exoplanets\turfs.dm"
 #include "code\modules\overmap\exoplanets\planet_types\bub_forest.dm"
+#include "code\modules\overmap\exoplanets\planet_types\bub_ice.dm"
 #include "code\modules\overmap\exoplanets\planet_types\bub_plains.dm"
 #include "code\modules\overmap\exoplanets\planet_types\bub_sand.dm"
 #include "code\modules\overmap\ships\landable.dm"

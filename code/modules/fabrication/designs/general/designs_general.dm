@@ -95,3 +95,7 @@
 
 /datum/fabricator_recipe/toolbox
 	path = /obj/item/weapon/storage/toolbox
+
+/datum/fabricator_recipe/netgun_shell
+	name = "netgun ammunition"
+	path = /obj/item/weapon/net_shell

@@ -189,6 +189,14 @@
 	name = "ENG - Atmospherics Processing"
 	icon_state = "atmos"
 
+/area/bub/ray/eng/work
+	name = "ENG - Workshop"
+	icon_state = "construction"
+
+/area/bub/ray/eng/work/secure
+	name = "ENG - Secure Storage"
+	icon_state = "primarystorage"
+	req_access = list(access_construction)
 //Medical
 /area/bub/ray/med
 	name = "MED - General Treatment Area"
@@ -249,6 +257,12 @@
 /area/bub/ray/sup/port2
 	name = "SUP - Secondary Port Warehouse"
 	icon_state = "quartsorting"
+
+/area/bub/ray/sup/mining
+	name = "SUP - Mining"
+	icon_state = "mining"
+	req_access = list(access_mining)
+	sound_env = HANGAR
 
 //___BELUGA AREAS___
 /area/bub/bel

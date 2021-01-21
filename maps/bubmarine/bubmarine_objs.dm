@@ -15,6 +15,16 @@
 	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CLIMBABLE
 	obj_flags = OBJ_FLAG_NOFALL
 
+//Quick weapon stuff
+/obj/item/weapon/gun/launcher
+	waterproof = 1
+
+/obj/item/weapon/gun/magnetic
+	waterproof = 1
+
+/obj/item/weapon/gun/projectile
+	waterproof = 1
+
 //ID cards
 /obj/item/weapon/card/id/bridge
 	name = "identification card"
@@ -772,3 +782,14 @@ obj/machinery/power/smes/buildable/main/Initialize()
 	pixel_x = rand(-24,24)
 	pixel_y = rand(-24,24)
 	color = pick("#77eded","#74b0b0","#74a0b0","#3a94b5","#4592d9")
+
+/obj/effect/floor_decal/stairs
+	name = "stairs decal"
+	icon = 'maps/bubmarine/icons/stairs.dmi'
+	icon_state = "stage_stairs"
+
+/obj/effect/floor_decal/stairs/top
+	icon_state = "ramptop"
+
+/obj/effect/floor_decal/stairs/bottom
+	icon_state = "rampbottom"

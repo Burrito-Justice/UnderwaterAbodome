@@ -5,6 +5,7 @@
 	item_state = "netgun"
 	fire_sound = 'sound/weapons/empty.ogg'
 	fire_sound_text = "a metallic thunk"
+	release_force = 5
 	var/obj/item/weapon/net_shell/chambered
 
 /obj/item/weapon/net_shell
@@ -12,6 +13,7 @@
 	desc = "A casing containing an autodeploying net for use in a net gun. Kind of looks like a flash light."
 	icon = 'icons/obj/ammo.dmi'
 	icon_state = "netshell"
+	matter = list(MATERIAL_STEEL = 2000)
 
 /obj/item/weapon/net_shell/attackby(obj/item/weapon/gun/launcher/net/I, mob/user)
 	if(istype(I) && I.can_load(src, user))
@@ -33,7 +35,7 @@
 
 /obj/item/weapon/gun/launcher/net/proc/finish_loading(var/obj/item/weapon/net_shell/S, var/mob/user)
 	chambered = S
-	if(user) 
+	if(user)
 		user.visible_message("\The [user] inserts \a [S] into \the [src].", SPAN_NOTICE("You insert \a [S] into \the [src]."))
 
 /obj/item/weapon/gun/launcher/net/proc/load(obj/item/weapon/net_shell/S, mob/user)

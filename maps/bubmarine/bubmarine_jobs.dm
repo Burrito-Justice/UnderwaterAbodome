@@ -143,9 +143,22 @@
 						SKILL_PILOT       = SKILL_BASIC)
 	max_skill = list(	SKILL_PILOT       = SKILL_MAX)
 	skill_points = 18
-	access = list(access_qm)
+	access = list(access_qm,access_mining)
 	supervisors = "the captain"
 	hud_icon = "huddecktechnician"
+
+/datum/job/mining
+	title = "Aqua Miner"
+	outfit_type = /decl/hierarchy/outfit/job/bub/supply
+	alt_titles = list("Resource Acquisition Specialist")
+	min_skill = list(	SKILL_HAULING = SKILL_BASIC,
+						SKILL_EVA     = SKILL_BASIC)
+	max_skill = list(	SKILL_PILOT   = SKILL_MAX)
+	skill_points = 18
+	access = list(access_mining)
+	supervisors = "the quartermaster or captain"
+	total_positions = 3
+	hud_icon = "hudprospector"
 
 //Service
 /datum/job/chef
@@ -208,9 +221,6 @@
 	total_positions = 0
 
 /datum/job/hydro
-	total_positions = 0
-
-/datum/job/mining
 	total_positions = 0
 
 /datum/job/janitor

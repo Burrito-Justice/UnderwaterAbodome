@@ -37,7 +37,7 @@
 	descriptor = "sandy plains biome"
 	smoothing_iterations = 2
 	land_type = /turf/simulated/ocean/sand
-	water_type = /turf/simulated/ocean
+	water_type = /turf/simulated/ocean/abyss
 	water_level_min = 3
 	water_level_max = 6
 

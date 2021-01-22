@@ -154,7 +154,13 @@
 	desc = "Some rough tufts of Europan seagrass."
 	icon_state = "grass-dark"
 	icon_edge_layer = EXT_EDGE_SAND
-	icon_has_corners = TRUE
+	icon_has_corners = FALSE
+
+/turf/simulated/ocean/grass/alt
+	icon = 'maps/bubmarine/icons/ocean_turfs/grass_light.dmi'
+	icon_state = "0"
+	icon_edge_layer = EXT_EDGE_SAND
+	icon_has_corners = FALSE
 
 /turf/simulated/ocean/sand
 	name = "sand"
@@ -174,8 +180,21 @@
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "ice"
 	icon_edge_layer = EXT_EDGE_SEAFLOOR
+	icon_has_corners = FALSE
+
+/turf/simulated/ocean/abyss
+	icon = 'maps/bubmarine/icons/ocean_turfs/mud_light.dmi'
+	icon_state = "0"
+	icon_edge_layer = EXT_EDGE_MUD
 	icon_has_corners = TRUE
 
+/turf/simulated/ocean/mud
+	name = "deep mud"
+	desc = "Some oddly loamy mush at the bottom of the sea."
+	icon = 'maps/bubmarine/icons/ocean_turfs/mud_dark.dmi'
+	icon_state = "0"
+	icon_edge_layer = EXT_EDGE_MUD_DARK
+	icon_has_corners = TRUE
 
 //Overmap Coziness
 /turf/unsimulated/map

@@ -28,7 +28,7 @@
 	return grass_color
 
 /area/exoplanet/bub_plains
-	base_turf = /turf/simulated/ocean/grass
+	base_turf = /turf/simulated/ocean/grass/alt
 	ambience = list('maps/bubmarine/sounds/amb/ocean_ambi1.ogg','maps/bubmarine/sounds/amb/ocean_ambi2.ogg',
 					'maps/bubmarine/sounds/amb/ocean_ambi3.ogg','maps/bubmarine/sounds/amb/ocean_ambi4.ogg')
 	sound_env = UNDERWATER
@@ -36,7 +36,7 @@
 /datum/random_map/noise/exoplanet/bub_plains
 	descriptor = "grassy plains biome"
 	smoothing_iterations = 2
-	land_type = /turf/simulated/ocean/grass
+	land_type = /turf/simulated/ocean/grass/alt
 	water_type = /turf/simulated/ocean/sand
 	water_level_min = 1
 	water_level_max = 4

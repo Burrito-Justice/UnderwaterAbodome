@@ -671,6 +671,7 @@
 	desc = "An absolutely colossal propulsion unit, which takes power from the engine to turn the shaft to spin the screws so that the sub can move."
 	icon = 'maps/bubmarine/icons/engine_96x.dmi'
 	icon_state = "engine_unit"
+	anchored = 1
 	density = 1
 
 /obj/structure/engine/axle

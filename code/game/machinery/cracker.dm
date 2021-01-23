@@ -22,6 +22,8 @@
 	icon_state = (use_power == POWER_USE_ACTIVE) ? "cracker_on" : "cracker"
 
 /obj/machinery/portable_atmospherics/cracker/interface_interact(mob/user)
+	if(!CanInteract(user, DefaultTopicState()))
+		return FALSE
 	if(use_power == POWER_USE_IDLE)
 		update_use_power(POWER_USE_ACTIVE)
 	else

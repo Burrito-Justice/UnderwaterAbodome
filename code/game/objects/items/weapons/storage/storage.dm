@@ -153,7 +153,7 @@
 			return 0
 
 	//If attempting to lable the storage item, silently fail to allow it
-	if(istype(W, /obj/item/weapon/hand_labeler) && user.a_intent != I_HELP)
+	if(istype(W, /obj/item/weapon/hand_labeler) && user?.a_intent != I_HELP)
 		return FALSE
 
 	// Don't allow insertion of unsafed compressed matter implants

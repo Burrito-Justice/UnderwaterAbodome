@@ -3,6 +3,13 @@
 	description = "Placeholder."
 	economic_power = 1
 	language = LANGUAGE_UNATHI_SINTA
+	secondary_langs = list(
+		LANGUAGE_SOL,
+		LANGUAGE_TCB,
+		LANGUAGE_TRADE,
+		LANGUAGE_FREE,
+		LANGUAGE_SIGN,
+	)
 
 /decl/cultural_info/culture/unathi/traditional
 	name = CULTURE_UNATHI_TRADITIONAL
@@ -17,6 +24,7 @@
 /decl/cultural_info/culture/unathi/dominia
 	name = CULTURE_UNATHI_DOMINIA
 	description = "Placeholder."
+	additional_langs = list(LANGUAGE_TRADE)
 
 /decl/cultural_info/culture/unathi/guwan
 	name = CULTURE_UNATHI_GUWAN

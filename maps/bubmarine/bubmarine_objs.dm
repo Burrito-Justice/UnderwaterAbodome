@@ -124,6 +124,7 @@
 
 /obj/item/clothing/accessory/bub/alt
 	icon_state = "dept_exped"
+	on_rolled = list("down" = "none", "rolled" = "dept_exped_sleeves")
 
 /obj/item/clothing/accessory/bub/com
 	desc = "Insignia denoting assignment to command. These are gold."
@@ -131,6 +132,7 @@
 
 /obj/item/clothing/accessory/bub/com/alt
 	icon_state = "dept_exped"
+	on_rolled = list("down" = "none", "rolled" = "dept_exped_sleeves")
 
 /obj/item/clothing/accessory/bub/sec
 	desc = "Insignia denoting assignment to security. These are blood red."
@@ -138,6 +140,7 @@
 
 /obj/item/clothing/accessory/bub/sec/alt
 	icon_state = "dept_exped"
+	on_rolled = list("down" = "none", "rolled" = "dept_exped_sleeves")
 
 /obj/item/clothing/accessory/bub/med
 	desc = "Insignia denoting assignment to medical. These are blue."
@@ -145,6 +148,7 @@
 
 /obj/item/clothing/accessory/bub/med/alt
 	icon_state = "dept_exped"
+	on_rolled = list("down" = "none", "rolled" = "dept_exped_sleeves")
 
 /obj/item/clothing/accessory/bub/eng
 	desc = "Insignia denoting assignment to engineering. These are orange."
@@ -152,6 +156,7 @@
 
 /obj/item/clothing/accessory/bub/eng/alt
 	icon_state = "dept_exped"
+	on_rolled = list("down" = "none", "rolled" = "dept_exped_sleeves")
 
 /obj/item/clothing/accessory/bub/xen
 	desc = "Insignia denoting assignment to research. These are purple."
@@ -159,6 +164,7 @@
 
 /obj/item/clothing/accessory/bub/xen/alt
 	icon_state = "dept_exped"
+	on_rolled = list("down" = "none", "rolled" = "dept_exped_sleeves")
 
 /obj/item/clothing/accessory/bub/sup
 	desc = "Insignia denoting assignment to cargo. These are brown."
@@ -166,6 +172,7 @@
 
 /obj/item/clothing/accessory/bub/sup/alt
 	icon_state = "dept_exped"
+	on_rolled = list("down" = "none", "rolled" = "dept_exped_sleeves")
 
 /obj/item/clothing/accessory/bub/xpd
 	desc = "Insignia denoting assignment to exploration. These are red."
@@ -173,6 +180,7 @@
 
 /obj/item/clothing/accessory/bub/xpd/alt
 	icon_state = "dept_exped"
+	on_rolled = list("down" = "none", "rolled" = "dept_exped_sleeves")
 
 /obj/item/clothing/accessory/bub/srv
 	desc = "Insignia denoting assignment to culinary service. These are green."
@@ -180,6 +188,7 @@
 
 /obj/item/clothing/accessory/bub/srv/alt
 	icon_state = "dept_exped"
+	on_rolled = list("down" = "none", "rolled" = "dept_exped_sleeves")
 
 //Shoulder patches
 /obj/item/clothing/accessory/patch
@@ -232,7 +241,7 @@
 	icon_state = "divinghelmet"
 	item_state = "divinghelmet"
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
-	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC)
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC,SPECIES_UNATHI)
 	light_overlay = "helmet_light_dual"
 
 /obj/item/clothing/suit/space/void/bub
@@ -240,7 +249,7 @@
 	desc = "A bulky suit to be sure, these things are built to allow you to dive to extremely deep points in the Earth's oceans. In other words, it keeps you from being crushed."
 	icon_state = "divingsuit"
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
-	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC)
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC,SPECIES_UNATHI)
 
 /obj/item/clothing/suit/space/void/bub/New()
 	..()
@@ -255,13 +264,13 @@
 	desc = "A very bulky looking helmet designed to be mounted on a pressure suit. It has lil' cooling fans in there!"
 	icon_state = "divinghelmet_in"
 	item_state = "divinghelmet_in"
-	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC)
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC,SPECIES_UNATHI)
 
 /obj/item/clothing/suit/space/void/engineering/alt/bub
 	name = "enginering pressure suit"
 	desc = "A very bulky, almost mean-looking pressure suit built to withstand the crushing depths of the Earth's ocean and more. Europa's waters are no match."
 	icon_state = "divingsuit_in"
-	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC)
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC,SPECIES_UNATHI)
 
 /obj/item/clothing/suit/space/void/engineering/alt/bub/New()
 	..()
@@ -278,7 +287,7 @@
 	item_state = "divinghelmet_med"
 	light_overlay = "helmet_light_dual"
 	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
-	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC)
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC,SPECIES_UNATHI)
 
 /obj/item/clothing/suit/space/void/medical/alt/bub
 	name = "streamlined medical pressure suit"
@@ -286,7 +295,7 @@
 	desc = "A flashier pressure suit sporting blue medical crosses for easier identification. It looks a bit lighter than most pressure suits."
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/firstaid,/obj/item/device/scanner/health,/obj/item/stack/medical)
 	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
-	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC)
+	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN,SPECIES_IPC,SPECIES_UNATHI)
 
 /obj/item/clothing/suit/space/void/medical/alt/bub/New()
 	..()
@@ -470,7 +479,7 @@
 		new/datum/atom_creator/simple(/obj/item/weapon/storage/backpack/dufflebag/eng, 50),
 		/obj/item/weapon/storage/toolbox/mechanical,
 		/obj/item/clothing/suit/storage/hazardvest,
-		/obj/item/clothing/mask/gas,
+		/obj/item/clothing/mask/gas/radical,
 		/obj/item/clothing/gloves/thick/duty/bub/eng,
 		/obj/item/taperoll/engineering,
 		/obj/item/clothing/accessory/armband/engine
@@ -490,7 +499,7 @@
 		/obj/item/device/flashlight,
 		/obj/item/weapon/extinguisher,
 		/obj/item/clothing/suit/storage/hazardvest,
-		/obj/item/clothing/mask/gas,
+		/obj/item/clothing/mask/gas/radical,
 		/obj/item/clothing/gloves/thick/duty/bub/eng,
 		/obj/item/taperoll/atmos,
 		/obj/item/clothing/accessory/armband/engine
@@ -541,7 +550,8 @@
 		/obj/item/clothing/under/rank/scientist,
 		/obj/item/clothing/suit/storage/toggle/labcoat,
 		/obj/item/clothing/shoes/white,
-		/obj/item/clothing/mask/gas,
+		/obj/item/device/scanner/xenobio,
+		/obj/item/clothing/mask/gas/radical,
 		/obj/item/clothing/gloves/latex,
 		/obj/item/weapon/material/clipboard,
 		/obj/item/weapon/storage/belt/general
@@ -561,7 +571,7 @@
 		/obj/item/clothing/gloves/thick/duty/bub/sup,
 		/obj/item/clothing/suit/fire/firefighter,
 		/obj/item/weapon/tank/emergency/oxygen,
-		/obj/item/clothing/mask/gas,
+		/obj/item/clothing/mask/gas/radical,
 		/obj/item/clothing/head/soft,
 	)
 

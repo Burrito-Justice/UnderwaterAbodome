@@ -52,7 +52,7 @@
 						SKILL_WEAPONS     = SKILL_MAX,
 						SKILL_FORENSICS   = SKILL_MAX)
 	skill_points = 28
-	access = list(access_hos,access_security,access_armory,access_brig,access_medical,access_tox,access_qm,access_engine,access_kitchen)
+	access = list(access_hos,access_security,access_armory,access_brig,access_medical,access_tox,access_mining,access_engine,access_kitchen)
 	department = "Command"
 	department_flag = COM
 	selection_color = "#2f2f7f"

@@ -38,6 +38,10 @@ GLOBAL_DATUM_INIT(is_http_protocol, /regex, regex("^https?://"))
 				send_asset(thing2, key, FALSE)
 			return "<img class='icon icon-misc [class]' src=\"[url_encode(name)]\">"
 		var/atom/A = thing
+		if(ispath(thing))
+			A = new thing(null)
+			spawn(10)
+				qdel(A)
 		if (isnull(dir))
 			dir = A.dir
 		if (isnull(icon_state))

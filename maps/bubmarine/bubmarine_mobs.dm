@@ -1,3 +1,11 @@
+//P E T  C R A B
+/mob/living/simple_animal/crab/pet
+	desc = "A crab that is definitely not native to the usual Europa populace. It looks rather cute compared to the rest of the inhabitants."
+	icon = 'maps/bubmarine/icons/mob/petcrab.dmi'
+	icon_state = "crab"
+	icon_living = "crab"
+	icon_dead = "crab_dead"
+
 //B A T S H A R K
 /mob/living/simple_animal/hostile/retaliate/batshark
 	name = "batshark"
@@ -49,8 +57,8 @@
 	meat_amount = 2
 	bone_amount = 0
 	skin_amount = 0
-	bone_material = MATERIAL_BONE_FISH
-	skin_material = MATERIAL_SKIN_FISH
+	bone_material = MATERIAL_BONE_CARTILAGE
+	skin_material = MATERIAL_SKIN_CHITIN
 
 //E U R O P A N  J E L L Y F I S H
 /mob/living/simple_animal/jellyfish
@@ -91,5 +99,5 @@
 	meat_amount = 2
 	bone_amount = 0
 	skin_amount = 3
-	bone_material = MATERIAL_BONE_FISH
+	bone_material = MATERIAL_BONE_CARTILAGE
 	skin_material = MATERIAL_SKIN_FISH

@@ -13,6 +13,7 @@
 /area/space
 	ambience = list('maps/bubmarine/sounds/amb/ocean_ambi1.ogg','maps/bubmarine/sounds/amb/ocean_ambi2.ogg',
 					'maps/bubmarine/sounds/amb/ocean_ambi3.ogg','maps/bubmarine/sounds/amb/ocean_ambi4.ogg')
+	has_gravity = 1
 
 //___STINGRAY AREAS___
 /area/bub/ray/exterior

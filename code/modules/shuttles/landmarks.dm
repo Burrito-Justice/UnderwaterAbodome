@@ -119,6 +119,7 @@
 /obj/effect/shuttle_landmark/automatic/clearing/LateInitialize()
 	..()
 	for(var/turf/T in range(radius, src))
+		ChangeArea(T, base_area)
 		if(T.density)
 			T.ChangeTurf(get_base_turf_by_area(T))
 
